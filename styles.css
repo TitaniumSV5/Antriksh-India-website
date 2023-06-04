@@ -1,0 +1,38 @@
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.navbar li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar li .logo {
+  margin-right: 10px;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height as per your logo's dimensions */
+}
+
+.navbar li a {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+}
+
+body {
+  background-image: url("image1.png");
+  background-size: cover;
+}
+
