@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming and Past Launches</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #launches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .launch-card {
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .launch-details {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .launch-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .launch-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .launch-text p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .active {
+      color: #0b7209;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Upcoming and Past Launches</h1>
+  </header>
+
+  <main>
+    <div class="launch-text">
+      <p class="upcoming active">Upcoming</p>
+      <p class="past">Past</p>
+    </div>
+
+    <section id="launches">
+      <div class="launch-card upcoming-launch">
+        <div class="launch-details">
+          <h2>Launch Name</h2>
+          <p>Date and Time: November 1, 2023 - 10:00 AM</p>
+          <p>Location: Kennedy Space Center, FL</p>
+        </div>
+        <div class="launch-image">
+          <img src="launch1.jpg" alt="Launch Image">
+        </div>
+      </div>
+
+      <div class="launch-card past-launch">
+        <div class="launch-details">
+          <h2>Launch Name</h2>
+          <p>Date and Time: November 5, 2023 - 3:30 PM</p>
+          <p>Location: Vandenberg Space Force Base, CA</p>
+        </div>
+        <div class="launch-image">
+          <img src="launch2.jpg" alt="Launch Image">
+        </div>
+      </div>
+
+      <!-- Add more launch cards as needed -->
+    </section>
+  </main>
+
+  <script>
+    const upcomingText = document.querySelector('.upcoming');
+    const pastText = document.querySelector('.past');
+    const upcomingLaunches = document.querySelectorAll('.upcoming-launch');
+    const pastLaunches = document.querySelectorAll('.past-launch');
+
+    upcomingText.addEventListener('click', () => {
+      upcomingText.classList.add('active');
+      pastText.classList.remove('active');
+      upcomingLaunches.forEach(launch => launch.style.display = 'grid');
+      pastLaunches.forEach(launch => launch.style.display = 'none');
+    });
+
+    pastText.addEventListener('click', () => {
+      pastText.classList.add('active');
+      upcomingText.classList.remove('active');
+      pastLaunches.forEach(launch => launch.style.display = 'grid');
+      upcomingLaunches.forEach(launch => launch.style.display = 'none');
+    });
+  </script>
+</body>
+
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launches</title>
+  <link rel="stylesheet" href="launchescss.css">
+</head>
+
+<body>
+  <main>
+    <div class="launch-text">
+      <p id="upcoming-text" class="active">Upcoming Launches</p>
+      <p id="past-text">Past Launches</p>
+    </div>
+
+    <section id="launches">
+      <!-- Upcoming Launches -->
+      <div id="upcoming-launches" class="launch-section">
+        <div class="launch-card">
+          <div class="launch-details">
+            <h3>Launch Name</h3>
+            <p>Date and Time: November 1, 2023 - 10:00 AM</p>
+            <p>Location: FLP, Satish Dhawan Space Center, Sriharikota</p>
+          </div>
+          <div class="launch-image">
+            <img src="launch1.jpg" alt="Launch Image">
+          </div>
+        </div>
+
+        <div class="launch-card">
+          <div class="launch-details">
+            <h3>Launch Name</h3>
+            <p>Date and Time: November 5, 2023 - 3:30 PM</p>
+            <p>Location: FLP, Satish Dhawan Space Center, Sriharikota</p>
+          </div>
+          <div class="launch-image">
+            <img src="launch2.jpg" alt="Launch Image">
+          </div>
+        </div>
+
+        <!-- Add more upcoming launch cards as needed -->
+      </div>
+
+      <!-- Past Launches -->
+      <div id="past-launches" class="launch-section" style="display: none;">
+        <div class="launch-card">
+          <div class="launch-details">
+            <h3>Launch Name</h3>
+            <p>Date and Time: October 20, 2023 - 8:00 AM</p>
+            <p>Location: FLP, Satish Dhawan Space Center, Sriharikota</p>
+          </div>
+          <div class="launch-image">
+            <img src="launch3.jpg" alt="Launch Image">
+          </div>
+        </div>
+
+        <div class="launch-card">
+          <div class="launch-details">
+            <h3>Launch Name</h3>
+            <p>Date and Time: October 15, 2023 - 12:30 PM</p>
+            <p>Location: SLP, Satish Dhawan Space Center, Sriharikota</p>
+          </div>
+          <div class="launch-image">
+            <img src="launch4.jpg" alt="Launch Image">
+          </div>
+        </div>
+
+        <!-- Add more past launch cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript to toggle between upcoming and past launches
+    const upcomingText = document.getElementById("upcoming-text");
+    const pastText = document.getElementById("past-text");
+    const upcomingLaunches = document.getElementById("upcoming-launches");
+    const pastLaunches = document.getElementById("past-launches");
+
+    upcomingText.addEventListener("click", function () {
+      upcomingText.classList.add("active");
+      pastText.classList.remove("active");
+      upcomingLaunches.style.display = "block";
+      pastLaunches.style.display = "none";
+    });
+
+    pastText.addEventListener("click", function () {
+      pastText.classList.add("active");
+      upcomingText.classList.remove("active");
+      pastLaunches.style.display = "block";
+      upcomingLaunches.style.display = "none";
+    });
+  </script>
+</body>
+
+</html>
+
