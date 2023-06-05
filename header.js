@@ -2,12 +2,23 @@ document.addEventListener('DOMContentLoaded', function() {
   // Create the logo element
   var logo = document.createElement('div');
   logo.classList.add('logo');
+  
+  // Create the logo image element
   var logoImage = document.createElement('img');
   logoImage.src = 'logo2.png';
   logoImage.classList.add('logo');
   logoImage.setAttribute('height', '100px');
   logoImage.setAttribute('width', '50px');
-  logo.appendChild(logoImage);
+  
+  // Create the anchor element
+  var anchor = document.createElement('a');
+  anchor.href = 'start.html'; // Replace with your desired URL
+  
+  // Append the logo image to the anchor element
+  anchor.appendChild(logoImage);
+  
+  // Append the anchor element to the logo div
+  logo.appendChild(anchor);
 
   // Create the navbar element
 var navbar = document.createElement('div');
