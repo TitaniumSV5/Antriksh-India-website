@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'YourFont';
+  src: url('sofachrome2.otf') format('opentype');
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'YourFont', sans-serif;
 }
 
 .banner {
@@ -26,7 +31,7 @@
 }
 
 .navbar {
-  width: 55%;
+  width: 75%;
   position: absolute;
   right: 80px;
   top: 30px;
