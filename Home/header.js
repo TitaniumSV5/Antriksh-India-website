@@ -14,7 +14,7 @@ var navbar = document.createElement('div');
 navbar.classList.add('navbar');
 var navbarList = document.createElement('ul');
 var navbarItems = ['Launches', 'Rockets', 'Spacecrafts', 'Satellites', 'Tests/Prototypes'];
-var hrefValues = ['launches.html', 'rockets.html', 'spacecraft.html', 'satellites.html', 'tests.html'];
+var hrefValues = ['Launches/launches.html', 'Rockets/rockets.html', 'Spacecrafts/spacecraft.html', 'Satellites/satellite.html', 'Test/test.html'];
 
 for (var i = 0; i < navbarItems.length; i++) {
   var navbarItem = document.createElement('li');
