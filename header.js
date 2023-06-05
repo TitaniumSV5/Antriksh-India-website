@@ -10,19 +10,23 @@ document.addEventListener('DOMContentLoaded', function() {
   logo.appendChild(logoImage);
 
   // Create the navbar element
-  var navbar = document.createElement('div');
-  navbar.classList.add('navbar');
-  var navbarList = document.createElement('ul');
-  var navbarItems = ['Launches', 'Rockets', 'Spacecrafts', 'Satellites', 'Tests/Prototypes'];
-  for (var i = 0; i < navbarItems.length; i++) {
-    var navbarItem = document.createElement('li');
-    var navbarLink = document.createElement('a');
-    navbarLink.href = 'launches.html'; // Set the appropriate href value
-    navbarLink.textContent = navbarItems[i];
-    navbarItem.appendChild(navbarLink);
-    navbarList.appendChild(navbarItem);
-  }
-  navbar.appendChild(navbarList);
+var navbar = document.createElement('div');
+navbar.classList.add('navbar');
+var navbarList = document.createElement('ul');
+var navbarItems = ['Launches', 'Rockets', 'Spacecrafts', 'Satellites', 'Tests/Prototypes'];
+var hrefValues = ['launches.html', 'rockets.html', 'spacecraft.html', 'satellites.html', 'tests.html'];
+
+for (var i = 0; i < navbarItems.length; i++) {
+  var navbarItem = document.createElement('li');
+  var navbarLink = document.createElement('a');
+  navbarLink.href = hrefValues[i]; // Set the appropriate href value
+  navbarLink.textContent = navbarItems[i];
+  navbarItem.appendChild(navbarLink);
+  navbarList.appendChild(navbarItem);
+}
+
+navbar.appendChild(navbarList);
+
 
   // Insert the logo and navbar into the banner element
   var banner = document.querySelector('.banner');
