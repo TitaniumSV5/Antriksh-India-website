@@ -43,7 +43,7 @@
 }
 
 .navbar ul li {
-  font-size: 110%;
+  font-size: 1vw; /* Adjust the font size as needed */
   position: relative;
   display: inline-block;
   margin: 0 20px;
