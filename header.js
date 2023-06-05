@@ -44,10 +44,6 @@ navbar.appendChild(navbarList);
   banner.appendChild(logo);
   banner.appendChild(navbar);
 
-  // Add the CSS file
-  var cssFile = document.createElement('link');
-  cssFile.rel = 'stylesheet';
-  cssFile.href = 'navbarcss.css'; // Specify the path to the CSS file
-  document.head.appendChild(cssFile);
+
 });
 
