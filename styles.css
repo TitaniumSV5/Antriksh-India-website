@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'YourFont';
-  src: url('sofachrome2.otf') format('opentype');
+  src: url('un.otf') format('opentype');
 }
 
 * {
@@ -48,7 +48,7 @@
 }
 
 .navbar ul li {
-  font-size: 1vw; /* Adjust the font size as needed */
+  font-size: 1.5vw; /* Adjust the font size as needed */
   position: relative;
   display: inline-block;
   margin: 0 20px;
@@ -65,13 +65,12 @@
   content: '';
   height: 3px;
   width: 0;
+  background: blue;
   position: absolute;
   left: 0;
   bottom: -8px;
   transition: 0.5s;
-  box-shadow: 0 0 5px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff, 0 0 40px #00e5ff;
 }
-
 
 .navbar ul li:hover::after {
   width: 100%;
