@@ -68,3 +68,29 @@
   width: 100%;
 }
 
+.dropdown-content {
+  position: absolute;
+  display: none;
+  min-width: 120px;
+}
+
+.dropdown-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-list li {
+  padding: 5px;
+}
+
+.navbar li:hover .dropdown-content {
+  display: block;
+}

@@ -67,11 +67,42 @@
   background: blue;
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -2px;
   transition: 0.5s;
 }
 
 .navbar ul li:hover::after {
   width: 100%;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  min-width: 120px;
+  top: 29px;
+  
+  
+}
+
+.dropdown-box {
+  background-color: #79d8da34;
+  border: 1px solid #211d1d2e;
+  border-radius: 4px;
+  padding: 10px;
+  
+}
+
+.dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-list li {
+  padding: 5px;
+}
+
+.navbar li:hover .dropdown-content {
+  display: block;
 }
 
