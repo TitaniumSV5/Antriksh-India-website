@@ -8,11 +8,27 @@
   <link rel="stylesheet" href="navbarcss.css">
   <link rel="stylesheet" href="launchescss.css">
   <script src="header.js"></script>
+  <style>
+    /* Add this CSS style to position the dropdown above everything */
+    .launch-section {
+      position: relative;
+      z-index: 1;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      display: none;
+      min-width: 120px;
+      top: 32px;
+      right: auto;
+      z-index: 2;
+    }
+  </style>
 </head>
 
 <body style="background-image: url('launches.jpg'); background-size: cover;">
 
-  <div class="banner"></div> 
+  <div class="banner"></div>
 
   <main>
     <div class="launch-text">
@@ -21,51 +37,33 @@
     </div>
 
     <section id="launches">
-      
       <!-- Upcoming Launches -->
-     
-   
-   
-   <div id="upcoming-launches" class="launch-section">
+      <div id="upcoming-launches" class="launch-section">
         <div class="launch-card" style="background-image: url('gslvmk3.jpg');">
           <div class="launch-details">
             <h3>LVM3-M4 / Chandrayaan-3 </h3>
             <p>Date and Time: 12 July 2023 - 10:00 AM</p>
             <p>Location: SLP, Satish Dhawan Space Center, Sriharikota</p>
           </div>
-            <div class="launch-caption">#7 LVM3 launch
-                                  <p>  #89 ISRO launch</div>
-
+          <div class="launch-caption">#7 LVM3 launch
+            <p> #89 ISRO launch</p>
+          </div>
         </div>
-
-       
-       
-       
-       <div class="launch-card" style="background-image: url('pslvca.jpg');">
+        <div class="launch-card" style="background-image: url('pslvca.jpg');">
           <div class="launch-details">
             <h3>PSLV-C56 / Unknown</h3>
             <p>Date and Time: July 2023 - 3:30 PM</p>
             <p>Location: FLP, Satish Dhawan Space Center, Sriharikota</p>
           </div>
-            <div class="launch-caption">#58 PSLV launch
-                                  <p>  #90 ISRO launch</div>
-
+          <div class="launch-caption">#58 PSLV launch
+            <p> #90 ISRO launch</p>
+          </div>
         </div>
-
         <!-- Add more upcoming launch cards as needed -->
       </div>
 
-      
-      
-      
-     
-     
-     
-     <!-- Past Launches -->
-      
-     
-     
-     <div id="past-launches" class="launch-section" style="display: none;">
+      <!-- Past Launches -->
+      <div id="past-launches" class="launch-section" style="display: none;">
         <div class="launch-card" style="background-image: url('launch3_background.jpg');">
           <div class="launch-details">
             <h3>Launch Name</h3>
@@ -73,18 +71,13 @@
             <p>Location: FLP, Satish Dhawan Space Center, Sriharikota</p>
           </div>
         </div>
-
-       
-       
-       
-       <div class="launch-card" style="background-image: url('launch4_background.jpg');">
+        <div class="launch-card" style="background-image: url('launch4_background.jpg');">
           <div class="launch-details">
             <h3>Launch Name</h3>
             <p>Date and Time: October 15, 2023 - 12:30 PM</p>
             <p>Location: SLP, Satish Dhawan Space Center, Sriharikota</p>
           </div>
         </div>
-
         <!-- Add more past launch cards as needed -->
       </div>
 
@@ -115,4 +108,3 @@
 </body>
 
 </html>
-
