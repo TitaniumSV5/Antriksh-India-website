@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'YourFont';
+  src: url('un.otf') format('opentype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +14,19 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
 h1 {
   font-size: 24px;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
 main {
   padding: 20px;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
@@ -30,7 +34,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 50px;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
@@ -44,7 +48,7 @@ main {
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
@@ -60,14 +64,14 @@ main {
   font-size: 10px;
   padding: 20px;
   color: #fff;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
 .launch-details h3,
 .launch-details p {
   color: #fff;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
@@ -75,21 +79,21 @@ main {
 h3 {
   font-size: 30px;
   margin-bottom: 10px;
-  font-family: serif, sans-serif;
+  font-family: , sans-serif;
 
 }
 
 p {
   font-size: 20px;
   margin-bottom: 5px;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
 .launch-image img {
   width: 100%;
   height: auto;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
@@ -97,7 +101,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
@@ -106,14 +110,14 @@ p {
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
 .active {
   color: #0b7209;
   text-decoration: underline;
-  font-family: serif, sans-serif;
+  font-family: 'YourFont';
 
 }
 
