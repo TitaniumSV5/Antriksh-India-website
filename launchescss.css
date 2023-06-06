@@ -30,6 +30,7 @@ main {
 }
 
 .launch-card {
+  position: relative;
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
@@ -40,7 +41,16 @@ main {
   margin-bottom: 20px;
 }
 
+.launch-caption {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  /* Add other styles for the caption text */
+}
+
 .launch-details {
+  font-size: 10px;
   padding: 20px;
   color: #fff;
 }
