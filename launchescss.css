@@ -1,90 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  font-family: serif, sans-serif;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-    }
+header {
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-    header {
-      background-color: darkgrey;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+h1 {
+  font-size: 24px;
+}
 
-    h1 {
-      font-size: 24px;
-    }
+main {
+  padding: 20px;
+}
 
-    main {
-      padding: 20px;
-    }
+#launches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
 
-    #launches {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
-    }
+.launch-card {
+  height: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+}
 
-    .launch-card {
-      background-color: #f3f3f3;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+.launch-details {
+  padding: 20px;
+  color: #fff;
+}
 
-    .launch-details {
-      padding: 20px;
-    }
-
-    h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-
-    .launch-image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .launch-text {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-
-    .launch-text p {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-      cursor: pointer;
-    }
-
-    .active {
-      color: #0b7209;
-      text-decoration: underline;
-    }
-  </style>
+.launch-details h3,
+.launch-details p {
+  color: #fff;
+}
 
 
-    pastText.addEventListener('click', () => {
-      pastText.classList.add('active');
-      upcomingText.classList.remove('active');
-      pastLaunches.forEach(launch => launch.style.display = 'grid');
-      upcomingLaunches.forEach(launch => launch.style.display = 'none');
-    });
-  </script>
-</body>
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
 
+.launch-image img {
+  width: 100%;
+  height: auto;
+}
+
+.launch-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.launch-text p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.active {
+  color: #0b7209;
+  text-decoration: underline;
+}
 
