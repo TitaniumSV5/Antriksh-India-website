@@ -99,25 +99,28 @@ p {
 
 .launch-text {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
   font-family: 'YourFont';
-
 }
 
-.launch-text p {
-  font-size: 18px;
+.launch-option {
+  flex: 1;
+  text-align: center;
+}
+
+.launch-option p {
+  font-size: 24px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
   font-family: 'YourFont';
-
 }
 
 .active {
   color: #0b7209;
   text-decoration: underline;
   font-family: 'YourFont';
-
 }
+
 
