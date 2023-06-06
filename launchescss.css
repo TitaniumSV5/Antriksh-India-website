@@ -4,29 +4,34 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: serif, sans-serif;
-}
 
 header {
   background-color: white;
   color: #fff;
   padding: 20px;
   text-align: center;
+  font-family: serif, sans-serif;
+
 }
 
 h1 {
   font-size: 24px;
+  font-family: serif, sans-serif;
+
 }
 
 main {
   padding: 20px;
+  font-family: serif, sans-serif;
+
 }
 
 #launches {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 50px;
+  font-family: serif, sans-serif;
+
 }
 
 .launch-card {
@@ -38,38 +43,52 @@ main {
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  font-family: serif, sans-serif;
+
 }
 
 .launch-details {
   padding: 20px;
   color: #fff;
+  font-family: serif, sans-serif;
+
 }
 
 .launch-details h3,
 .launch-details p {
   color: #fff;
+  font-family: serif, sans-serif;
+
 }
 
 
 h3 {
-  font-size: 18px;
+  font-size: 30px;
   margin-bottom: 10px;
+  font-family: serif, sans-serif;
+
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 5px;
+  font-family: serif, sans-serif;
+
 }
 
 .launch-image img {
   width: 100%;
   height: auto;
+  font-family: serif, sans-serif;
+
 }
 
 .launch-text {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  font-family: serif, sans-serif;
+
 }
 
 .launch-text p {
@@ -77,10 +96,14 @@ p {
   font-weight: bold;
   color: #333;
   cursor: pointer;
+  font-family: serif, sans-serif;
+
 }
 
 .active {
   color: #0b7209;
   text-decoration: underline;
+  font-family: serif, sans-serif;
+
 }
 
