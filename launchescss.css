@@ -26,16 +26,18 @@ main {
 #launches {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 
 .launch-card {
   height: 400px;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+
   background-size: cover;
   background-position: center;
+  margin-bottom: 20px;
 }
 
 .launch-details {
