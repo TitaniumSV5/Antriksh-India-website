@@ -60,7 +60,7 @@
   background: blue;
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -3px;
   transition: 0.5s;
 }
 
@@ -68,17 +68,25 @@
   width: 100%;
 }
 
+
 .dropdown-content {
   position: absolute;
   display: none;
   min-width: 120px;
+  top: 32px;
+  align-items: center;
+  
+  
 }
 
 .dropdown-box {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #79d8da60;
+  border: 1px solid #211d1d2e;
   border-radius: 4px;
   padding: 10px;
+  align-items: center;
+
+  
 }
 
 .dropdown-list {
