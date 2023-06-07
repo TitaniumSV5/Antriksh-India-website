@@ -35,7 +35,10 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 50px;
   font-family: 'YourFont';
-  padding-left: 34px;
+  justify-items: center; /* Add this line */
+  align-items: center; /* Add this line */
+
+  
 
 }
 
