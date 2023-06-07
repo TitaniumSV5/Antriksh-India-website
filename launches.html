@@ -15,6 +15,8 @@
       z-index: 1;
     }
 
+    
+
     .dropdown-content {
       position: absolute;
       display: none;
@@ -23,6 +25,32 @@
       right: auto;
       z-index: 2;
     }
+
+    .launch-option {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .launch-option button {
+  border: none;
+  background: transparent; /* Set the background to transparent */
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px; /* Set the desired font size */
+  padding: 15px 20px;
+
+}
+
+.launch-option button.active {
+  background-color: rgb(79, 156, 126); /* Set the background color when the button is active */
+  color: white;
+}
+
+
   </style>
 </head>
 
@@ -32,29 +60,29 @@
 
   <main>
     <div class="launch-text">
-    <div class="launch-option">
-      <p id="upcoming-text" class="active">Upcoming Launches</p>
+      <div class="launch-option">
+        <button id="upcoming-button" class="active">Upcoming Launches</button>
+      </div>
+      <div class="launch-option">
+        <button id="past-button">Past Launches</button>
+      </div>
     </div>
-    <div class="launch-option">
-      <p id="past-text">Past Launches</p>
-    </div>
-  </div>
 
     <section id="launches">
       <!-- Upcoming Launches -->
       <div id="upcoming-launches" class="launch-section">
         <a href="Cy3.html" class="no-underline">
-        <div class="launch-card" style="background-image: url('Assets/launchers/gslvmk3.jpg');">
-         
+          <div class="launch-card" style="background-image: url('Assets/launchers/gslvmk3.jpg');">
+
             <div class="launch-details">
-                <h3>LVM3-M4 / Chandrayaan-3 </h3>
-                <p>Date and Time: 12 July 2023 - 10:00 AM</p>
-                <p>Location: SLP, Satish Dhawan Space Center, Sriharikota</p>
+              <h3>LVM3-M4 / Chandrayaan-3 </h3>
+              <p>Date and Time: 12 July 2023 - 10:00 AM</p>
+              <p>Location: SLP, Satish Dhawan Space Center, Sriharikota</p>
             </div>
             <div class="launch-caption">#7 LVM3 launch
-                <p> #89 ISRO launch</p>
-            </div> 
-        </div>
+              <p> #89 ISRO launch</p>
+            </div>
+          </div>
         </a>
         <div class="launch-card" style="background-image: url('Assets/launchers/pslvca.jpg');">
           <div class="launch-details">
@@ -104,21 +132,21 @@
 
   <script>
     // JavaScript to toggle between upcoming and past launches
-    const upcomingText = document.getElementById("upcoming-text");
-    const pastText = document.getElementById("past-text");
+    const upcomingButton = document.getElementById("upcoming-button");
+    const pastButton = document.getElementById("past-button");
     const upcomingLaunches = document.getElementById("upcoming-launches");
     const pastLaunches = document.getElementById("past-launches");
 
-    upcomingText.addEventListener("click", function () {
-      upcomingText.classList.add("active");
-      pastText.classList.remove("active");
+    upcomingButton.addEventListener("click", function () {
+      upcomingButton.classList.add("active");
+      pastButton.classList.remove("active");
       upcomingLaunches.style.display = "block";
       pastLaunches.style.display = "none";
     });
 
-    pastText.addEventListener("click", function () {
-      pastText.classList.add("active");
-      upcomingText.classList.remove("active");
+    pastButton.addEventListener("click", function () {
+      pastButton.classList.add("active");
+      upcomingButton.classList.remove("active");
       pastLaunches.style.display = "block";
       upcomingLaunches.style.display = "none";
     });
