@@ -33,38 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navbarLink.href = hrefValues[i]; // Set the appropriate href value
     navbarLink.textContent = navbarItems[i];
 
-    if (navbarItems[i] === 'Rockets') {
-      // Create the dropdown list
-      var dropdownContent = document.createElement('div');
-      dropdownContent.classList.add('dropdown-content');
-
-      var subheadings = ['SLV', 'ASLV', 'PSLV', 'GSLV', 'LVM3', 'SSLV'];
-
-      // Create a box for the subheadings
-      var dropdownBox = document.createElement('div');
-      dropdownBox.classList.add('dropdown-box');
-
-      // Create a dropdown list element
-      var dropdownList = document.createElement('ul');
-      dropdownList.classList.add('dropdown-list');
-
-      // Add subheadings to the dropdown list
-      for (var j = 0; j < subheadings.length; j++) {
-        var dropdownItem = document.createElement('li');
-        dropdownItem.textContent = subheadings[j];
-        dropdownList.appendChild(dropdownItem);
-      }
-
-      // Append the dropdown list to the dropdown box
-      dropdownBox.appendChild(dropdownList);
-
-      // Append the dropdown box to the dropdown content
-      dropdownContent.appendChild(dropdownBox);
-
-      // Append the dropdown content to the navbar item
-      navbarItem.appendChild(dropdownContent);
-    }
-
     navbarItem.appendChild(navbarLink);
     navbarList.appendChild(navbarItem);
   }
