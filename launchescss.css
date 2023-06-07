@@ -38,6 +38,10 @@ main {
   justify-items: center; /* Add this line */
   align-items: center; /* Add this line */
 
+  padding-left: 3%;
+  width: calc(100% - 40px); /* Add this line */
+  
+  justify-self: center; /* Add this line */
   
 
 }
@@ -56,6 +60,9 @@ main {
   margin-bottom: 20px;
   font-family: 'YourFont';
   transition: transform 0.3s;
+
+
+  
 
 }
 .launch-card:hover {
