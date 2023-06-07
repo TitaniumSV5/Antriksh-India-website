@@ -35,21 +35,28 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 50px;
   font-family: 'YourFont';
+  padding-left: 34px;
 
 }
 
 .launch-card {
   position: relative;
   height: 400px;
+  width: 1400px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+ 
 
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
   font-family: 'YourFont';
+  transition: transform 0.3s;
 
+}
+.launch-card:hover {
+  transform: scale(1.05);
 }
 
 .launch-caption {
