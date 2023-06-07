@@ -17,10 +17,11 @@ body {
   padding: 0 20px;
 }
 
-.logo {
-  width: 350px;
-  margin-left: 200px;
-  margin-top: 300px;
+.logopslv {
+  width: 14%;
+  position: relative;
+  margin-left: 7%;
+  
 }
 
 .text {
@@ -29,7 +30,7 @@ body {
   text-align: right;
   margin-right: 200px;
   font-family: 'YourFont';
-  line-height: 0.4; /* Adjust the line height to reduce the gap */  
+  line-height: 1; /* Adjust the line height to reduce the gap */  
   text-shadow: 0 0 20px blue;
 
 
