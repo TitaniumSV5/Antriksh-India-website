@@ -13,42 +13,46 @@
       background-size: cover;
       background-position: center top;
       background-attachment: fixed; /* Add this line */
-
     }
     
-  .section {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+    .section {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   
-  .card {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  }
+    .card {
+      width: 250px;
+      height: 500px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+      transition: transform 0.3s;
+    }
   
-  .card-heading {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
+    .card-heading {
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
   
-  .card-content {
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
+    .card-content {
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
 
+    /* Add this CSS for hover effect */
+    .card:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 
@@ -57,40 +61,45 @@
 
   <div class="section">
     <h2 class="card-heading">Operational Rockets</h2>
+    <a href="PSLV/pslv.html">
     <div class="card" style="background-image: url('Assets/pslv.jpg');">
       <div class="card-content">
         <h3>PSLV</h3>
         <p>Polar Satellite Launch Vehicle</p>
       </div>
     </div>
+    </a>
+    <a href="">
     <div class="card" style="background-image: url('Assets/gslv.jpg');">
       <div class="card-content">
         <h3>GSLV</h3>
         <p>Geosynchronous Satellite Launch Vehicle</p>
       </div>
     </div>
+    </a>
+    <a href="">
     <div class="card" style="background-image: url('Assets/lvm3.jpg');">
       <div class="card-content">
         <h3>LVM3</h3>
         <p>Launch Vehicle Mark3</p>
       </div>
     </div>
+    </a>
+    <a href="">
     <div class="card" style="background-image: url('Assets/sslv.jpg');">
       <div class="card-content">
         <h3>SSLV</h3>
         <p>Small Satellite Launch Vehicle</p>
       </div>
     </div>
+    </a>
   </div>
 
- 
- 
- 
- <div class="section">
+  <div class="section">
     <h2 class="card-heading" style="margin-right: 110px;">Future Rockets</h2>
     <div class="card" style="background-image: url('Assets/skyroot.jpg');">
       <div class="card-content">
-        <h3>Skyoot Vikram Series</h3>
+        <h3>Skyroot Vikram Series</h3>
         <p>Vikram 1/2/3</p>
       </div>
     </div>
@@ -102,11 +111,7 @@
     </div>
   </div>
 
-
-
-
-
-   <div class="section">
+  <div class="section">
     <h2 class="card-heading" style="margin-right: 100px;">Retired Rockets</h2>
     <div class="card" style="background-image: url('Assets/slv3.webp');">
       <div class="card-content">
@@ -122,11 +127,7 @@
     </div>
   </div>
 
- 
- 
- 
- 
- <div class="section">
+  <div class="section">
     <h2 class="card-heading" style="margin-right: 15px;">Sub-Orbital Rockets</h2>
     <div class="card" style="background-image: url('Assets/rhseries.jpg');">
       <div class="card-content">
@@ -144,4 +145,3 @@
 </body>
 
 </html>
-
