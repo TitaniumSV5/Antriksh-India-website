@@ -1,5 +1,5 @@
 <div class="logo">
-  <img src="logo2.png" class="logo" height="100px" width="50px">
+  <img src='logo2.png' class="logo" height="100px" width="50px">
 
 <div class="navbar">
   <ul>
