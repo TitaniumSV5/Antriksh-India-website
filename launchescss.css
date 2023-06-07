@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'YourFont';
-  src: url('un.otf') format('opentype');
+  src: url('Assets/fonts/un.otf') format('opentype');
 }
 * {
   margin: 0;
@@ -79,7 +79,7 @@ main {
 h3 {
   font-size: 30px;
   margin-bottom: 10px;
-  font-family: , sans-serif;
+  font-family:  "sans-serif";
 
 }
 
