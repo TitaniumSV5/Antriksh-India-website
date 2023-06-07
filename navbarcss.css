@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'YourFont';
-  src: url('un.otf') format('opentype');
+  src: url('Assets/fonts/un.otf') format('opentype');
 }
 
 * {
