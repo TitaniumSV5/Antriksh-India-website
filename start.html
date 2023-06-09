@@ -1,22 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>AntrikshIndia</title>
-    <link rel="stylesheet" href="navbarcss.css">
-      <script src="header.js"></script>
 
-  </head>
+    <style>
+      @font-face {
+        font-family: 'CustomFont';
+        src: url('un.otf') format('opentype');
+      }
 
+      body {
+        font-family: 'CustomFont', Arial, sans-serif;
+        background-image: url('image1.png');
+        background-repeat: no-repeat;
 
-<body style="background-image: url('image1.png'); background-size: cover; background-position: center -50px;">
-
-
-</body>
-
-
- <div class="banner">
+        background-size: cover;
+      }
+      @media (max-width: 640px) {
+        body {
+          background-size: 100% 100vh;
+        }
+      }
+    </style>
     
-  
-        </div>
-   </body>
+    <style>
 
+      .logo-size {
+        height: 8rem; /* Adjust this value as needed */
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header class="flex items-center justify-between px-4 py-2">
+      <div class="flex items-center">
+        <img src="logo2.png" alt="Logo" class="logo-size">
+      </div>
+      <nav class="flex items-center">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-white" text-3x1>Launches</a></li>
+          <li><a href="#" class="text-white" text-3x1>Rockets</a></li>
+          <li><a href="#" class="text-white" text-3x1>Spacecrafts</a></li>
+          <li><a href="#" class="text-white" text-3x1>Satellites</a></li>
+          <li><a href="#" class="text-white" text-3x1>Tests</a></li>
+          <li><a href="#" class="text-white" text-3x1>Others</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Your website content here -->
+
+  </body>
 </html>
