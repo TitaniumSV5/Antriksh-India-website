@@ -8,10 +8,55 @@
   <link rel="stylesheet" href="navbarcss.css">
   <link rel="stylesheet" type="text/css" href="style.css"> 
   <script src="header.js"></script>
+  <style>
+    .container {
+      display: flex;
+    }
 
+    .text-container {
+      background-color: rgba(204, 204, 204, 0.8); /* Adjust the opacity value as needed */
+      padding: 20px;
+      flex: 2;
+      border-radius: 10px; /* Adjust the border radius value as needed */
+    }
+    
+    
+    .text-container h2 {
+      font-size: 40px; /* Adjust the value to increase or decrease the heading size */
+    }
+
+    .text-container p {
+      font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
+    }
+
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .image-container img {
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+    }
+
+    .info {
+      font-family: monospace;
+      white-space: pre;
+    }
+    
+    .details p {
+      margin-bottom: 15px; /* Adjust the value to increase or decrease the paragraph spacing */
+    }
+    h2 {
+      margin-bottom: 20px; /* Adjust the value to increase or decrease the spacing */
+    }
+  </style>
 </head>
-<body>
 
+<body>
   <div class="banner"></div> <!-- Add the banner element here -->
 
   <div class="container">
@@ -23,6 +68,34 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="text-container">
+     <h2>Basic Information</h2>
+      <ul>
+      <div class="details">
+        <li><p>4-stage launch vehicle</p>
+        <li><p>Payload capacity (XL variant):</p>
+        <p class="info">
+          3800 kg to LEO<br>
+          1750 kg to SSO<br>
+          1300 kg to GTO
+        </p>
+        <li><p>Variants:</p>
+        <p class="info">
+          G  (Generic) - Retired
+          CA (Core Alone)
+          DL (2 boosters)
+          QL (4 boosters)
+          XL (6 boosters)
+        </p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="pslv2.jpg" alt="PSLV" class="logopslv">
+    </div>
+  </div>
 </body>
+
 </html>
 
