@@ -144,3 +144,83 @@ p {
 .no-underline {
   text-decoration: none;
 }
+
+.launch-section {
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  min-width: 120px;
+  top: 32px;
+  right: auto;
+  z-index: 2;
+}
+
+.launch-option {
+  display: inline-block;
+  margin: 10px;
+}
+
+.launch-option button {
+border: none;
+background: transparent; /* Set the background to transparent */
+color: white;
+outline: none;
+cursor: pointer;
+padding: 10px;
+text-decoration: none;
+border-radius: 15px;
+font-size: 20px; /* Set the desired font size */
+padding: 15px 20px;
+
+}
+
+.launch-option button.active {
+background-color: rgba(73, 88, 82, 0.537); /* Set the background color when the button is active */
+color: white;
+}
+
+
+  .pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border: none;
+    background: transparent; /* Set the background to transparent */
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px; /* Set the desired font size */
+    padding: 15px 20px;
+    
+    
+  }
+
+  .pagination-buttons button {
+    margin: 0 20px;
+    font-size: xx-large;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    color:white;
+    background-color: rgb(73, 88, 82); /* Set the background color when the button is active */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border: none;
+  
+    
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px; /* Set the desired font size */
+    padding: 15px 20px;
+
+  }
