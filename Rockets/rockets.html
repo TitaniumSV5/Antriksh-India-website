@@ -12,37 +12,78 @@
       background-image: url('Assets/rockets.jpg');
       background-size: cover;
       background-position: center top;
-      background-attachment: fixed; /* Add this line */
+      background-attachment: fixed;
     }
-    
+
     .section {
-      padding: 50px;
+      padding: 3%;
       display: flex;
+      margin-left: 1%;
+      flex-wrap: wrap; /* Add this line */
       justify-content: center;
       align-items: center;
       text-align: center;
     }
-  
+
     .card {
-      width: 250px;
-      height: 500px;
+      width: 300px;
+      height: 530px;
       border-radius: 10px;
       background-size: cover;
       background-position: center;
-      margin-right: 10px;
+      margin-left: 1%;
+      margin-right: 1%;
       margin-bottom: 10px;
       display: inline-block;
       text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
       transition: transform 0.3s;
     }
-  
+
     .card-heading {
       text-align: center;
       color: white;
       font-size: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 1%;
+      margin-top: 3%;
+}
+
+.card-heading2 {
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.section2 {
+  padding: 3%;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  text-align: center;
+}
+
+.section2 > .card {
+  margin-left: 30px; /* Adjust the gap between the text and cards */
+}
+
+
+
+
+    .card-heading2 {
+      text-align: left;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 1%;
+      margin-top: 3%;
+      margin-left: 1%; /* Add this line */
+      display: inline-block;
+      display: block;
+
     }
-  
+
     .card-content {
       padding: 10px;
       color: white;
@@ -58,45 +99,39 @@
 
 <body>
   <div class="banner"></div>
-
+  <h2 class="card-heading">Operational Rockets</h2>
   <div class="section">
-    <h2 class="card-heading">Operational Rockets</h2>
-    <a href="PSLV/pslv.html">
+    
     <div class="card" style="background-image: url('Assets/pslv.jpg');">
       <div class="card-content">
         <h3>PSLV</h3>
         <p>Polar Satellite Launch Vehicle</p>
       </div>
     </div>
-    </a>
-    <a href="">
     <div class="card" style="background-image: url('Assets/gslv.jpg');">
       <div class="card-content">
         <h3>GSLV</h3>
         <p>Geosynchronous Satellite Launch Vehicle</p>
       </div>
     </div>
-    </a>
-    <a href="">
     <div class="card" style="background-image: url('Assets/lvm3.jpg');">
       <div class="card-content">
         <h3>LVM3</h3>
         <p>Launch Vehicle Mark3</p>
       </div>
     </div>
-    </a>
-    <a href="">
     <div class="card" style="background-image: url('Assets/sslv.jpg');">
       <div class="card-content">
         <h3>SSLV</h3>
         <p>Small Satellite Launch Vehicle</p>
       </div>
     </div>
-    </a>
   </div>
 
-  <div class="section">
-    <h2 class="card-heading" style="margin-right: 110px;">Future Rockets</h2>
+
+  
+  <div class="section2">  
+    <h2 class="card-heading2">Future Rockets</h2>
     <div class="card" style="background-image: url('Assets/skyroot.jpg');">
       <div class="card-content">
         <h3>Skyroot Vikram Series</h3>
@@ -111,8 +146,9 @@
     </div>
   </div>
 
-  <div class="section">
-    <h2 class="card-heading" style="margin-right: 100px;">Retired Rockets</h2>
+  
+  <div class="section2">
+    <h2 class="card-heading2">Retired Rockets</h2>
     <div class="card" style="background-image: url('Assets/slv3.webp');">
       <div class="card-content">
         <h3>SLV-3</h3>
@@ -127,8 +163,9 @@
     </div>
   </div>
 
-  <div class="section">
-    <h2 class="card-heading" style="margin-right: 15px;">Sub-Orbital Rockets</h2>
+  
+  <div class="section2">
+    <h2 class="card-heading2">Sub-Orbital Rockets</h2>
     <div class="card" style="background-image: url('Assets/rhseries.jpg');">
       <div class="card-content">
         <h3>RH Series</h3>
@@ -143,5 +180,9 @@
     </div>
   </div>
 </body>
+
+
+
+
 
 </html>
