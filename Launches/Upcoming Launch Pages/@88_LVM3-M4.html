@@ -3,20 +3,42 @@
     <title>LVM3-M4 / Chandrayaan-3</title>
     <link rel="stylesheet" href="navbarcss.css">
     <script src="header.js"></script>
+    <style>
+      .launch-name {
+        position: relative; /* Add position relative to allow z-index */
+        z-index: 2;
+        top: -230px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 2%;
+        border: 4px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+      }
 
+      .ytlink {
+        position: relative;
+        z-index: 1;
+        margin-top: 5%;
+        margin-left: 4%;
+        margin-right: 4%;
+        padding: 12%;
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+        background-image: url('../Assets/mk3bg.png');
+        background-attachment: fixed;
+
+      }
+    </style>
   </head>
 
-
-<body style="background-image: url('../Assets/launches.jpg'); background-size: cover; background-position: center -50px;">
-
-
-
-
-  <div class="banner"> 
-  </div>
-
-
-
-
-</body>
+  <body style="background-image: url('../Assets/launches.jpg'); background-size: cover; background-attachment: fixed;">
+    <div class="banner"></div>
+    
+    <div class="ytlink"><div class="launch-name">
+      <h1>LVM3-M4 / Chandrayaan-3</h1>
+    </div></div>
+  </body>
 </html>
