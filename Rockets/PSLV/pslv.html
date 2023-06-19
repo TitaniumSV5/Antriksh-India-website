@@ -64,6 +64,26 @@
     h2 {
       margin-bottom: 20px; /* Adjust the value to increase or decrease the spacing */
     }
+    
+     .stage-info-container {
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .stage-info-container .image-container {
+      flex: 1.5;
+      margin-right: 1px;
+      justify-content: center;
+
+   }
+
+    .stage-info-container .text-container {
+      flex: 2;
+    }
+    
   </style>
 </head>
 
@@ -85,41 +105,75 @@
       <h2 style="text-align: center;">Basic Information</h2>
 
       <ul>
-      <div class="details">
-        <li><p>4-stage launch vehicle</p>
-        <li><p>Payload capacity (XL variant):</p>
-        <p class="info">
-          3800 kg to LEO<br>
-          1750 kg to SSO<br>
-          1300 kg to GTO
-        </p>
-        
-        <li><p>Variants:</p>
-        <p class="info">
-          G  (Generic) - Retired
-          CA (Core Alone)
-          DL (2 boosters)
-          QL (4 boosters)
-          XL (6 boosters)
-        </p>
-        
-        <li><p>Mass of launch vehicle (XL variant):  <span style="font-family: monospace;"> 320000 kg</span></p></li>
-        
-        <li><p>Height of launch vehicle:  <span style="font-family: monospace;"> 44m</span></p></li>
-        
-        <li><p>Max Diameter of launch vehicle:  <span style="font-family: monospace;"> 2.8m</span></p></li>
-        
-        <li><p>First launch on:  <span style="font-family: monospace;"> 20 September 1993</span></p></li>
-        
-        <li><p>Total launches:  <span style="font-family: monospace;"> 57 (54 successes, 2 failures and 1 partial failure)</span></p></li>
-        
-        
-      </div>
+        <div class="details">
+          <li>
+            <p>4-stage launch vehicle</p>
+          </li>
+          <li>
+            <p>Payload capacity (XL variant):</p>
+            <p class="info">
+              3800 kg to LEO<br>
+              1750 kg to SSO<br>
+              1300 kg to GTO
+            </p>
+          </li>
+          <li>
+            <p>Variants:</p>
+            <p class="info">
+              G (Generic) - Retired<br>
+              CA (Core Alone)<br>
+              DL (2 boosters)<br>
+              QL (4 boosters)<br>
+              XL (6 boosters)
+            </p>
+          </li>
+          <li>
+            <p>Mass of launch vehicle (XL variant): <span style="font-family: monospace;">320000 kg</span></p>
+          </li>
+          <li>
+            <p>Height of launch vehicle: <span style="font-family: monospace;">44m</span></p>
+          </li>
+          <li>
+            <p>Max Diameter of launch vehicle: <span style="font-family: monospace;">2.8m</span></p>
+          </li>
+          <li>
+            <p>First launch on: <span style="font-family: monospace;">20 September 1993</span></p>
+          </li>
+          <li>
+            <p>Total launches: <span style="font-family: monospace;">57 (54 successes, 2 failures and 1 partial failure)</span></p>
+          </li>
+        </div>
+      </ul>
     </div>
     <div class="image-container">
       <img src="pslv2.jpg" alt="PSLV" class="logopslv">
     </div>
   </div>
+  
+  <div class="stage-info-container">
+    <div class="image-container">
+      <img src="boost.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+      <h2 style="text-align: center;">Stage Information</h2>
+      <div class="details">
+        <p>Side Boosters (PSOM-XL):</p>
+        <p class="info">
+          - S-12 Solid Rocket Motor <br>
+          - Propellant - HTPB (Hydroxyl-terminated Polybutadiene)<br>
+          - Height - 12m<br>
+          - Diameter - 1m<br>
+          - Thrust - 703.5kN<br>
+          - Specific Impulse (Isp) - 262 sec<br>
+          - Burn time - 70 sec<br>
+          - Propellant mass: 12200 kg<br>
+          - Burn time: 100 seconds<br>
+          - 6x on XL, 4x on QL, 2x on DL, none on CA. (G variant had 6x PSOM - non XL version) 
+        </p>
+      </div>
+    </div>
+  </div>
+          
 </body>
 
 </html>
