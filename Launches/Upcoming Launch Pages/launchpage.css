@@ -118,8 +118,8 @@ p{
 }
 
 .image {
-  margin-top: 3%;
-  height: 40%;
+  margin-top: 1%;
+  height: 30%;
   display: flex;
 }
 
@@ -139,3 +139,26 @@ p{
   box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
   flex: 0 0 65%;
 }
+
+
+
+.knowmore a.button {
+  margin-top: 2%;
+  font-size: x-large;
+  margin-left: 6%;
+  display: inline-block;
+  padding: 1% 2%;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 4px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+  
+  }
+  
+  .knowmore a.button:hover {
+  background-color: #555;
+  color: #fff;
+  }
