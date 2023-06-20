@@ -7,16 +7,107 @@
   <title>Chandrayaan-3</title>
   <link rel="stylesheet" href="../navbarcss.css">
 
-  <script src="header.js"></script>
+<style>
+  #countdown {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+   .countdown-text {
+    font-size: 30px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+
+  .countdown-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .number {
+    font-size: 96px;
+    padding: 0 10px;
+    width: 140px; /* Adjust the width as needed */
+    text-align: center;
+  }
+
+  .label {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+</style>
+
+
+
+
+
+  <script>
+    // Calculate the remaining time until the target date
+    function calculateCountdown() {
+      var targetDate = new Date('July 12, 2023 10:00:00');
+      var now = new Date();
+      var difference = targetDate.getTime() - now.getTime();
+
+      // Calculate the remaining days, hours, minutes, and seconds
+      var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById('days').textContent = days;
+      document.getElementById('hours').textContent = hours;
+      document.getElementById('minutes').textContent = minutes;
+      document.getElementById('seconds').textContent = seconds;
+    }
+
+    // Update the countdown every second
+    setInterval(calculateCountdown, 1000);
+  </script>
 </head>
 
-<body style="background-image: url('acoustic_test.jpg.webp'); background-size: cover;">
-
+<body style="background-image: url('cy3-1.jpg'); background-size: cover;">
   <div class="banner"></div> <!-- Add the banner element here -->
 
- 
+  <div id="countdown">
+    <div class="countdown-text">Chandrayaan 3 launch in</div>
+    <div class="countdown-numbers">
+      <div class="countdown-section">
+        <div class="number" id="days"></div>
+        <div class="label">Days</div>
+      </div>
+      <div class="countdown-section">
+        <div class="number" id="hours"></div>
+        <div class="label">Hours</div>
+      </div>
+      <div class="countdown-section">
+        <div class="number" id="minutes"></div>
+        <div class="label">Minutes</div>
+      </div>
+      <div class="countdown-section">
+        <div class="number" id="seconds"></div>
+        <div class="label">Seconds</div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Your remaining code here -->
 </body>
+
+
 
 </html>
 
