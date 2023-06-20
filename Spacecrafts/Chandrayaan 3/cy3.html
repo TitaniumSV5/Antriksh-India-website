@@ -48,6 +48,34 @@
     font-size: 18px;
     margin-top: 10px;
   }
+  
+   .swipe-up-container {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .double-chevron {
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    margin-bottom: -1px;
+    border-color: #fff;
+  }
+
+  .swipe-up-text {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 </style>
 
 
@@ -102,6 +130,12 @@
         <div class="label">Seconds</div>
       </div>
     </div>
+  </div>
+  
+  <div class="swipe-up-container">
+    <div class="double-chevron"></div>
+    <div class="double-chevron"></div>
+    <div class="swipe-up-text">Scroll  down</div>
   </div>
 
   <!-- Your remaining code here -->
