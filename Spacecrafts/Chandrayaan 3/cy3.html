@@ -7,80 +7,116 @@
   <title>Chandrayaan-3</title>
   <link rel="stylesheet" href="../navbarcss.css">
 
-<style>
-  #countdown {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-   .countdown-text {
-    font-size: 30px; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Adjust the margin as needed */
-  }
+  <style>
+    /* First Page Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('cy3-1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-  .countdown-numbers {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
+    #countdown {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 
-  .countdown-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-  }
+    .countdown-text {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
 
-  .number {
-    font-size: 96px;
-    padding: 0 10px;
-    width: 140px; /* Adjust the width as needed */
-    text-align: center;
-  }
+    .countdown-numbers {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
 
-  .label {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
-   .swipe-up-container {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-  }
+    .countdown-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 10px;
+    }
 
-  .double-chevron {
-    width: 20px;
-    height: 20px;
-    border-style: solid;
-    border-width: 0 1.5px 1.5px 0;
-    transform: rotate(45deg);
-    margin-bottom: -1px;
-    border-color: #fff;
-  }
+    .number {
+      font-size: 96px;
+      padding: 0 10px;
+      width: 140px;
+      text-align: center;
+    }
 
-  .swipe-up-text {
-    color: #fff;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-</style>
+    .label {
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
+    .swipe-up-container {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+    }
 
+    .double-chevron {
+      width: 20px;
+      height: 20px;
+      border-style: solid;
+      border-width: 0 1.5px 1.5px 0;
+      transform: rotate(45deg);
+      margin-bottom: -1px;
+      border-color: #fff;
+    }
 
+    .swipe-up-text {
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px;
+    }
 
+    /* Second Page Styling */
+    .second-page {
+      background: linear-gradient(to right, #0000FF, #000000);
+      color: #fff;
+      padding: 40px;
+      font-size: 18px;
+      margin-top: 100vh;
+    }
+
+    .second-page .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: calc(100vh - 150px);
+    }
+
+    .second-page .info-box {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      font-size: 18px;
+    }
+
+    .second-page .cy3-image {
+      max-width: 50%;
+      height: auto;
+    }
+  </style>
 
   <script>
     // Calculate the remaining time until the target date
@@ -107,7 +143,7 @@
   </script>
 </head>
 
-<body style="background-image: url('cy3-1.jpg'); background-size: cover;">
+<body>
   <div class="banner"></div> <!-- Add the banner element here -->
 
   <div id="countdown">
@@ -131,17 +167,25 @@
       </div>
     </div>
   </div>
-  
+
   <div class="swipe-up-container">
     <div class="double-chevron"></div>
     <div class="double-chevron"></div>
-    <div class="swipe-up-text">Scroll  down</div>
+    <div class="swipe-up-text">Scroll down</div>
+  </div>
+
+  <div class="second-page">
+    <div class="content-wrapper">
+      <img src="cy3mesh.gif" alt="Chandrayaan-3 Mesh" class="cy3-image">
+      <div class="info-box">
+        <h1>Chandrayaan-3 Mission</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis nunc vel tellus aliquet, a pretium ex tincidunt. Nulla accumsan fringilla fringilla. Integer facilisis, nulla nec condimentum suscipit, nisl lectus dictum lorem, vitae gravida tortor arcu nec nisi. Donec vulputate eros a purus euismod dignissim.</p>
+      </div>
+    </div>
   </div>
 
   <!-- Your remaining code here -->
 </body>
-
-
 
 </html>
 
