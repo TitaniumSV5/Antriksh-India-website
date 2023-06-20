@@ -56,7 +56,7 @@ color: #fff;
 
 .details-box{
   
-    background-color: #dcd5c5b9;
+    background-color: #1a1916e1;
     position: relative;
     z-index: 1;
     margin-top: 1%;
@@ -75,14 +75,15 @@ h4{
   font-size: 50px;
   text-decoration: underline;
   font-family: 'Times New Roman', Times, serif;
-  
+  color: aliceblue;
   
 }
 
 h2{
   font-size: 30px;
-  line-height: 90px;
+  line-height: 85px;
   margin-top: 4%;
+  color: aliceblue;
   
   
 }
@@ -90,7 +91,7 @@ h2{
 
 li{
   font-family: 'Times New Roman', Times, serif;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   word-spacing: 5px;
   
 }
@@ -110,6 +111,7 @@ p{
   word-spacing: 5px;
   text-align: justify;
   line-height: 50px;
+  color: aliceblue;
 }
 
 .container {
@@ -159,6 +161,34 @@ p{
   }
   
   .knowmore a.button:hover {
+  background-color: #555;
+  color: #fff;
+  }
+
+.image2{
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.knowmore2 a.button {
+  margin-top: 2%;
+  font-size: x-large;
+  margin-left: 40%;
+  display: inline-block;
+  padding: 1% 2%;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 4px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+  
+  }
+  
+  .knowmore2 a.button:hover {
   background-color: #555;
   color: #fff;
   }
