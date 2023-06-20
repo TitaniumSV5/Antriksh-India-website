@@ -13,10 +13,6 @@
     body {
       margin: 0;
       padding: 0;
-    }
-
-    .first-page {
-      height: 100vh;
       background-image: url('cy3-1.jpg');
       background-size: cover;
       background-position: center;
@@ -25,7 +21,7 @@
     }
 
     #countdown {
-      position: absolute;
+      position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -66,7 +62,7 @@
     }
 
     .swipe-up-container {
-      position: absolute;
+      position: fixed;
       bottom: 30px;
       left: 50%;
       transform: translateX(-50%);
@@ -95,9 +91,11 @@
 
     /* Second Page Styling */
     .second-page {
-      height: 100vh;
       background: linear-gradient(to right, #0000FF, #000000);
       color: #fff;
+      padding: 40px;
+      font-size: 18px;
+      margin-top: 100vh;
     }
 
     .second-page .content-wrapper {
@@ -105,7 +103,12 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      height: calc(100% - 150px);
+      height: calc(100vh - 150px);
+    }
+
+    .second-page .info-box {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 40px;
       font-size: 18px;
     }
@@ -142,34 +145,34 @@
 </head>
 
 <body>
-  <div class="first-page">
-    <div id="countdown">
-      <div class="countdown-text">Chandrayaan 3 launch in</div>
-      <div class="countdown-numbers">
-        <div class="countdown-section">
-          <div class="number" id="days"></div>
-          <div class="label">Days</div>
-        </div>
-        <div class="countdown-section">
-          <div class="number" id="hours"></div>
-          <div class="label">Hours</div>
-        </div>
-        <div class="countdown-section">
-          <div class="number" id="minutes"></div>
-          <div class="label">Minutes</div>
-        </div>
-        <div class="countdown-section">
-          <div class="number" id="seconds"></div>
-          <div class="label">Seconds</div>
-        </div>
+  <div class="banner"></div> <!-- Add the banner element here -->
+
+  <div id="countdown">
+    <div class="countdown-text">Chandrayaan 3 launch in</div>
+    <div class="countdown-numbers">
+      <div class="countdown-section">
+        <div class="number" id="days"></div>
+        <div class="label">Days</div>
+      </div>
+      <div class="countdown-section">
+        <div class="number" id="hours"></div>
+        <div class="label">Hours</div>
+      </div>
+      <div class="countdown-section">
+        <div class="number" id="minutes"></div>
+        <div class="label">Minutes</div>
+      </div>
+      <div class="countdown-section">
+        <div class="number" id="seconds"></div>
+        <div class="label">Seconds</div>
       </div>
     </div>
+  </div>
 
-    <div class="swipe-up-container">
-      <div class="double-chevron"></div>
-      <div class="double-chevron"></div>
-      <div class="swipe-up-text">Scroll down</div>
-    </div>
+  <div class="swipe-up-container">
+    <div class="double-chevron"></div>
+    <div class="double-chevron"></div>
+    <div class="swipe-up-text">Scroll down</div>
   </div>
 
   <div class="second-page">
