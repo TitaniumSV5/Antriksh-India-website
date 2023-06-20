@@ -193,3 +193,28 @@ p{
   background-color: #555;
   color: #fff;
   }
+
+
+  .spechead{
+    font-size: 60px;
+    margin-top: 3%;
+    margin-left: 9%;
+    
+  }
+
+  .data{
+    font-size: 40px;
+    margin-top: 4%;
+    margin-left: 15%;
+    line-height: 40px;
+    margin-bottom: 5%;
+  }
+
+  h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    word-spacing: 4px;
+    
+
+  }
+
