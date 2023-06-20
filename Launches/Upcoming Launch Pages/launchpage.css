@@ -92,5 +92,23 @@ h2{
 li{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(0, 0, 0);
+  word-spacing: 5px;
   
+}
+
+
+.solid-line {
+  margin-top: 5%;
+  border-top: 2px solid rgb(127, 102, 102);
+  margin-bottom: 5%;
+  
+}
+
+p{
+  margin-top: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  word-spacing: 5px;
+  text-align: justify;
+  line-height: 50px;
 }
