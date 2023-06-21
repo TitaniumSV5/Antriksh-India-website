@@ -130,3 +130,44 @@ body {
 .second-page .info-box .info span {
   font-weight: bold; /* Add this line to make the text before the dash bold */
 }
+
+
+/* Third Page Styling */
+.third-page {
+  background-image: url('propulsion.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex; /* Add this line to make the content stretch to fill the entire height */
+  align-items: center; /* Add this line to vertically center the content */
+  justify-content: center; /* Adjusted to center content horizontally */
+}
+
+.third-page .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 40px;
+}
+
+.third-page .info-box {
+  flex: 0.5; /* Adjusted width to take up the left half of the screen */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.third-page .info-box .heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.third-page .info-box .info {
+  font-size: 18px;
+}
+
