@@ -8,24 +8,314 @@
   <link rel="stylesheet" href="navbarcss.css">
   <link rel="stylesheet" type="text/css" href="style.css"> 
   <script src="header.js"></script>
-
   <style>
+  
+  body {
+      background-image: url('Assets/BG.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+    
+    .container {
+      display: flex;
+      
+    }
 
-  .heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh; /* Adjust the height as needed */
-  color: aliceblue;
-}
+    .text-container {
+      background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity value as needed */
+      color: white;
+      padding: 30px;
+      flex: 2;
+      border-radius: 10px; /* Adjust the border radius value as needed */
+      margin-bottom: 10%;
+      margin-top: 5%;
+      margin-right: 0%;
+    }
+    
+    
+    .text-container h2 {
+      font-size: 40px; /* Adjust the value to increase or decrease the heading size */
+      
+    }
+
+    .text-container p {
+      font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
+    }
+
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      height: 90%;
+    }
+
+    .image-container img {
+      width: 80%;
+      height: 110%;
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+
+    .image-container2 {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+     height: 50%;
+      margin-left: 3%;
+    }
+
+    .image-container2 img {
+      width: 80%;
+      
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+
+    .image-container3 {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+     height: 50%;
+      margin-left: 3%;
+    }
+
+    .image-container3 img {
+      width: 80%;
+      
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+    .image-container4 {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      height: 50%;
+      margin-left: 3%;
+    }
+
+    .image-container4 img {
+      width: 80%;
+      
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+    .info {
+      font-family: monospace;
+      white-space: pre;
+    }
+    
+    .details p {
+      margin-bottom: 15px; /* Adjust the value to increase or decrease the paragraph spacing */
+    }
+    h2 {
+      margin-bottom: 20px; /* Adjust the value to increase or decrease the spacing */
+    }
+    
+     .stage-info-container {
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .stage-info-container .image-container {
+      flex: 0.7;
+      margin-right: 1px;
+      justify-content: center;
+
+   }
+
+    .stage-info-container .text-container {
+      flex: 2;
+    }
+    .logopslv{
+      margin-bottom: 10%;
+    }
+    .lvm3-2{
+    
+      margin-left: 10%;
+      
+    }
+
+
 
   </style>
 </head>
-<body>
 
+<body>
   <div class="banner"></div> <!-- Add the banner element here -->
-  <h1 class="heading">GSLV</h1>
+
+  <div class="container">
+    <img src="Assets/LVM3.1.png" alt="PSLV" class="logopslv">
+    <div class="text">
+      <h1>GSLV</h1>
+      <div class="subtext">
+        <p>Geosynchronous Satellite<br> Launch Vehicle</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-container">
+      <h2 style="text-align: center;">Basic Information</h2>
+
+      <ul>
+        <div class="details">
+          <li>
+            <p>3-stage launch vehicle</p>
+          </li>
+          <li>
+            <p>Payload capacity:</p>
+            <p class="info">
+              6000 kg to LEO<br>
+              4000 kg to SSO<br>
+              2250 kg to GTO
+            </p>
+          </li>
+          
+          <li>
+            <p>Mass of launch vehicle: <span style="font-family: monospace;">414750 kg</span></p>
+          </li>
+          <li>
+            <p>Height of launch vehicle: <span style="font-family: monospace;">49.13 m</span></p>
+          </li>
+          <li>
+            <p>Max Diameter of launch vehicle: <span style="font-family: monospace;">2.8 m</span></p>
+          </li>
+          <li>
+            <p>First launch on: <span style="font-family: monospace;">18 April 2001</span></p>
+          </li>
+          <li>
+            <p>Total launches: <span style="font-family: monospace;">15 (9 successes, 2 partial failure and 4 failures)</span></p>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="image-container">
+      <img src="Assets/gslv.2.jpg" alt="PSLV" class="lvm3-2">
+    </div>
+  </div>
   
+  <div class="stage-info-container">
+    <div class="image-container2">
+      <img src="Assets/L40.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+      <h2 style="text-align: center;">Stage Information</h2>
+      <div class="details">
+        <p>Side Boosters (L40):</p>
+        <p class="info">
+          - L40 Liquid propellant stage<br>
+          - Propellant - UDMH (fuel) and N<sub>2</sub>O<sub>4</sub> (oxidiser)<br>
+          - Engine - 4x Vikas<br>
+          - Height - 19.7<br>
+          - Diameter - 2.1m<br>
+          - Thrust - 760kN each<br>
+          - Specific Impulse (Isp) - 262 sec<br>
+          - Burn time - 154 sec<br>
+          - Propellant mass: 42700 kg each<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="stage-info-container">
+    <div class="image-container3">
+      <img src="Assets/s139.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>First stage/Core stage (S139):</p>
+        <p class="info">
+          - S139 Solid Rocket Motor<br>
+          - Propellant - HTPB (Hydroxyl-terminated Polybutadiene)<br>
+          - Height - 20m<br>
+          - Diameter - 2.8m<br>
+          - Thrust - 4846.9kN<br>
+          - Specific Impulse (Isp) - 237 sec (at sea level), 269 sec (in vacuum)<br>
+          - Burn time - 100 sec<br>
+          - Propellant mass: 138200 kg<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="stage-info-container">
+    <div class="image-container4">
+      <img src="Assets/GS2.png" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>Second Stage (GS2):</p>
+        <p class="info">
+          - GL40 Liquid propellant stage<br>
+          - Propellant - UDMH (fuel) and N<sub>2</sub>O<sub>4</sub> (oxidiser)<br>
+          - Engine - 1x Vikas<br>
+          - Height - 11.6<br>
+          - Diameter - 2.8m<br>
+          - Thrust - 846kN each<br>
+          - Specific Impulse (Isp) - 295 sec<br>
+          - Burn time - 139 sec<br>
+          - Propellant mass: 39500 kg each<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="stage-info-container">
+    <div class="image-container4">
+      <img src="Assets/CUS.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>Third Stage (CUS15):</p>
+        <p class="info">
+          - Indigenous Cryogenic upper stage <br>
+          - Propellants - Hydrogen (fuel) and Oxygen (oxidiser)<br>
+          - Engine - 1x CE-7.5<br>
+          - Height - 9.9m<br>
+          - Diameter - 2.8m<br>
+          - Thrust - 75kN<br>
+          - Specific Impulse (Isp) - 454 sec (in vacuum)<br>
+          - Burn time - 846 sec<br>
+          - Propellant mass: 15000 kg<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="text-container">
+      <h2 style="text-align: center;">GSLV in Detail</h2>
+      <div class="details">
+        <p>Work in progress</p>
+        <p class="info">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+          
 </body>
+
 </html>
 
