@@ -127,3 +127,6 @@ body {
   margin-bottom: 20px;
 }
 
+.second-page .info-box .info span {
+  font-weight: bold; /* Add this line to make the text before the dash bold */
+}
