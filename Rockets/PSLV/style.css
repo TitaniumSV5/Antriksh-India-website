@@ -31,7 +31,7 @@ body {
   margin-right: 200px;
   font-family: 'YourFont';
   line-height: 1; /* Adjust the line height to reduce the gap */  
-  text-shadow: 0 0 20px blue;
+  text-shadow: 0 0 20px rgb(255, 0, 0);
 
 
 
