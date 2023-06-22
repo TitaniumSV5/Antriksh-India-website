@@ -4,50 +4,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Launches</title>
+  <title>Rockets</title>
   <link rel="stylesheet" href="navbarcss.css">
-  <link rel="stylesheet" href="spacecraft.css">
   <script src="header.js"></script>
+  <style>
+    body {
+      background-image: url('Assets/mangalyaan.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+
+    .section {
+      padding: 3%;
+      display: flex;
+      margin-left: 1%;
+      flex-wrap: wrap; /* Add this line */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card {
+      width: 300px;
+      height: 530px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-bottom: 10px;
+      display: inline-block;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+      transition: transform 0.3s;
+    }
+
+    .section .card {
+  margin: 15px; /* Adjust the margin value to increase or decrease the space */
+}
+
+    .card-heading {
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 1%;
+      margin-top: 3%;
+}
+
+    .card-heading2 {
+     text-align: left;
+     color: white;
+     font-size: 40px;
+     margin-bottom: 1%;
+     margin-top: 3%;
+     margin-left: 5%;
+     margin-right: 10%;
+}
+
+
+  .section2 {
+  padding: 3%;
+  display: flex;
+  justify-content: center; /* Align content to the center */
+  align-items: center;
+  text-align: center;
+}
+
+.section2 > .card {
+  width: 300px; /* Adjust the width of the cards as needed */
+  height: 530px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px; /* Adjust the margin value to increase or decrease the space between cards */
+}
+
+
+
+
+
+
+    .card-heading2 {
+      text-align: left;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 1%;
+      margin-top: 3%;
+      margin-left: 1%; /* Add this line */
+      display: inline-block;
+      display: block;
+
+    }
+
+    .card-content {
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    /* Add this CSS for hover effect */
+    .card:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 
-<body style="background-image: url('Assets/mangalyaan.jpg'); background-size: cover; background-attachment: fixed;">
-
+<body>
   <div class="banner"></div>
 
-  <main>
-    
 
-    <section id="launches">
-      <!-- Upcoming Launches -->
-      <div id="upcoming-launches" class="launch-section">
-        <a href="Chandrayaan 3/cy3.html" class="no-underline">
-          <div class="launch-card" style="background-image: url('Assets/cy3.jpg');">
 
-            <div class="launch-details">
-              <h3>Chandrayaan-3 </h3>
-              <p>12 July 2023 </p>
-              
-            </div>
-            =
-          </div>
-        </a>
-        <a href="#" class="no-underline">
-        <div class="launch-card" style="background-image: url('Assets/L1.jpg');">
-          <div class="launch-details">
-            <h3>Aditya L1</h3>
-            <p>NET September 2023 </p>
-          </div>
-        </div>
-        </a>
-             
-            
+  <h2 class="card-heading">Upcoming missions</h2>
+  <div class="section">
+
+    <a href="PSLV\pslv.html">
+    <div class="card" style="background-image: url('Assets/pslv.jpg');">
+      <div class="card-content">
+        <h3>Chandrayaan-3</h3>
+        <p>       </p>
       </div>
-    </section>
+    </div>
+    </a>
+
+    <a href="GSLV/gslv.html">
+    <div class="card" style="background-image: url('Assets/gslv.jpg');">
+      <div class="card-content">
+        <h3>Aditya-L1</h3>
+        <p>       </p>
+      </div>
+    </div>
+  </a>
+    
+  </div>
 
 
-</main>
+  <h2 class="card-heading">Past/Operational Missions</h2>
+    <div class="section2">  
+    <div class="card" style="background-image: url('Assets/skyroot.jpg');">
+      <div class="card-content">
+        <h3>Chandrayaan-2</h3>
+        <p>      </p>
+      </div>
+    </div>
+    
+    <div class="card" style="background-image: url('Assets/nglv.png');">
+      <div class="card-content">
+        <h3>Astrosat</h3>
+        <p>       </p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card" style="background-image: url('Assets/nglv.png');">
+      <div class="card-content">
+        <h3>Mangalyaan</h3>
+        <p>        </p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card" style="background-image: url('Assets/nglv.png');">
+      <div class="card-content">
+        <h3>Chandrayaan-1</h3>
+        <p>       </p>
+      </div>
+    </div>
+  </div>
 
+  
+  
+  <div class="section2">
+    <h2 class="card-heading2">Retired Rockets</h2>
+    <div class="card" style="background-image: url('Assets/slv3.webp');">
+      <div class="card-content">
+        <h3>SLV-3</h3>
+        <p>Satellite Launch Vehicle - 3</p>
+      </div>
+    </div>
+    <div class="card" style="background-image: url('Assets/aslv.jpg');">
+      <div class="card-content">
+        <h3>ASLV</h3>
+        <p>Augmented Satellite Launch Vehicle</p>
+      </div>
+    </div>
+  </div>
 
-
+  
+  <div class="section2">
+    <h2 class="card-heading2">Sub-Orbital Rockets</h2>
+    <div class="card" style="background-image: url('Assets/rhseries.jpg');">
+      <div class="card-content">
+        <h3>RH Series</h3>
+        <p>Sounding Rockets</p>
+      </div>
+    </div>
+    <div class="card" style="background-image: url('Assets/skyrootvikrams.jpg');">
+      <div class="card-content">
+        <h3>Skyroot Vikram S</h3>
+        <p>Sounding Rocket</p>
+      </div>
+    </div>
+  </div>
 </body>
+
+
+
+
+
 </html>
