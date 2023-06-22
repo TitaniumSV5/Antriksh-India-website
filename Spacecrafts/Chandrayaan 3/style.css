@@ -109,7 +109,7 @@ body {
 .second-page .info-box {
   flex: 1;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 100px;
+  padding: 80px;
   font-size: 18px;
   color: #fff;
   border-radius: 10px;
@@ -117,12 +117,12 @@ body {
 
 .second-page .info-box .heading {
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
 .second-page .info-box .info {
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Inter', sans-serif;
   margin-bottom: 20px;
 }
@@ -153,9 +153,9 @@ body {
 }
 
 .third-page .info-box {
-  flex: 0.5; /* Adjusted width to take up the left half of the screen */
+  flex: 0.5;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px;
+  padding: 100px;
   font-size: 18px;
   color: #fff;
   border-radius: 10px;
@@ -163,11 +163,17 @@ body {
 
 .third-page .info-box .heading {
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .third-page .info-box .info {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
+
+.third-page .info-box .info span {
+  font-weight: bold; /* Add this line to make the text before the dash bold */
 }
 
