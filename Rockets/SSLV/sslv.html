@@ -8,24 +8,314 @@
   <link rel="stylesheet" href="navbarcss.css">
   <link rel="stylesheet" type="text/css" href="style.css"> 
   <script src="header.js"></script>
-
   <style>
+  
+  body {
+      background-image: url('Assets/BG.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+    
+    .container {
+      display: flex;
+      
+    }
 
-  .heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh; /* Adjust the height as needed */
-  color: aliceblue;
-}
+    .text-container {
+      background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity value as needed */
+      color: white;
+      padding: 30px;
+      flex: 2;
+      border-radius: 10px; /* Adjust the border radius value as needed */
+      margin-bottom: 10%;
+      margin-top: 5%;
+      margin-right: 0%;
+    }
+    
+    
+    .text-container h2 {
+      font-size: 40px; /* Adjust the value to increase or decrease the heading size */
+      
+    }
+
+    .text-container p {
+      font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
+    }
+
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      height: 88%;
+    }
+
+    .image-container img {
+      width: 80%;
+      height: 88%;
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -1%;
+    }
+
+
+    .image-container2 {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      height: 100%;
+      margin-left: 3%;
+    }
+
+    .image-container2 img {
+      width: 80%;
+      height: 120%;
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+
+    .image-container3 {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+     height: 50%;
+      margin-left: 3%;
+    }
+
+    .image-container3 img {
+      width: 80%;
+      
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+    .image-container4 {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      height: 50%;
+      margin-left: 3%;
+    }
+
+    .image-container4 img {
+      width: 80%;
+      
+      object-fit: cover;
+      border-radius: 10px; /* Add rounded corners */
+      margin-top: -15%;
+    }
+
+    .info {
+      font-family: monospace;
+      white-space: pre;
+    }
+    
+    .details p {
+      margin-bottom: 15px; /* Adjust the value to increase or decrease the paragraph spacing */
+    }
+    h2 {
+      margin-bottom: 20px; /* Adjust the value to increase or decrease the spacing */
+    }
+    
+     .stage-info-container {
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .stage-info-container .image-container {
+      flex: 0.7;
+      margin-right: 1px;
+      justify-content: center;
+
+   }
+
+    .stage-info-container .text-container {
+      flex: 2;
+    }
+    .logopslv{
+      height: 85%;
+      width: 16%;
+      margin-bottom: 2%;
+     margin-top: -4%;
+
+    }
+    .lvm3-2{
+    
+      margin-left: 8%;
+      
+    }
+
+ 
+
 
   </style>
 </head>
-<body>
 
+<body>
   <div class="banner"></div> <!-- Add the banner element here -->
-  <h1 class="heading">SSLV</h1>
+
+  <div class="container">
+    <img src="Assets/sslv.png" alt="PSLV" class="logopslv">
+    <div class="text">
+      <h1>SSLV</h1>
+      <div class="subtext">
+        <p>Small Satellite Launch Vehicle</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-container">
+      <h2 style="text-align: center;">Basic Information</h2>
+
+      <ul>
+        <div class="details">
+          <li>
+            <p>3-stage launch vehicle</p>
+          </li>
+          <li>
+            <p>Payload capacity:</p>
+            <p class="info">
+              500 kg to LEO<br>
+              300 kg to SSO<br>
+            </p>
+          </li>
+          
+          <li>
+            <p>Mass of launch vehicle: <span style="font-family: monospace;">12000 kg</span></p>
+          </li>
+          <li>
+            <p>Height of launch vehicle: <span style="font-family: monospace;">34 m</span></p>
+          </li>
+          <li>
+            <p>Max Diameter of launch vehicle: <span style="font-family: monospace;">2 m</span></p>
+          </li>
+          <li>
+            <p>First launch on: <span style="font-family: monospace;">7 August 2022</span></p>
+          </li>
+          <li>
+            <p>Total launches: <span style="font-family: monospace;">2 (1 successes and 1 failures)</span></p>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="image-container">
+      <img src="Assets/sslv2.jpg" alt="PSLV" class="lvm3-2">
+    </div>
+  </div>
   
+
+  
+  <div class="stage-info-container">
+    <div class="image-container3">
+      <img src="Assets/SS1.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>First stage (SS1):</p>
+        <p class="info">
+          - S85 Solid Rocket Motor<br>
+          - Propellant - HTPB (Hydroxyl-terminated Polybutadiene)<br>
+          - Height - x m<br>
+          - Diameter - 2 m<br>
+          - Thrust - 2496 kN<br>
+          - Burn time - 94.3 sec<br>
+          - Propellant mass: 87000 kg<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="stage-info-container">
+    <div class="image-container3">
+      <img src="Assets/SS2.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>Second stage (SS2):</p>
+        <p class="info">
+          - S7 Solid Rocket Motor<br>
+          - Propellant - HTPB (Hydroxyl-terminated Polybutadiene)<br>
+          - Height - x m<br>
+          - Diameter - 2 m<br>
+          - Thrust - 234.2 kN<br>
+          - Burn time - 113.1 sec<br>
+          - Propellant mass: 7700 kg<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="stage-info-container">
+    <div class="image-container3">
+      <img src="Assets/ss3.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>Third stage (SS3):</p>
+        <p class="info">
+          - S4 Solid Rocket Motor<br>
+          - Propellant - HTPB (Hydroxyl-terminated Polybutadiene)<br>
+          - Height - x m<br>
+          - Diameter - 2 m<br>
+          - Thrust - 160 kN<br>
+          - Burn time - 106.9 sec<br>
+          - Propellant mass: 4500 kg<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="stage-info-container">
+    <div class="image-container3">
+      <img src="Assets/VTM.jpg" alt="Boosters">
+    </div>
+    <div class="text-container">
+
+      <div class="details">
+        <p>Velocity Trimming Module (VTM):</p>
+        <p class="info">
+          - 16 Bi-propellant thrusters<br>
+          - Propellant - MMH (fuel) and MON3 (oxidizer) <br>
+          - Height - x m<br>
+          - Diameter - 2 m<br>
+          - Thrust - 50 N each<br>
+          - Burn time - as much required according to flight computer<br>
+          - Propellant mass: 50 kg<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="text-container">
+      <h2 style="text-align: center;">GSLV in Detail</h2>
+      <div class="details">
+        <p>Work in progress</p>
+        <p class="info">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+          
 </body>
+
 </html>
 
