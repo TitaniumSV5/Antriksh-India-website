@@ -177,3 +177,19 @@ body {
   font-weight: bold; /* Add this line to make the text before the dash bold */
 }
 
+.text-container {
+      background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity value as needed */
+      color: white;
+      padding: 20px;
+      flex: 2;
+      border-radius: 10px; /* Adjust the border radius value as needed */
+    }
+    
+    
+    .text-container h2 {
+      font-size: 40px; /* Adjust the value to increase or decrease the heading size */
+    }
+
+    .text-container p {
+      font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
+    }
