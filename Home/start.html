@@ -35,6 +35,7 @@
 
     .center-container {
       width: 60%;
+      position: relative;
     }
 
     .carousel-container {
@@ -54,11 +55,17 @@
     }
 
     .carousel-slide {
-      flex: 0 0 auto;
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
 
     .caption-overlay {
       position: absolute;
@@ -69,36 +76,28 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
-
-    .carousel-slide:hover .caption-overlay {
-      opacity: 0;
     }
 
     .carousel-caption {
       color: white;
-      font-size: 18px;
+      font-size: 24px;
       text-align: center;
-   }
-
-
-    .carousel-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-shadow: 2px 2px 4px black;
     }
 
-    .carousel-caption {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: white;
-  font-size: 18px;
+    .carousel-slide:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
 
@@ -122,6 +121,24 @@
     .countdown-timer {
       font-size: 40px;
     }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    .carousel-dot.active {
+      background-color: white;
+    }
   </style>
 </head>
 
@@ -140,25 +157,31 @@
     <div class="center-container">
       <div class="carousel-container">
         <div class="carousel">
-          
-          
           <div class="carousel-slide">
             <img src="f12.jpg" alt="GSLV F12/NVS-01 Mission">
             <div class="caption-overlay">
               <div class="carousel-caption">GSLV F12/NVS-01 successfully launched</div>
             </div>
           </div>
-          
-          
-          
+
           <div class="carousel-slide">
-            <img src="Assets/Slide2.jpg" alt="Slide 2">
+            <img src="cy3sp.jpg" alt="Chandrayaan-3">
+            <div class="caption-overlay">
+              <div class="carousel-caption">Chandrayaan-3</div>
+            </div>
           </div>
+
           <div class="carousel-slide">
             <img src="Assets/Slide3.jpg" alt="Slide 3">
           </div>
           <!-- Add more carousel slides as needed -->
         </div>
+      </div>
+      <div class="carousel-dots">
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+        <!-- Add more dots as needed -->
       </div>
     </div>
 
@@ -180,32 +203,39 @@
   <!-- Other content below the container -->
 
   <script>
-    // Set the countdown date and time
-    const countdownDate = new Date('July 12, 2023 13:30:00').getTime();
+    const carouselSlides = document.querySelectorAll('.carousel-slide');
+    const carouselDots = document.querySelectorAll('.carousel-dot');
+    let currentIndex = 0;
 
-    // Update the countdown every second
-    const countdownTimer = setInterval(() => {
-      // Get the current date and time
-      const now = new Date().getTime();
+    // Function to show the current slide
+    const showSlide = (index) => {
+      carouselSlides.forEach((slide, slideIndex) => {
+        slide.style.transform = `translateX(${100 * (slideIndex - index)}%)`;
+      });
+    };
 
-      // Calculate the remaining time
-      const distance = countdownDate - now;
+    // Function to handle dot click
+    const handleDotClick = (index) => {
+      currentIndex = index;
+      showSlide(currentIndex);
+      updateActiveDot();
+    };
 
-      // Calculate days, hours, minutes, and seconds
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Function to update the active dot
+    const updateActiveDot = () => {
+      carouselDots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === currentIndex);
+      });
+    };
 
-      // Display the countdown timer
-      document.getElementById('countdown-timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    // Add click event listeners to dots
+    carouselDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => handleDotClick(index));
+    });
 
-      // Check if the countdown is finished
-      if (distance < 0) {
-        clearInterval(countdownTimer);
-        document.getElementById('countdown-timer').innerHTML = 'EXPIRED';
-      }
-    }, 1000);
+    // Set the initial slide and active dot
+    showSlide(currentIndex);
+    updateActiveDot();
   </script>
 
 </body>
