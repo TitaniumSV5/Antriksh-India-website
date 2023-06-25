@@ -237,6 +237,37 @@
     showSlide(currentIndex);
     updateActiveDot();
   </script>
+  
+  <script>
+    // Countdown timer
+const countdownTimer = document.getElementById('countdown-timer');
+
+// Set the date and time for the countdown (replace with your desired date and time)
+const countdownDate = new Date('2023-07-12T00:13:30Z');
+
+// Update the countdown timer every second
+const countdownInterval = setInterval(() => {
+  const currentDate = new Date();
+  const timeDifference = countdownDate - currentDate;
+
+  // Check if the countdown has expired
+  if (timeDifference <= 0) {
+    clearInterval(countdownInterval);
+    countdownTimer.innerHTML = 'Countdown expired';
+    return;
+  }
+
+  // Calculate the remaining days, hours, minutes, and seconds
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+  // Display the remaining time in the countdown timer element
+  countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}, 1000);
+
+  </script>
 
 </body>
 
