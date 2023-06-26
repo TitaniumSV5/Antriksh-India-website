@@ -39,7 +39,8 @@
     }
 
     .carousel-container {
-      height: 50%;
+      height: 300%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -52,31 +53,29 @@
       height: 100%;
       display: flex;
       overflow: hidden;
+      position: relative;
     }
 
     .carousel-slide {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-}
-
-.carousel-slide:hover {
-  transform: scale(1.1);
-  z-index: 1;
-}
-
-    .caption-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
+      flex: 0 0 100%;
       width: 100%;
       height: 100%;
+      position: absolute;
+      transition: opacity 0.3s ease-in-out;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
+    .carousel-slide img {
+    width: 100%;
+    height: auto; /* Change this line */
+    object-fit: contain; /* Change this line */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
     .carousel-caption {
       color: white;
@@ -89,17 +88,27 @@
       text-shadow: 2px 2px 4px black;
     }
 
-    .carousel-slide:hover img {
-  transform: scale(1.1);
-}
+    .carousel-slide:not(.active) {
+      opacity: 0;
+    }
 
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-}
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
 
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    .carousel-dot.active {
+      background-color: white;
+    }
 
     .countdown-box {
       display: flex;
@@ -122,22 +131,8 @@
       font-size: 40px;
     }
 
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .carousel-dot {
-      width: 10px;
-      height: 10px;
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 50%;
-      margin: 0 5px;
-    }
-
-    .carousel-dot.active {
-      background-color: white;
+    .countdown-box-clickable p {
+      margin: 0;
     }
   </style>
 </head>
@@ -157,39 +152,32 @@
     <div class="center-container">
       <div class="carousel-container">
         <div class="carousel">
-          <div class="carousel-slide">
+          <div class="carousel-slide active">
             <img src="f12.jpg" alt="GSLV F12/NVS-01 Mission">
             <div class="caption-overlay">
               <div class="carousel-caption">GSLV F12/NVS-01 successfully launched</div>
             </div>
           </div>
+
           <div class="carousel-slide">
             <img src="cy3sp.jpg" alt="Chandrayaan-3">
             <div class="caption-overlay">
               <div class="carousel-caption">Chandrayaan-3</div>
             </div>
           </div>
+
           <div class="carousel-slide">
             <img src="pslvql.jpg" alt="PSLV C56 Coming SOON">
             <div class="caption-overlay">
               <div class="carousel-caption">PSLV C56 Coming SOON</div>
             </div>
           </div>
-
-     
-
-   
-          <!-- Add more carousel slides as needed -->
         </div>
       </div>
       <div class="carousel-dots">
+        <div class="carousel-dot active"></div>
         <div class="carousel-dot"></div>
         <div class="carousel-dot"></div>
-        <div class="carousel-dot"></div>
-        <div class="carousel-dot"></div>
-        <div class="carousel-dot"></div>
-      
-        <!-- Add more dots as needed -->
       </div>
     </div>
 
@@ -218,7 +206,7 @@
     // Function to show the current slide
     const showSlide = (index) => {
       carouselSlides.forEach((slide, slideIndex) => {
-        slide.style.transform = `translateX(${100 * (slideIndex - index)}%)`;
+        slide.classList.toggle('active', slideIndex === index);
       });
     };
 
@@ -245,38 +233,36 @@
     showSlide(currentIndex);
     updateActiveDot();
   </script>
-  
+
   <script>
     // Countdown timer
-const countdownTimer = document.getElementById('countdown-timer');
+    const countdownTimer = document.getElementById('countdown-timer');
 
-// Set the date and time for the countdown (replace with your desired date and time)
-const countdownDate = new Date('2023-07-12T00:13:30Z');
+    // Set the date and time for the countdown (replace with your desired date and time)
+    const countdownDate = new Date('2023-07-12T00:13:30Z');
 
-// Update the countdown timer every second
-const countdownInterval = setInterval(() => {
-  const currentDate = new Date();
-  const timeDifference = countdownDate - currentDate;
+    // Update the countdown timer every second
+    const countdownInterval = setInterval(() => {
+      const currentDate = new Date();
+      const timeDifference = countdownDate - currentDate;
 
-  // Check if the countdown has expired
-  if (timeDifference <= 0) {
-    clearInterval(countdownInterval);
-    countdownTimer.innerHTML = 'Countdown expired';
-    return;
-  }
+      // Check if the countdown has expired
+      if (timeDifference <= 0) {
+        clearInterval(countdownInterval);
+        countdownTimer.innerHTML = 'Countdown expired';
+        return;
+      }
 
-  // Calculate the remaining days, hours, minutes, and seconds
-  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-  // Display the remaining time in the countdown timer element
-  countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}, 1000);
-
+      // Display the countdown timer
+      countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
   </script>
-
 </body>
 
 </html>
