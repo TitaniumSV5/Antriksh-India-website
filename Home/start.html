@@ -164,21 +164,26 @@
             <div class="caption-overlay">
               <div class="carousel-caption">GSLV F12/NVS-01 successfully launched</div>
             </div>
+            </a>
           </div>
-        </a>
+        
 
           <div class="carousel-slide">
+            <a href="../Spacecrafts/Chandrayaan 3/cy3.html">
             <img src="cy3sp.jpg" alt="Chandrayaan-3">
             <div class="caption-overlay">
               <div class="carousel-caption">Chandrayaan-3</div>
             </div>
+            </a>
           </div>
 
           <div class="carousel-slide">
+            <a href="../Launches/Upcoming Launch Pages/@89_PSLV-C56.html">
             <img src="pslvql.jpg" alt="PSLV C56 Coming SOON">
             <div class="caption-overlay">
               <div class="carousel-caption">PSLV C56 Coming SOON</div>
             </div>
+          </a>
           </div>
         </div>
       </div>
@@ -205,42 +210,55 @@
   </div>
 
   <!-- Other content below the container -->
-
   <script>
     const carouselSlides = document.querySelectorAll('.carousel-slide');
     const carouselDots = document.querySelectorAll('.carousel-dot');
     let currentIndex = 0;
-
+  
     // Function to show the current slide
     const showSlide = (index) => {
       carouselSlides.forEach((slide, slideIndex) => {
         slide.classList.toggle('active', slideIndex === index);
       });
     };
-
+  
     // Function to handle dot click
     const handleDotClick = (index) => {
       currentIndex = index;
       showSlide(currentIndex);
       updateActiveDot();
     };
-
+  
     // Function to update the active dot
     const updateActiveDot = () => {
       carouselDots.forEach((dot, dotIndex) => {
         dot.classList.toggle('active', dotIndex === currentIndex);
       });
     };
-
+  
     // Add click event listeners to dots
     carouselDots.forEach((dot, index) => {
       dot.addEventListener('click', () => handleDotClick(index));
     });
-
+  
+    // Add click event listeners to slides
+    carouselSlides.forEach((slide, index) => {
+      const slideLink = slide.querySelector('a');
+      slideLink.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent the click event from bubbling up to the carousel container
+      });
+      slideLink.addEventListener('mousedown', () => {
+        currentIndex = index;
+        showSlide(currentIndex);
+        updateActiveDot();
+      });
+    });
+  
     // Set the initial slide and active dot
     showSlide(currentIndex);
     updateActiveDot();
   </script>
+  
 
   <script>
     // Countdown timer
