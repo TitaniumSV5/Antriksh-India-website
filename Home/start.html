@@ -23,19 +23,81 @@
       margin-right: 20px;
     }
 
-    
-
     .right-container {
       width: 30%;
-      
       margin-left: 10px;
     }
 
-    .carousel-container:hover {
-    transform: scale(1.05); /* Increase the size of the container */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    .countdown-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  z-index: 1; /* Add higher z-index value */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+    .countdown-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+  
     }
 
+    .countdown-timer {
+      font-size: 40px;
+    }
+
+    .updates-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .countdown-title,
+    .countdown-timer,
+    .updates-title,
+    .update-description {
+       color: white;
+}
+
+
+    .updates-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .updates-scroll {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .update {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .update img {
+      width: 100px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .update-description {
+      margin: 0;
+    }
+
+    .carousel-container:hover {
+      transform: scale(1.05);
+      /* Increase the size of the container */
+      transition: transform 0.3s ease-in-out;
+      /* Add a smooth transition effect */
+    }
 
     .center-container {
       width: 65%;
@@ -45,7 +107,7 @@
     }
 
     .carousel-container {
-      height: 300%;
+      height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
@@ -74,14 +136,16 @@
     }
 
     .carousel-slide img {
-    width: 100%;
-    height: auto; /* Change this line */
-    object-fit: contain; /* Change this line */
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+      width: 100%;
+      height: auto;
+      /* Change this line */
+      object-fit: contain;
+      /* Change this line */
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .carousel-caption {
       color: white;
@@ -116,30 +180,33 @@
       background-color: white;
     }
 
-    .countdown-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      border-radius: 10px;
-    }
 
-    .countdown-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 98%;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
 
-    .countdown-timer {
-      font-size: 40px;
-    }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .countdown-box-clickable p {
-      margin: 0;
-    }
+.footer-section a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 
@@ -151,39 +218,34 @@
   <div class="banner"></div>
 
   <div class="container">
-    <div class="left-container">
-      <!-- Left container content here -->
-    </div>
-
     <div class="center-container">
       <div class="carousel-container">
         <div class="carousel">
-          <div class="carousel-slide active">
+          <div class="carousel-slide">
             <a href="../Launches/Past Launch Pages/@87_GSLV-F12.html">
-            <img src="f12.jpg" alt="GSLV F12/NVS-01 Mission">
-            <div class="caption-overlay">
-              <div class="carousel-caption">GSLV F12/NVS-01 successfully launched</div>
-            </div>
+              <img src="f12.jpg" alt="GSLV F12/NVS-01 Mission">
+              <div class="caption-overlay">
+                <div class="carousel-caption">GSLV F12/NVS-01 successfully launched</div>
+              </div>
             </a>
           </div>
-        
 
           <div class="carousel-slide">
             <a href="../Spacecrafts/Chandrayaan 3/cy3.html">
-            <img src="cy3sp.jpg" alt="Chandrayaan-3">
-            <div class="caption-overlay">
-              <div class="carousel-caption">Chandrayaan-3</div>
-            </div>
+              <img src="cy3sp.jpg" alt="Chandrayaan-3">
+              <div class="caption-overlay">
+                <div class="carousel-caption">Chandrayaan-3</div>
+              </div>
             </a>
           </div>
 
           <div class="carousel-slide">
             <a href="../Launches/Upcoming Launch Pages/@89_PSLV-C56.html">
-            <img src="pslvql.jpg" alt="PSLV C56 Coming SOON">
-            <div class="caption-overlay">
-              <div class="carousel-caption">PSLV C56 Coming SOON</div>
-            </div>
-          </a>
+              <img src="pslvql.jpg" alt="PSLV C56 Coming SOON">
+              <div class="caption-overlay">
+                <div class="carousel-caption">PSLV C56 Coming SOON</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -195,8 +257,7 @@
     </div>
 
     <div class="right-container">
-      <!-- Right container content here -->
-      <div class="countdown-box">
+      <div class="countdown-container">
         <h2 class="countdown-title">LVM3/Chandrayaan-3 Launch</h2>
         <div class="countdown-timer" id="countdown-timer"></div>
         <a href="../Launches/Upcoming Launch Pages/@88_LVM3-M4.html">
@@ -206,41 +267,59 @@
           </div>
         </a>
       </div>
+
+      <div class="updates-container">
+        <h3 class="updates-title">Updates</h3>
+        <div class="updates-scroll">
+          <div class="update">
+            <img src="update1.jpg" alt="Update 1">
+            <p class="update-description">Update 1 description goes here</p>
+          </div>
+          <div class="update">
+            <img src="update2.jpg" alt="Update 2">
+            <p class="update-description">Update 2 description goes here</p>
+          </div>
+          <div class="update">
+            <img src="update3.jpg" alt="Update 3">
+            <p class="update-description">Update 3 description goes here</p>
+          </div>
+          <!-- Add more update elements as needed -->
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Other content below the container -->
   <script>
     const carouselSlides = document.querySelectorAll('.carousel-slide');
     const carouselDots = document.querySelectorAll('.carousel-dot');
     let currentIndex = 0;
-  
+
     // Function to show the current slide
     const showSlide = (index) => {
       carouselSlides.forEach((slide, slideIndex) => {
         slide.classList.toggle('active', slideIndex === index);
       });
     };
-  
+
     // Function to handle dot click
     const handleDotClick = (index) => {
       currentIndex = index;
       showSlide(currentIndex);
       updateActiveDot();
     };
-  
+
     // Function to update the active dot
     const updateActiveDot = () => {
       carouselDots.forEach((dot, dotIndex) => {
         dot.classList.toggle('active', dotIndex === currentIndex);
       });
     };
-  
+
     // Add click event listeners to dots
     carouselDots.forEach((dot, index) => {
       dot.addEventListener('click', () => handleDotClick(index));
     });
-  
+
     // Add click event listeners to slides
     carouselSlides.forEach((slide, index) => {
       const slideLink = slide.querySelector('a');
@@ -253,19 +332,18 @@
         updateActiveDot();
       });
     });
-  
+
     // Set the initial slide and active dot
     showSlide(currentIndex);
     updateActiveDot();
   </script>
-  
 
   <script>
     // Countdown timer
     const countdownTimer = document.getElementById('countdown-timer');
 
     // Set the date and time for the countdown (replace with your desired date and time)
-    const countdownDate = new Date('2023-07-12T00:13:30Z');
+    const countdownDate = new Date('2023-07-12T13:30:00Z');
 
     // Update the countdown timer every second
     const countdownInterval = setInterval(() => {
@@ -289,6 +367,21 @@
       countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }, 1000);
   </script>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <a href="about-us.html">About Us</a>
+    </div>
+    <div class="footer-section">
+      <a href="content-use-policy.html">Content Use Policy</a>
+    </div>
+    <div class="footer-section">
+      <p>&copy; AntrikshIndia 2023. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </body>
 
 </html>
