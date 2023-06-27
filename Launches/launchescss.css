@@ -7,6 +7,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  position: relative; /* Add this line */
+}
+body::after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Assets/launches.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 
 header {
@@ -179,7 +194,7 @@ padding: 15px 20px;
 }
 
 .launch-option button.active {
-background-color: rgba(73, 88, 82, 0.537); /* Set the background color when the button is active */
+background-color: rgba(125, 148, 138, 0.514); /* Set the background color when the button is active */
 color: white;
 }
 
@@ -239,7 +254,7 @@ color: white;
     transition: background-color 0.3s ease;
     border: 3px solid #ccc;
     border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -256,7 +271,7 @@ color: white;
   transition: background-color 0.3s ease;
   border: 3px solid #ccc;
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -273,7 +288,7 @@ color: white;
   transition: background-color 0.3s ease;
   border: 3px solid #ccc;
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
     
