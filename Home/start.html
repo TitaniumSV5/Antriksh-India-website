@@ -56,6 +56,7 @@
       background-color: rgba(0, 0, 0, 0.8);
       border-radius: 10px;
       padding: 20px;
+      height: 300px
     }
 
     .countdown-title,
@@ -207,6 +208,46 @@
   text-decoration: underline;
 }
 
+.quick-links-container {
+  margin-top: 20px;
+  padding: 60px
+}
+
+.quick-links-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quick-link-card {
+  width: 140px;
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.quick-link-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.quick-link-caption {
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+
   </style>
 </head>
 
@@ -286,6 +327,32 @@
           <!-- Add more update elements as needed -->
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <div class="quick-links-container">
+    <h3 class="quick-links-title">Quick Links</h3>
+    <div class="quick-links">
+      <div class="quick-link-card">
+        <a href="../Spacecrafts/Chandrayaan 3/cy3.html">
+          <img src="cy3sp.jpg" alt="Chandrayaan-3">
+          <div class="quick-link-caption">Chandrayaan-3</div>
+        </a>
+      </div>
+      <div class="quick-link-card">
+        <a href="../Launches/Upcoming Launch Pages/@88_LVM3-M4.html">
+          <img src="lvm3.jpg" alt="LVM3">
+          <div class="quick-link-caption">LVM3</div>
+        </a>
+      </div>
+      <div class="quick-link-card">
+        <!-- Placeholder card -->
+      </div>
+      <div class="quick-link-card">
+        <!-- Placeholder card -->
+      </div>
+      <!-- Add more placeholder cards as needed -->
     </div>
   </div>
 
