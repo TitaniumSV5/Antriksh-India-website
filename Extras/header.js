@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Create the anchor element
   var anchor = document.createElement('a');
-  anchor.href = '../../Home/start.html'; // Replace with your desired URL
+  anchor.href = '../Home/start.html'; // Replace with your desired URL
 
   // Append the logo image to the anchor element
   anchor.appendChild(logoImage);
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   navbar.classList.add('navbar');
   var navbarList = document.createElement('ul');
   var navbarItems = ['Launches', 'Rockets', 'Spacecrafts', 'Gaganyaan', 'Others'];
-  var hrefValues = ['../../Launches/launches.html', '../../Rockets/rockets.html', '../spacecraft.html', '../../Extras/WIP.html', '../../Extras/WIP.html'];
+  var hrefValues = ['../Launches/launches.html', '../Rockets/rockets.html', '../Spacecrafts/spacecraft.html', 'WIP.html', 'WIP.html'];
 
   for (var i = 0; i < navbarItems.length; i++) {
     var navbarItem = document.createElement('li');
