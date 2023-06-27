@@ -8,12 +8,23 @@
   <link rel="stylesheet" href="navbarcss.css">
   <script src="header.js"></script>
   <style>
-    body {
-      background-image: url('Assets/mangalyaan.jpg');
-      background-size: cover;
-      background-position: center top;
-      background-attachment: fixed;
+       body {
+      position: relative; /* Add this line */
     }
+
+
+body::after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Assets/mangalyaan.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
     .section {
       padding: 3%;
