@@ -225,4 +225,56 @@ color: white;
 
   }
 
-  
+ 
+  .success a.button {
+    font-size: 17px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 0.8% 0.8%;
+    background-color: green;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+    z-index: 1;
+}
+
+.failure a.button {
+  font-size: 17px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  padding: 0.8% 0.8%;
+  background-color: red;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+  z-index: 1;
+}
+
+.pfailure a.button {
+  font-size: 17px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  padding: 0.8% 0.8%;
+  background-color: yellow;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+  z-index: 1;
+}
+    
+    
