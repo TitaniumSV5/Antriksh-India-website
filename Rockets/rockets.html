@@ -29,7 +29,6 @@ body::after {
     .section {
       padding: 3%;
       display: flex;
-      margin-left: 1%;
       flex-wrap: wrap; /* Add this line */
       justify-content: center;
       align-items: center;
@@ -51,7 +50,15 @@ body::after {
     }
 
     .section .card {
-  margin: 15px; /* Adjust the margin value to increase or decrease the space */
+  width: 280px;
+  height: 480px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  display: inline-block;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  transition: transform 0.3s;
 }
 
     .card-heading {
@@ -84,20 +91,16 @@ body::after {
     }
 
     @media (max-width: 768px) {
-  .section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+     
 
-  .card {
-    width: 80%;
-    max-width: 280px;
-    height: 200px;
+      .card-heading {
+        font-size: 30px;
+      }
+
+      
+
+     
   }
-}
 
   </style>
 </head>
