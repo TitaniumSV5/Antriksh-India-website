@@ -44,3 +44,5 @@ document.addEventListener('DOMContentLoaded', function() {
   banner.appendChild(logo);
   banner.appendChild(navbar);
 });
+
+
