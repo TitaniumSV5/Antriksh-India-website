@@ -9,7 +9,7 @@ body {
 
   .container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 4%;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -186,8 +186,10 @@ text-align: center;
 
 
 .quick-links-container {
-margin-top: 20px;
-padding: 60px;
+margin-top: 7%;
+margin-left: 4%;
+margin-bottom: 5%;
+
 }
 
 .quick-links-title {
@@ -213,7 +215,7 @@ overflow: hidden;
 
 .quick-link-card img {
 width: 100%;
-height: auto;
+height: 75%;
 object-fit: cover;
 }
 
@@ -252,3 +254,29 @@ color: white;
     right: 15px;
   }
 
+  .quick-links-container2 {
+    margin-top: 7%;
+    padding: 2%;
+    background-color: inherit;
+    text-align: center;
+    }
+
+    .quick-links-container2 h1{
+      color: white;
+      font-size: 12px;
+      font-family: sans-serif;
+      font-weight: 100;
+      display: inline;
+      margin-right: 5%;
+      margin-left: 10%;
+    }
+    
+    .quick-links-container2 h3{
+      color: white;
+      font-size: 22x;
+      font-family: sans-serif;
+      font-weight: 600;
+      display: inline;
+      margin-right: 5%;
+    }
+    
