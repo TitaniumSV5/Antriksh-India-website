@@ -82,6 +82,23 @@ body::after {
     .card:hover {
       transform: scale(1.1);
     }
+
+    @media (max-width: 768px) {
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 280px;
+    height: 200px;
+  }
+}
+
   </style>
 </head>
 
