@@ -193,3 +193,130 @@ body {
     .text-container p {
       font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
     }
+
+
+    /* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .first-page {
+    background-attachment: scroll;
+  }
+
+  #countdown {
+    top: 40%;
+  }
+
+  .countdown-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .countdown-numbers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown-section {
+    margin: 10px 0;
+  }
+
+  .number {
+    font-size: 48px;
+    padding: 0 5px;
+    width: 80px;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .swipe-up-container {
+    bottom: 20px;
+  }
+
+  .double-chevron {
+    width: 10px;
+    height: 10px;
+    border-width: 0 1px 1px 0;
+    margin-bottom: -0.5px;
+  }
+
+  .swipe-up-text {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .second-page {
+    background: linear-gradient(to right, #000 30%, #0000FF);
+    color: #fff;
+    font-size: 18px;
+    height: 140vh;
+    display: flex;
+    flex-direction: column; /* Adjusted to stack the elements vertically */
+  }
+  
+  .second-page .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 18px;
+  }
+  
+  .second-page .cy3-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 32px; 
+  }
+  
+  .second-page .info-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center; /* Adjusted to center the content */
+  }
+  
+
+  .second-page .info-box .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .second-page .info-box .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .third-page .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .third-page .info-box {
+    padding: 40px;
+  }
+
+  .third-page .info-box .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .third-page .info-box .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 24px;
+  }
+
+  .text-container p {
+    font-size: 14px;
+  }
+}
+
