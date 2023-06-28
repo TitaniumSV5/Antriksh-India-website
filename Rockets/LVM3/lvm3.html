@@ -148,7 +148,93 @@
       margin-left: 10%;
       
     }
+   
+    @media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
 
+  .logopslv {
+    width: 50%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 40px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .subtext {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .text-container h2 {
+    font-size: 35px; /* Adjust the value to decrease the heading size */
+  }
+
+  .text-container {
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+    overflow: hidden; /* Add overflow property to hide overflowing text */
+    text-align: left; /* Align text towards the left */
+    font-size: 8px; /* Reduce the font size for the boxes */
+  }
+
+  .info {
+   white-space: unset;
+  }
+  
+  .text-container p {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+
+  .image-container {
+    margin-top: 20px;
+    display: flex; /* Add flex display to ensure image visibility */
+    justify-content: center; /* Center align the image */
+    flex-direction: column; /* Stack the images below the boxes */
+    align-items: center; /* Center align the images horizontally */
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px; /* Add margin to separate the image from the box */
+  }
+}
+.stage-info-container {
+    flex-direction: column-reverse; /* Reverse the order of flex items */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  .stage-info-container .image-container {
+    flex: 1;
+    margin-right: 0;
+    margin-bottom: 20px; /* Add margin below the image */
+    justify-content: center;
+  }
+
+  .stage-info-container .text-container {
+    flex: 2;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0; /* Remove the margin on top */
+  }
 
 
   </style>
