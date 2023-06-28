@@ -6,7 +6,7 @@ body {
 
 .first-page {
   height: 100vh;
-  background-image: url('cy3-1.jpg');
+  background-image: url('Assets/cy3-1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body {
 
 /* Third Page Styling */
 .third-page {
-  background-image: url('propulsion.jpg');
+  background-image: url('Assets/propulsion.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

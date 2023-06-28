@@ -241,7 +241,7 @@ color: white;
   }
 
  
-  .success a.button {
+  .success p.button {
     font-size: 17px;
     position: absolute;
     top: 20px;
@@ -258,7 +258,7 @@ color: white;
     z-index: 1;
 }
 
-.failure a.button {
+.failure p.button {
   font-size: 17px;
   position: absolute;
   top: 20px;
@@ -275,7 +275,7 @@ color: white;
   z-index: 1;
 }
 
-.pfailure a.button {
+.pfailure p.button {
   font-size: 17px;
   position: absolute;
   top: 20px;
