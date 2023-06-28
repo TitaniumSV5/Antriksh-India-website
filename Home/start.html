@@ -96,7 +96,7 @@
     .carousel-container:hover {
       transform: scale(1.05);
       /* Increase the size of the container */
-      transition: transform 0.3s ease-in-out;
+       
       /* Add a smooth transition effect */
     }
 
@@ -115,6 +115,7 @@
       justify-content: center;
       overflow: hidden;
       border-radius: 10px;
+      transition: transform 0.3s;
     }
 
     .carousel {
@@ -166,7 +167,7 @@
     .carousel-dots {
       display: flex;
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 3%;
     }
 
     .carousel-dot {
@@ -247,6 +248,34 @@
   color: white;
 }
 
+.carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      z-index: 2;
+    }
+
+    .carousel-arrow:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .carousel-arrow-left {
+      left: 15px;
+    }
+
+    .carousel-arrow-right {
+      right: 15px;
+    }
+
 
   </style>
 </head>
@@ -261,6 +290,9 @@
   <div class="container">
     <div class="center-container">
       <div class="carousel-container">
+        <div class="carousel-arrow carousel-arrow-left"><--</div>
+        <div class="carousel-arrow carousel-arrow-right">--></div>
+
         <div class="carousel">
           <div class="carousel-slide">
             <a href="../Launches/Past Launch Pages/@87_GSLV-F12.html">
@@ -356,54 +388,86 @@
     </div>
   </div>
 
+
+
+
+
+  <script>
+    // ... Arrow keys ...
+
+    // Function to handle arrow click for moving to the previous slide
+    const handleArrowLeftClick = () => {
+      currentIndex = (currentIndex - 1 + carouselSlides.length) % carouselSlides.length;
+      showSlide(currentIndex);
+      updateActiveDot();
+    };
+
+    // Function to handle arrow click for moving to the next slide
+    const handleArrowRightClick = () => {
+      currentIndex = (currentIndex + 1) % carouselSlides.length;
+      showSlide(currentIndex);
+      updateActiveDot();
+    };
+
+    // Add click event listeners to arrow buttons
+    const carouselArrowLeft = document.querySelector('.carousel-arrow-left');
+    const carouselArrowRight = document.querySelector('.carousel-arrow-right');
+    carouselArrowLeft.addEventListener('click', handleArrowLeftClick);
+    carouselArrowRight.addEventListener('click', handleArrowRightClick);
+
+    // ... Your existing JavaScript code ...
+
+  </script>
+
+
+
+
   <script>
     const carouselSlides = document.querySelectorAll('.carousel-slide');
     const carouselDots = document.querySelectorAll('.carousel-dot');
     let currentIndex = 0;
-
+  
     // Function to show the current slide
     const showSlide = (index) => {
       carouselSlides.forEach((slide, slideIndex) => {
         slide.classList.toggle('active', slideIndex === index);
       });
     };
-
+  
     // Function to handle dot click
     const handleDotClick = (index) => {
       currentIndex = index;
       showSlide(currentIndex);
       updateActiveDot();
     };
-
+  
     // Function to update the active dot
     const updateActiveDot = () => {
       carouselDots.forEach((dot, dotIndex) => {
         dot.classList.toggle('active', dotIndex === currentIndex);
       });
     };
-
+  
+    // Function to move to the next slide
+    const moveToNextSlide = () => {
+      currentIndex = (currentIndex + 1) % carouselSlides.length;
+      showSlide(currentIndex);
+      updateActiveDot();
+    };
+  
     // Add click event listeners to dots
     carouselDots.forEach((dot, index) => {
       dot.addEventListener('click', () => handleDotClick(index));
     });
-
-    // Add click event listeners to slides
-    carouselSlides.forEach((slide, index) => {
-      const slideLink = slide.querySelector('a');
-      slideLink.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent the click event from bubbling up to the carousel container
-      });
-      slideLink.addEventListener('mousedown', () => {
-        currentIndex = index;
-        showSlide(currentIndex);
-        updateActiveDot();
-      });
-    });
-
+  
     // Set the initial slide and active dot
     showSlide(currentIndex);
     updateActiveDot();
+  
+    // Automatically move to the next slide every 3 seconds
+    setInterval(moveToNextSlide, 5000);
   </script>
+  
 
   <script>
     // Countdown timer
