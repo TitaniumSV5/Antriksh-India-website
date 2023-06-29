@@ -117,13 +117,16 @@ p{
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   
 }
 
 .image {
-  margin-top: 1%;
+  margin-top: 5%;
   height: 30%;
   display: flex;
+  margin-right: 10%;
 }
 
 
@@ -133,7 +136,6 @@ p{
   position: relative;
   z-index: 1;
   margin-top: 5%;
-  margin-left: 10%;
   
   
  
@@ -217,4 +219,106 @@ p{
     
 
   }
+
+  @media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
+  
+    .launch-name {
+      bottom: 10px;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 1%;
+      font-size: 30px;
+    }
+  
+    .ytlink {
+      margin-left: 2%;
+      margin-right: 2%;
+      padding: 2%;
+      padding-bottom: 1%;
+    }
+  
+    .ytlink a.button {
+      margin-top: 5%;
+      font-size: large;
+      margin-left: 35%;
+      padding: 2% 4%;
+    }
+  
+    .details-box {
+      margin-left: 2%;
+      margin-right: 2%;
+      padding: 4%;
+      padding-bottom: 3%;
+      font-size: 18px;
+    }
+  
+    h4 {
+      font-size: 30px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 2%;
+    }
+  
+    li {
+      font-size: 14px;
+      word-spacing: 3px;
+    }
+  
+    p {
+      margin-top: 2%;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image,
+  .specifications {
+    flex: 0 0 100%;
+  }
+
+
+  
+  
+    .image2 {
+      margin-left: 10%;
+      width: auto;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+  
+    .knowmore2 a.button {
+      margin-top: 5%;
+      font-size: large;
+      margin-left: 25%;
+      padding: 2% 4%;
+    }
+  
+    .spechead {
+      font-size: 30px;
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+  
+    .data {
+      font-size: 20px;
+      margin-top: 2%;
+      margin-left: 10%;
+      line-height: 20px;
+      margin-bottom: 3%;
+    }
+  
+    h6 {
+      font-size: 18px;
+      word-spacing: 2px;
+    }
+  }
+  
 
