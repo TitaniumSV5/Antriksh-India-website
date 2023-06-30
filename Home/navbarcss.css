@@ -1,4 +1,8 @@
 
+@font-face {
+  font-family: 'YourFont';
+  src: url('un.otf') format('opentype');
+}
 
 * {
   margin: 0;
@@ -12,11 +16,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 5%;
 }
 
 .logo img {
   max-width: 100%;
   height: auto;
+  margin-left: 2%;
+  margin-top: -4%;
 }
 
 .navbar {
