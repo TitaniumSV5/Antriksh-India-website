@@ -224,11 +224,11 @@ h6{
   /* Adjustments for mobile devices */
 
   .launch-name {
-    bottom: 10px;
+    bottom: 40px;
     margin-left: 5%;
     margin-right: 5%;
     padding: 1%;
-    font-size: 30px;
+    font-size: 10px;
   }
 
   .ytlink {
