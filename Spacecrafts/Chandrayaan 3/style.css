@@ -250,7 +250,7 @@ body {
     background: linear-gradient(to right, #000 30%, #0000FF);
     color: #fff;
     font-size: 18px;
-    height: 140vh;
+    height: 160vh;
     display: flex;
     flex-direction: column; /* Adjusted to stack the elements vertically */
   }
@@ -269,7 +269,7 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-    margin-left: 32px; 
+    margin-left: 25px; 
   }
   
   .second-page .info-box {

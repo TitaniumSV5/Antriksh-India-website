@@ -224,11 +224,11 @@ p{
     /* Adjustments for mobile devices */
   
     .launch-name {
-      bottom: 10px;
+      bottom: 40px; /* Adjust the value as needed */
       margin-left: 5%;
       margin-right: 5%;
       padding: 1%;
-      font-size: 30px;
+      font-size: 10px;
     }
   
     .ytlink {
