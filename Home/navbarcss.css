@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'YourFont';
-  src: url('un.otf') format('opentype');
-}
+
 
 * {
   margin: 0;
@@ -44,6 +41,7 @@
   position: relative;
   display: inline-block;
   margin: 0 20px;
+  font-weight: 700;
 }
 
 .navbar ul li a {
