@@ -294,6 +294,15 @@ color: white;
     
 
 @media (max-width: 767px) {
+
+
+  @font-face {
+    font-family: 'Cap';
+    src: url('Assets/gt.otf') format('opentype');
+  }
+
+
+
   body::after {
     background-attachment: scroll;
     text-transform: none;
@@ -303,10 +312,11 @@ color: white;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding-left: 0;
     width: 100%;
+    margin-bottom: 40%;
   }
 
   .launch-card {
-    height: auto;
+    height: max-content;
     width: 100%;
   }
 
@@ -338,7 +348,7 @@ color: white;
  
 
   .launch-caption {
-    font-size: 10px;
+    font-size: 25px;
     position: absolute;
     bottom: -10px;
     right: 10px;
@@ -363,19 +373,20 @@ color: white;
   }
 
   .launch-details p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'YourFont';
     text-transform: none;
   }
   
   .launch-caption p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 8px;
+    font-family: 'Cap';
     text-transform: none;
     
     
   }
   
   h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-family:  "sans-serif";
   
