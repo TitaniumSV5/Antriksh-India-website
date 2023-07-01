@@ -345,6 +345,7 @@ color: white;
     color: white;
     margin-top: 20%;
     text-transform: lowercase;
+    
     /* Add other styles for the caption text */
   }
   
@@ -369,6 +370,8 @@ color: white;
   .launch-caption p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: none;
+    
+    
   }
   
   h3 {
@@ -382,6 +385,7 @@ color: white;
     font-size: 10px;
     margin-bottom: 20%;
     text-transform: lowercase;
+    
   
   }
   
