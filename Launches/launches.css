@@ -294,24 +294,289 @@ color: white;
     
 
 @media (max-width: 767px) {
+
+
+  @font-face {
+    font-family: 'Cap';
+    src: url('Assets/gt.otf') format('opentype');
+  }
+
+
+
   body::after {
     background-attachment: scroll;
+    text-transform: none;
   }
 
   #launches {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding-left: 0;
     width: 100%;
+    margin-bottom: 40%;
   }
 
   .launch-card {
-    height: auto;
+    height: max-content;
     width: 100%;
   }
 
   .launch-card:hover {
     transform: none;
   }
+
+
+
+
+
+
+
+  
+
+  
+  h1 {
+    font-size: 24px;
+    font-family: 'YourFont';
+  
+  }
+  
+  main {
+    padding: 20px;
+    font-family: 'YourFont';
+  
+  }
+  
+ 
+
+  .launch-caption {
+    font-size: 25px;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    color: white;
+    margin-top: 20%;
+    text-transform: lowercase;
+    
+    /* Add other styles for the caption text */
+  }
+  
+  .launch-details {
+    font-size: 10px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'YourFont';
+  
+  }
+  
+  .launch-details h3
+  {
+    color: #fff;  
+  }
+
+  .launch-details p{
+    font-family: 'YourFont';
+    text-transform: none;
+  }
+  
+  .launch-caption p{
+    font-size: 8px;
+    font-family: 'Cap';
+    text-transform: none;
+    
+    
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family:  "sans-serif";
+  
+  }
+  
+  p {
+    font-size: 10px;
+    margin-bottom: 20%;
+    text-transform: lowercase;
+    
+  
+  }
+  
+  .launch-image img {
+    width: 100%;
+    height: auto;
+    font-family: 'YourFont';
+  
+  }
+  
+  .launch-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'YourFont';
+  }
+  
+  .launch-option {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .launch-option p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    font-family: 'YourFont';
+  }
+  
+  .active {
+    color: #0b7209;
+    text-decoration: underline;
+    font-family: 'YourFont';
+  }
+  
+  
+  .no-underline {
+    text-decoration: none;
+  }
+  
+  .launch-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    min-width: 120px;
+    top: 32px;
+    right: auto;
+    z-index: 2;
+  }
+  
+  .launch-option {
+    display: inline-block;
+    margin: 10px;
+    margin-top: -5%;
+  }
+  
+  .launch-option button {
+  border: none;
+  background: transparent; /* Set the background to transparent */
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 10px; /* Set the desired font size */
+  padding: 15px 20px;
+  
+  }
+  
+  .launch-option button.active {
+  background-color: rgba(125, 148, 138, 0.514); /* Set the background color when the button is active */
+  color: white;
+  }
+  
+  
+    .pagination-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      border: none;
+      background: transparent; /* Set the background to transparent */
+      color: white;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 20px; /* Set the desired font size */
+      padding: 15px 20px;
+      
+      
+    }
+  
+    .pagination-buttons button {
+      margin: 0 20px;
+      font-size: xx-large;
+      margin-bottom: 4%;
+      margin-top: 4%;
+      color:white;
+      background-color: rgb(73, 88, 82); /* Set the background color when the button is active */
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      border: none;
+    
+      
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 20px; /* Set the desired font size */
+      padding: 15px 20px;
+  
+    }
+  
+   
+    .success p.button {
+      font-size: 17px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: inline-block;
+      padding: 0.8% 0.8%;
+      background-color: rgb(38, 163, 38);
+      color: #ffffff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      border: 3px solid #ccc;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+  }
+  
+  .failure p.button {
+    font-size: 17px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 0.8% 0.8%;
+    background-color: rgb(184, 58, 58);
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .pfailure p.button {
+    font-size: 17px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 0.8% 0.8%;
+    background-color: rgb(192, 192, 56);
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+    
+
+
+
+
+
+
 }
 
     
