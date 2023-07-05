@@ -2,6 +2,14 @@
   font-family: 'YourFont';
   src: url('un.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Cap';
+  src: url('Assets/gt.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Buttons';
+  src: url('Assets/cooper-hewitt.semibold.otf') format('opentype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -91,6 +99,13 @@ main {
   color: white;
   /* Add other styles for the caption text */
 }
+.launch-caption p{
+  font-size: 20px;
+  font-family: 'Cap';
+  text-transform: none;
+  
+  
+}
 
 .launch-details {
   font-size: 10px;
@@ -100,23 +115,28 @@ main {
 
 }
 
-.launch-details h3,
+.launch-details h3
+{
+  color: #fff;
+  font-family: 'Buttons';
+
+
+}
 .launch-details p {
   color: #fff;
-  font-family: 'YourFont';
+  font-family: 'Buttons';
 
 }
 
 
 h3 {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 10px;
-  font-family:  "sans-serif";
 
 }
 
 p {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 5px;
   font-family: 'YourFont';
 
@@ -133,12 +153,13 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  font-family: 'YourFont';
+  font-family: 'Buttons';
 }
 
 .launch-option {
   flex: 1;
   text-align: center;
+  font-family: 'Buttons';
 }
 
 .launch-option p {
@@ -146,13 +167,13 @@ p {
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  font-family: 'YourFont';
+  font-family: 'Buttons';
 }
 
 .active {
   color: #0b7209;
   text-decoration: underline;
-  font-family: 'YourFont';
+  font-family: 'Buttons';
 }
 
 
@@ -177,6 +198,7 @@ p {
 .launch-option {
   display: inline-block;
   margin: 10px;
+  font-family: 'Buttons';
 }
 
 .launch-option button {
@@ -190,7 +212,8 @@ text-decoration: none;
 border-radius: 15px;
 font-size: 20px; /* Set the desired font size */
 padding: 15px 20px;
-
+font-family: 'Buttons';
+letter-spacing: 1px;
 }
 
 .launch-option button.active {
@@ -312,13 +335,21 @@ color: white;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding-left: 0;
     width: 100%;
-    margin-bottom: 40%;
   }
 
   .launch-card {
-    height: max-content;
-    width: 100%;
+    position: relative;
+    height: 80%;
+    width: 110%; /* Set the width to 90% of the container */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+    background-size: cover;
+    background-position: center;
+    font-family: 'YourFont';
+    transition: transform 0.3s;
   }
+  
 
   .launch-card:hover {
     transform: none;
@@ -373,7 +404,7 @@ color: white;
   }
 
   .launch-details p{
-    font-family: 'YourFont';
+    font-family: 'Buttons';
     text-transform: none;
   }
   
