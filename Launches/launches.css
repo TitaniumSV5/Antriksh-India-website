@@ -552,7 +552,7 @@ color: white;
   
    
     .success p.button {
-      font-size: 17px;
+      font-size: 10px;
       position: absolute;
       top: 20px;
       right: 20px;
@@ -569,7 +569,7 @@ color: white;
   }
   
   .failure p.button {
-    font-size: 17px;
+    font-size: 10px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -586,7 +586,7 @@ color: white;
   }
   
   .pfailure p.button {
-    font-size: 17px;
+    font-size: 10px;
     position: absolute;
     top: 20px;
     right: 20px;
