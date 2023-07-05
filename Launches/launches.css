@@ -327,7 +327,7 @@ color: white;
 
 
   body::after {
-    background-attachment: scroll;
+    background-attachment: fixed;
     text-transform: none;
   }
 
@@ -370,13 +370,7 @@ color: white;
   
   }
   
-  main {
-    padding: 20px;
-    font-family: 'YourFont';
-  
-  }
-  
- 
+
 
   .launch-caption {
     font-size: 25px;
@@ -521,15 +515,16 @@ color: white;
       padding: 10px;
       text-decoration: none;
       border-radius: 15px;
-      font-size: 20px; /* Set the desired font size */
+      font-size: 10px; /* Set the desired font size */
       padding: 15px 20px;
+      font-family: 'Buttons';
       
       
     }
   
     .pagination-buttons button {
       margin: 0 20px;
-      font-size: xx-large;
+      font-size: 10px;
       margin-bottom: 4%;
       margin-top: 4%;
       color:white;
@@ -538,21 +533,22 @@ color: white;
       justify-content: center;
       margin-top: 20px;
       border: none;
-    
+      font-family: 'Buttons';
+
       
       outline: none;
       cursor: pointer;
       padding: 10px;
       text-decoration: none;
       border-radius: 15px;
-      font-size: 20px; /* Set the desired font size */
+      font-size: 10px; /* Set the desired font size */
       padding: 15px 20px;
   
     }
   
    
     .success p.button {
-      font-size: 10px;
+      font-size: 8px;
       position: absolute;
       top: 20px;
       right: 20px;
@@ -569,7 +565,7 @@ color: white;
   }
   
   .failure p.button {
-    font-size: 10px;
+    font-size: 8px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -586,7 +582,7 @@ color: white;
   }
   
   .pfailure p.button {
-    font-size: 10px;
+    font-size: 8px;
     position: absolute;
     top: 20px;
     right: 20px;
