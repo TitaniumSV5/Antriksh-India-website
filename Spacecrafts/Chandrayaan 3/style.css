@@ -101,7 +101,7 @@ body {
 }
 
 .second-page .cy3-image {
-  flex: 0.4;
+  flex: 0.36;
   max-width: 100%;
   height: auto;
 }
@@ -134,7 +134,6 @@ body {
 
 /* Third Page Styling */
 .third-page {
-  background-image: url('Assets/propulsion.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
