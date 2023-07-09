@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="../Home/navbarcss.css">
   <script src="header.js"></script>
   <style>
+
+@font-face {
+  font-family: 'Cap';
+  src: url('../Launches/Assets/gt.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Buttons';
+  src: url('../Launches/Assets/cooper-hewitt.semibold.otf') format('opentype');
+}
+
+
     body {
       position: relative; /* Add this line */
     }
@@ -77,6 +88,7 @@ body::after {
   margin-top: 3%;
   margin-left: 5%;
   margin-right: 10%;
+  
 }
 
     .card-content {
@@ -85,6 +97,14 @@ body::after {
       text-align: center;
     }
 
+    .card-content h3{
+      font-family: 'Buttons';
+      font-size: 25px;
+    }
+    .card-content p{
+      font-family: 'Buttons';
+      font-size: 20px;
+    }
     /* Add this CSS for hover effect */
     .card:hover {
       transform: scale(1.1);
@@ -93,6 +113,14 @@ body::after {
     @media (max-width: 768px) {
       body {
       position: relative; /* Add this line */
+    }
+    .card-content h3{
+      font-family: 'Buttons';
+      font-size: 25px;
+    }
+    .card-content p{
+      font-family: 'Buttons';
+      font-size: 20px;
     }
 
 
