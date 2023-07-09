@@ -150,6 +150,7 @@ body {
 }
 .second-page h1{
   font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
 }
 
 
@@ -164,7 +165,10 @@ body {
   align-items: center; /* Add this line to vertically center the content */
   justify-content: center; /* Adjusted to center content horizontally */
 }
-
+.third-page h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
 .third-page .content-wrapper {
   display: flex;
   align-items: center;
@@ -184,18 +188,24 @@ body {
 
 .third-page .info-box .heading {
   text-align: center;
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-size: 60px;
+  margin-bottom: 8%;
+  margin-top: -2%;
+  
 }
 
 .third-page .info-box .info {
-  font-size: 20px;
-  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-family: 'Buttons';
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .third-page .info-box .info span {
-  font-weight: bold; /* Add this line to make the text before the dash bold */
+  font-weight: bolder;
+  font-family: 'Buttons'; 
+  font-size: 30px;
+  line-height: 25px;
 }
 
 .text-container {
@@ -203,16 +213,17 @@ body {
       color: white;
       padding: 20px;
       flex: 2;
-      border-radius: 10px; /* Adjust the border radius value as needed */
     }
     
     
     .text-container h2 {
+      margin-top: 5%;
       font-size: 40px; /* Adjust the value to increase or decrease the heading size */
     }
 
     .text-container p {
       font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
+      margin-bottom: 20%;
     }
 
 
