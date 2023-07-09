@@ -20,50 +20,77 @@
   <div class="container">
     <div class="center-container">
       <div class="carousel-container">
-        <div class="carousel-arrow carousel-arrow-left"><-</div>
-        <div class="carousel-arrow carousel-arrow-right">-></div>
-
-        <div class="carousel">
-          <div class="carousel-slide">
-            <a href="../Launches/Past Launch Pages/@87_GSLV-F12.html">
-              <img src="Assets/f12.jpg" alt="GSLV F12/NVS-01 Mission">
-              <div class="caption-overlay">
-                <div class="carousel-caption">GSLV F12/NVS-01 successfully launched</div>
+        
+        
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                   class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                   class="carousel__next">Go to next slide</a>
               </div>
-            </a>
-          </div>
-
-          <div class="carousel-slide">
-            <a href="../Spacecrafts/Chandrayaan 3/cy3.html">
-              <img src="cy3sp.jpg" alt="Chandrayaan-3">
-              <div class="caption-overlay">
-                <div class="carousel-caption">Chandrayaan-3</div>
-              </div>
-            </a>
-          </div>
-
-          <div class="carousel-slide">
-            <a href="../Launches/Upcoming Launch Pages/@89_PSLV-C56.html">
-              <img src="Assets/pslvql.jpg" alt="PSLV C56 Coming SOON">
-              <div class="caption-overlay">
-                <div class="carousel-caption">PSLV C56 Coming SOON</div>
-              </div>
-            </a>
-          </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1"
+                 class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide3"
+                 class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2"
+                 class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide4"
+                 class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3"
+                 class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide1"
+                 class="carousel__next">Go to first slide</a>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                   class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                   class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                   class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                   class="carousel__navigation-button">Go to slide 4</a>
+              </li>
+            </ol>
+          </aside>
+        </section>
         </div>
-      </div>
-      <div class="carousel-dots">
-        <div class="carousel-dot active"></div>
-        <div class="carousel-dot"></div>
-        <div class="carousel-dot"></div>
-      </div>
-    </div>
+        </div>
 
     <div class="right-container">
       <div class="countdown-container">
         <h2 class="countdown-title">LVM3/Chandrayaan-3 Launch</h2>
         <div class="countdown-timer" id="countdown-timer"></div>
-        <a href="../Launches/Upcoming Launch Pages/@88_LVM3-M4.html">
+        <a href="../Launches/Upcoming%20Launch%20Pages/@88_LVM3-M4.html">
           <div class="countdown-box-clickable">
             <!-- Countdown box clickable content here -->
             <p>Know More</p>
@@ -97,13 +124,13 @@
     <h3 class="quick-links-title">Quick Links</h3>
     <div class="quick-links">
       <div class="quick-link-card">
-        <a href="../Spacecrafts/Chandrayaan 3/cy3.html">
+        <a href="../Spacecrafts/Chandrayaan%203/cy3.html">
           <img src="cy3sp.jpg" alt="Chandrayaan-3">
           <div class="quick-link-caption">Chandrayaan-3</div>
         </a>
       </div>
       <div class="quick-link-card">
-        <a href="../Launches/Upcoming Launch Pages/@88_LVM3-M4.html">
+        <a href="../Launches/Upcoming%20Launch%20Pages/@88_LVM3-M4.html">
           <img src="lvm3.jpg" alt="LVM3">
           <div class="quick-link-caption">LVM3</div>
         </a>
@@ -125,91 +152,10 @@
     <a href="../Extras/About.html" class="no-underline"><h3>About</h3></a>
     <a href="../Extras/WIP.html" class="no-underline"><h3>Twitter</h3></a>
     <a href="../Extras/WIP.html" class="no-underline"><h3>Instagram</h3></a>
-    <a href="../Extras/Privacy Policy.html" class="no-underline"><h3>Privacy Policy</h3></a>
-    <a href="../Extras/Content use policy.html" class="no-underline"><h3>Content use Policy</h3></a>
+    <a href="../Extras/Privacy%20Policy.html" class="no-underline"><h3>Privacy Policy</h3></a>
+    <a href="../Extras/Content%20use%20policy.html" class="no-underline"><h3>Content use Policy</h3></a>
   </div>
 
-
-
-
-
-
-
-  <script>
-    // ... Arrow keys ...
-
-    // Function to handle arrow click for moving to the previous slide
-    const handleArrowLeftClick = () => {
-      currentIndex = (currentIndex - 1 + carouselSlides.length) % carouselSlides.length;
-      showSlide(currentIndex);
-      updateActiveDot();
-    };
-
-    // Function to handle arrow click for moving to the next slide
-    const handleArrowRightClick = () => {
-      currentIndex = (currentIndex + 1) % carouselSlides.length;
-      showSlide(currentIndex);
-      updateActiveDot();
-    };
-
-    // Add click event listeners to arrow buttons
-    const carouselArrowLeft = document.querySelector('.carousel-arrow-left');
-    const carouselArrowRight = document.querySelector('.carousel-arrow-right');
-    carouselArrowLeft.addEventListener('click', handleArrowLeftClick);
-    carouselArrowRight.addEventListener('click', handleArrowRightClick);
-
-    // ... Your existing JavaScript code ...
-
-  </script>
-
-
-
-
-  <script>
-    const carouselSlides = document.querySelectorAll('.carousel-slide');
-    const carouselDots = document.querySelectorAll('.carousel-dot');
-    let currentIndex = 0;
-  
-    // Function to show the current slide
-    const showSlide = (index) => {
-      carouselSlides.forEach((slide, slideIndex) => {
-        slide.classList.toggle('active', slideIndex === index);
-      });
-    };
-  
-    // Function to handle dot click
-    const handleDotClick = (index) => {
-      currentIndex = index;
-      showSlide(currentIndex);
-      updateActiveDot();
-    };
-  
-    // Function to update the active dot
-    const updateActiveDot = () => {
-      carouselDots.forEach((dot, dotIndex) => {
-        dot.classList.toggle('active', dotIndex === currentIndex);
-      });
-    };
-  
-    // Function to move to the next slide
-    const moveToNextSlide = () => {
-      currentIndex = (currentIndex + 1) % carouselSlides.length;
-      showSlide(currentIndex);
-      updateActiveDot();
-    };
-  
-    // Add click event listeners to dots
-    carouselDots.forEach((dot, index) => {
-      dot.addEventListener('click', () => handleDotClick(index));
-    });
-  
-    // Set the initial slide and active dot
-    showSlide(currentIndex);
-    updateActiveDot();
-  
-    // Automatically move to the next slide every 3 seconds
-    setInterval(moveToNextSlide, 5000);
-  </script>
   
 
   <script>
@@ -241,8 +187,6 @@
       countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }, 1000);
   </script>
-
-
 
 </body>
 
