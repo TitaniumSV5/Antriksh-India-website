@@ -1,4 +1,15 @@
 /* First Page Styling */
+
+@font-face {
+  font-family: 'Countdown';
+  src: url('Assets/open-sans.extrabold.ttf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Buttons';
+  src: url('Assets/cooper-hewitt.semibold.otf') format('opentype');
+}
 body {
   margin: 0;
   padding: 0;
@@ -25,8 +36,9 @@ body {
 }
 
 .countdown-text {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 20px;
+  font-family: 'Countdown';
 }
 
 .countdown-numbers {
@@ -43,14 +55,15 @@ body {
 }
 
 .number {
-  font-size: 96px;
+  font-size: 105px;
   padding: 0 10px;
   width: 140px;
   text-align: center;
 }
 
 .label {
-  font-size: 18px;
+  font-size: 25px;
+  font-family: 'Countdown';
   margin-top: 10px;
 }
 
@@ -87,7 +100,7 @@ body {
   background: linear-gradient(to right, #000 30%, #0000FF);
   color: #fff;
   font-size: 18px;
-  height: 100vh;
+  height: 100%;
 }
 
 .second-page .content-wrapper {
@@ -117,19 +130,28 @@ body {
 
 .second-page .info-box .heading {
   text-align: center;
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-size: 60px;
+  margin-bottom: 8%;
+  margin-top: -6%;
+  
 }
 
 .second-page .info-box .info {
-  font-size: 20px;
-  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-family: 'Buttons';
   margin-bottom: 20px;
 }
 
 .second-page .info-box .info span {
-  font-weight: bold; /* Add this line to make the text before the dash bold */
+  font-weight: bolder;
+  font-family: 'Buttons'; 
+  font-size: 30px;
+  line-height: 25px;
 }
+.second-page h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 
 /* Third Page Styling */
