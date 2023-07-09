@@ -10,6 +10,10 @@
   font-family: 'Buttons';
   src: url('Assets/cooper-hewitt.semibold.otf') format('opentype');
 }
+@font-face {
+  font-family: 'About';
+  src: url('../Assets/open-sans.light.ttf') format('opentype');
+}
 body {
   margin: 0;
   padding: 0;
@@ -208,23 +212,116 @@ body {
   line-height: 25px;
 }
 
-.text-container {
-      background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity value as needed */
-      color: white;
-      padding: 20px;
-      flex: 2;
-    }
-    
-    
-    .text-container h2 {
-      margin-top: 5%;
-      font-size: 40px; /* Adjust the value to increase or decrease the heading size */
-    }
 
-    .text-container p {
-      font-size: 18px; /* Adjust the value to increase or decrease the paragraph text size */
-      margin-bottom: 20%;
+    
+    
+
+
+
+    body{
+      background-image: url('../../Rockets/PSLV/Assets/pslvbg.jpg');
     }
+.details-box{
+
+  background-color: #1a1916e1;
+  position: relative;
+  z-index: 1;
+  margin-top: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 5%;
+  padding: 6%;
+  padding-bottom: 5%;
+  border: 4px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);   
+  
+}
+
+.details-box h2{
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: -5%;
+  margin-bottom: 7%;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+.details-box h3{
+  font-size: 40px;
+  color: aliceblue;
+  margin-top: -5%;
+  margin-bottom: 7%;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+.details-box h5{
+    margin-top: 5%;
+    font-family: 'About';
+    font-size: 22px;
+    word-spacing: 5px;
+    text-align: justify;
+    line-height: 40px;
+    color: aliceblue;
+  }
+  .details-box h6{
+    margin-left: 8%;
+    font-family: 'About';
+    font-size: 22px;
+    word-spacing: 5px;
+    text-align: justify;
+    line-height: 40px;
+    color: aliceblue;
+  }
+  i{
+    margin-top: 5%;
+    font-family: 'About';
+    font-size: 22px;
+    word-spacing: 5px;
+    text-align: justify;
+    line-height: 40px;
+    color: aliceblue;
+    
+  }
+  .details-box li{
+    
+    font-family: 'About';
+    font-size: 22px;
+    word-spacing: 5px;
+    text-align: justify;
+    line-height: 40px;
+    color: aliceblue;
+  }
+  
+    
+.solid-line {
+   margin-top: -5%;
+   border-top: 2px solid rgb(127, 102, 102);
+   margin-bottom: 10%;
+  }
+
+  .solid-line2 {
+    margin-top: 8%;
+    border-top: 2px solid rgb(127, 102, 102);
+    margin-bottom: 10%;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* Mobile Styles */
