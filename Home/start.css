@@ -392,6 +392,11 @@ color: white;
       transition: transform 0.1s;
     }
     
+    .carousel__navigation-list .carousel__navigation-item .carousel__navigation-button.active {
+      background-color: #ffffff; /* Change this to the desired active color */
+    }
+    
+    
     .carousel::before,
     .carousel::after,
     .carousel__prev,

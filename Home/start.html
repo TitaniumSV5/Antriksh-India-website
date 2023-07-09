@@ -22,8 +22,7 @@
       <div class="carousel-container">
         <section class="carousel" aria-label="Gallery">
           <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-              <a href="../Launches/Past%20Launch%20Pages/@87_GSLV-F12.html">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">              <a href="../Launches/Past%20Launch%20Pages/@87_GSLV-F12.html">
                 <div class="carousel__snapper">
                   <div class="carousel__prev">Go to last slide</div>
                   <div class="carousel__next">Go to next slide</div>
@@ -54,7 +53,7 @@
           <aside class="carousel__navigation">
             <ol class="carousel__navigation-list">
               <li class="carousel__navigation-item">
-                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                <a href="#carousel__slide1" class="carousel__navigation-button active">Go to slide 1</a>
               </li>
               <li class="carousel__navigation-item">
                 <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
@@ -139,7 +138,27 @@
   </div>
 
   
+<script>
+  // JavaScript code
+const navigationButtons = document.querySelectorAll('.carousel__navigation-button');
 
+// Add click event listeners to the navigation buttons
+navigationButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    // Remove the active class from all buttons
+    navigationButtons.forEach(btn => btn.classList.remove('active'));
+
+    // Add the active class to the clicked button
+    button.classList.add('active');
+
+    // Update the active slide
+    const slides = document.querySelectorAll('.carousel__slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  });
+});
+
+</script>
   <script>
     // Countdown timer
     const countdownTimer = document.getElementById('countdown-timer');
