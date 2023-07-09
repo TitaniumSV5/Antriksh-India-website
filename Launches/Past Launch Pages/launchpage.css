@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: 'Buttons';
+  src: url('../Assets/cooper-hewitt.semibold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'About';
+  src: url('../Assets/open-sans.light.ttf') format('opentype');
+}
 body {
   position: relative; /* Add this line */
 }
@@ -35,23 +42,6 @@ body::after {
   text-align: center;
 }
 
-.ytlink {
-  position: relative;
-  z-index: 1;
-  margin-top: 5%;
-  margin-left: 4%;
-  margin-right: 4%;
-  padding: 6%;
-  padding-bottom: 2%;
-
-
-  border: 4px solid #ccc;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
-  background-image: url('../Assets/gs1.jpg');
-  background-size: cover;
-}
-
 .ytlink a.button {
 margin-top: 10%;
 font-size: x-large;
@@ -65,6 +55,7 @@ transition: background-color 0.3s ease;
 border: 4px solid #ccc;
 border-radius: 20px;
 box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+font-family: 'Buttons';
 
 }
 
@@ -181,6 +172,7 @@ transition: background-color 0.3s ease;
 border: 4px solid #ccc;
 border-radius: 20px;
 box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+font-family: 'Buttons';
 
 }
 
@@ -191,7 +183,6 @@ color: #fff;
 
 .image2{
 margin-left: 10%;
-width: 80%;
 margin-top: 2%;
 margin-bottom: 2%;
 }
@@ -209,6 +200,7 @@ transition: background-color 0.3s ease;
 border: 4px solid #ccc;
 border-radius: 20px;
 box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+font-family: 'Buttons';
 
 }
 
@@ -242,6 +234,15 @@ h6{
 }
 
 @media only screen and (max-width: 600px) {
+
+  @font-face {
+    font-family: 'Buttons';
+    src: url('../Assets/cooper-hewitt.semibold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'About';
+    src: url('../Assets/open-sans.light.ttf') format('opentype');
+  }
   /* Adjustments for mobile devices */
 
   .launch-name {
@@ -260,10 +261,18 @@ h6{
   }
 
   .ytlink a.button {
-    margin-top: 5%;
-    font-size: large;
-    margin-left: 35%;
+    margin-top: 15%;
+    font-size: 10px;
+    margin-left: 40%;
     padding: 2% 4%;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+    font-family: 'Buttons';
   }
 
   .details-box {
@@ -279,31 +288,37 @@ h6{
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 0px;
     line-height: 30px;
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-left: 5%;
   }
 
   li {
-    font-size: 14px;
+    font-size: 16px;
     word-spacing: 3px;
   }
 
   p {
-    margin-top: 2%;
-    font-size: 16px;
-    line-height: 30px;
+    margin-top: 7%;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'About';
+  }
+  .spechead li{
+    font-size: 20px;
+    margin-left: 5%;
   }
 
-  .container {
-    flex-direction: column;
-    align-items: center;
+  
+  
+  .data{
+    font-size: 30px;
+    margin-top: 4%;
+    margin-left: 5%;
+    line-height: 22px;
+    margin-bottom: 5%;
   }
-
-  .image,
-.specifications {
-  flex: 0 0 100%;
-}
 
 
 
@@ -317,29 +332,26 @@ h6{
 
   .knowmore2 a.button {
     margin-top: 5%;
-    font-size: large;
-    margin-left: 25%;
+    font-size: 10px;
+    margin-left: 40%;
     padding: 2% 4%;
+    padding: 2% 4%;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);
+    font-family: 'Buttons';
   }
 
-  .spechead {
-    font-size: 30px;
-    margin-top: 5%;
-    margin-left: 5%;
-  }
-
-  .data {
-    font-size: 20px;
-    margin-top: 2%;
-    margin-left: 10%;
-    line-height: 20px;
-    margin-bottom: 3%;
-  }
 
   h6 {
-    font-size: 18px;
+    font-size: 13px;
     word-spacing: 2px;
   }
+
 }
 
 
