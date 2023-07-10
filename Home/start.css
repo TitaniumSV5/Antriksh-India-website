@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: 'quote';
-  src: url('Assets/beyond-wonderland.regular.ttf') format('opentype');
+  src: url('Assets/blackchancery.regular.ttf') format('opentype');
 }
 
 body {
@@ -499,7 +499,7 @@ font-family: 'Buttons';
       background-color: #1a1916e1;
       position: relative;
       z-index: 1;
-      margin-top: -5%;
+      margin-top: -1%;
       margin-left: 4%;
       margin-right: 4%;
       margin-bottom: 1%;
@@ -518,7 +518,7 @@ font-family: 'Buttons';
     }
 
     .quote p{
-      font-size: 48px;
+      font-size: 250%;
       text-align: justify;
       font-family: 'quote';
       margin-right: 15%;
