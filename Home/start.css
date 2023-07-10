@@ -1,15 +1,34 @@
+@font-face {
+  font-family: 'Buttons';
+  src: url('../Launches/Assets/cooper-hewitt.semibold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'About';
+  src: url('../Assets/open-sans.light.ttf') format('opentype');
+}
+
 body {
-    background-image: url('Assets/image1.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center -50px;
-    margin: 0;
-    padding: 0;
-  }
+  position: relative; /* Add this line */
+}
+body::after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Assets/image1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
 
   .container {
     display: flex;
-    margin-top: 4%;
+    margin-top: 1%;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -20,35 +39,49 @@ body {
   }
 
   .countdown-container {
-background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
-border-radius: 10px;
-padding: 20px;
-margin-bottom: 20px;
-z-index: 1; /* Add higher z-index value */
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
+    border-radius: 10px;
+    height: 20%;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 1; /* Add higher z-index value */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
   .countdown-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-family: 'Buttons';
+    font-size: 30px;
 
   }
 
   .countdown-timer {
     font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Buttons';
+    margin-bottom: 3%;
+    word-spacing: 10px;
+
+  }
+
+  .countdown-container p{
+    color: rgb(209, 209, 119);
+    font-family: 'Buttons';
+
   }
 
   .updates-container {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 20px;
-    height: 250px;
+    height: 42%;
   }
+
+
 
   .countdown-title,
   .countdown-timer,
@@ -59,8 +92,10 @@ text-align: center;
 
 
   .updates-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-family: 'Buttons';
+    text-align: center;
   }
 
   .updates-scroll {
@@ -77,11 +112,13 @@ text-align: center;
   .update img {
     width: 100px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 10%;
   }
 
   .update-description {
     margin: 0;
+    font-family: 'Buttons';
+    font-size: 20px;
   }
 
   .carousel-container:hover {
@@ -99,7 +136,7 @@ text-align: center;
   }
 
   .carousel-container {
-    height: 100%;
+    height: 65%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -133,7 +170,7 @@ text-align: center;
 
 
 .quick-links-container {
-margin-top: 7%;
+margin-top: -10%;
 margin-left: 4%;
 margin-bottom: 5%;
 
@@ -210,7 +247,6 @@ color: white;
 
 
 
-
     @keyframes tonext {
       75% {
         left: 0;
@@ -256,13 +292,7 @@ color: white;
       }
     }
     
-    body {
-      max-width: 37.5rem;
-      margin: 0 auto;
-      padding: 0 1.25rem;
-      font-family: 'Lato', sans-serif;
-    }
-    
+
     * {
       box-sizing: border-box;
       scrollbar-color: transparent transparent; /* thumb and track color */
