@@ -21,61 +21,65 @@
   <div class="container">
     <div class="center-container">
 
-      <div class="carousel-container">
-        
-        <section class="carousel" aria-label="Gallery">
-          <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">              
-              <a href="../Launches/Past%20Launch%20Pages/@87_GSLV-F12.html">
-                <div class="carousel__snapper">
-                  <div class="carousel__prev">Go to last slide</div>
-                  <div class="carousel__next">Go to next slide</div>
+      
+        <div class="w3-content w3-display-container">
+            <section class="carousel" aria-label="Gallery">
+                <img class="w3-display-container mySlides" src="Assets/ql1.jpg" style="width: 100%;">
+                <img class="w3-display-container mySlides" src="Assets/ql2.jpg" style="width: 100%;">
+                <img class="w3-display-container mySlides" src="Assets/ql3.jpg" style="width: 100%;">
+                <img class="w3-display-container mySlides" src="Assets/ql4.jpg" style="width: 100%;">
+                <button class="w3-button w3-display-left" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusSlides(+1)">&#10095;</button>
+            </section>
+            <!-- Slideshow Indicators -->
+            <div class="w3-center">
+                <div class="w3-section">
+                    <button class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(1)"></button>
+                    <button class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(2)"></button>
+                    <button class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(3)"></button>
+                    <button class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(4)"></button>
                 </div>
-              </a>
-            </li>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            // Function for Slideshow indicators
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            // Function to display slides
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) { slideIndex = 1; }
+              if (n < 1) { slideIndex = slides.length; }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+            }
+              
+            // Automatic slideshow
+            setInterval(function() {
+              plusSlides(1);
+            }, 5000); // Change slide every 5 seconds
+            </script>
 
-
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <a href="../Spacecrafts/Chandrayaan%203/cy3.html">
-                <div class="carousel__snapper"></div>
-                <div class="carousel__prev">Go to previous slide</div>
-                <div class="carousel__next">Go to next slide</div>
-              </a>
-            </li>
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-              <a href="../Launches/Upcoming%20Launch%20Pages/@89_PSLV-C56.html">
-                <div class="carousel__snapper"></div>
-                <div class="carousel__prev">Go to previous slide</div>
-                <div class="carousel__next">Go to next slide</div>
-              </a>
-            </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <div class="carousel__prev">Go to previous slide</div>
-                <div class="carousel__next">Go to first slide</div>
-              </div>
-            </li>
-          </ol>
-          <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide1" class="carousel__navigation-button active">Go to slide 1</a>
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-              </li>
-            </ol>
-          </aside>
-        </section>
-
-
-      </div>
     </div>
 
     <div class="right-container">
