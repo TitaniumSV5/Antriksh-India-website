@@ -502,15 +502,19 @@ font-family: 'Buttons';
       margin-top: -5%;
       margin-left: 4%;
       margin-right: 4%;
-      margin-bottom: 5%;
+      margin-bottom: 1%;
       padding: 6%;
-      padding-bottom: 5%;
+      padding-bottom: 4%;
       border: 4px solid #000000;
       border-radius: 20px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);   
 
-      display: flex;
       
+      
+    }
+
+    .quote .container{
+      display: flex;
     }
 
     .quote p{
@@ -526,4 +530,19 @@ font-family: 'Buttons';
     .quote img{
       margin-right: 5%;
     }
- 
+
+    .capt h1{
+      font-size: 30px;
+      margin-left: 73%;
+      margin-top: 2%;
+      align-items: center;
+      color: aliceblue;
+      font-family: 'Buttons';
+    }
+    .capt h2{
+      font-size: 25px;
+      margin-left: 72%;
+      align-items: center;
+      color: aliceblue;
+      font-family: 'Buttons';
+    }
