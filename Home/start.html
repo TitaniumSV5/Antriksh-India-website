@@ -19,16 +19,21 @@
 
   <div class="container">
     <div class="center-container">
+
       <div class="carousel-container">
+        
         <section class="carousel" aria-label="Gallery">
           <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">              <a href="../Launches/Past%20Launch%20Pages/@87_GSLV-F12.html">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">              
+              <a href="../Launches/Past%20Launch%20Pages/@87_GSLV-F12.html">
                 <div class="carousel__snapper">
                   <div class="carousel__prev">Go to last slide</div>
                   <div class="carousel__next">Go to next slide</div>
                 </div>
               </a>
             </li>
+
+
             <li id="carousel__slide2" tabindex="0" class="carousel__slide">
               <a href="../Spacecrafts/Chandrayaan%203/cy3.html">
                 <div class="carousel__snapper"></div>
@@ -67,6 +72,8 @@
             </ol>
           </aside>
         </section>
+
+
       </div>
     </div>
 
@@ -138,25 +145,27 @@
   </div>
 
   
-<script>
-  // JavaScript code
-const navigationButtons = document.querySelectorAll('.carousel__navigation-button');
 
-// Add click event listeners to the navigation buttons
+
+
+<script>
+const navigationButtons = document.querySelectorAll('.carousel__navigation-button');
+const indicators = document.querySelectorAll('.carousel__indicator');
+
 navigationButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    // Remove the active class from all buttons
     navigationButtons.forEach(btn => btn.classList.remove('active'));
-
-    // Add the active class to the clicked button
     button.classList.add('active');
 
-    // Update the active slide
     const slides = document.querySelectorAll('.carousel__slide');
     slides.forEach(slide => slide.classList.remove('active'));
     slides[index].classList.add('active');
+
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    indicators[index].classList.add('active');
   });
 });
+
 
 </script>
   <script>
