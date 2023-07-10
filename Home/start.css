@@ -8,13 +8,23 @@
 }
 
 body {
-    background-image: url('Assets/image1.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center -50px;
-    margin: 0;
-    padding: 0;
-  }
+  position: relative; /* Add this line */
+}
+body::after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Assets/image1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
 
   .container {
     display: flex;
@@ -54,6 +64,7 @@ body {
     text-transform: uppercase;
     font-family: 'Buttons';
     margin-bottom: 3%;
+    word-spacing: 10px;
 
   }
 
