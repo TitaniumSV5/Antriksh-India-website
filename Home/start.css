@@ -145,8 +145,8 @@ body::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     border-radius: 10px;
+    overflow: hidden;
     transition: transform 0.3s;
   }
   
@@ -157,7 +157,10 @@ body::after {
     height: 100%;
     display: flex;
     position: relative;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
   }
+  
 
 
 
@@ -340,12 +343,7 @@ font-family: 'Buttons';
       padding: 0;
     }
     
-    .carousel {
-      position: relative;
-      padding-top: 75%;
-      filter: drop-shadow(0 0 10px #0003);
-      perspective: 100px;
-    }
+   
     
     .carousel__viewport {
       position: absolute;

@@ -8,6 +8,35 @@
   <link rel="stylesheet" href="navbarcss.css">
   <link rel="stylesheet" href="start.css ">
   <script src="header.js"></script>
+
+  <style>
+    .carousel__slide {
+      position: relative;
+    }
+
+    .carousel__image {
+      max-height: 100%;
+      width: auto;
+    }
+
+    .carousel__text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      width: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s ease-in-out;
+    }
+
+    .carousel__slide:hover .carousel__text {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,18 +50,24 @@
     <div class="center-container">
 
       <div class="carousel-container">
-        
+
         <section class="carousel" aria-label="Gallery">
           <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">              
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">
               <a href="../Launches/Past%20Launch%20Pages/@87_GSLV-F12.html">
                 <div class="carousel__snapper">
                   <div class="carousel__prev">Go to last slide</div>
                   <div class="carousel__next">Go to next slide</div>
                 </div>
               </a>
+              <div class="carousel__image">
+                <img src="slide1-image.jpg" alt="Slide 1 Image">
+              </div>
+              <div class="carousel__text">
+                <h3>Slide 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </li>
-
 
             <li id="carousel__slide2" tabindex="0" class="carousel__slide">
               <a href="../Spacecrafts/Chandrayaan%203/cy3.html">
@@ -40,18 +75,41 @@
                 <div class="carousel__prev">Go to previous slide</div>
                 <div class="carousel__next">Go to next slide</div>
               </a>
+              <div class="carousel__image">
+                <img src="slide2-image.jpg" alt="Slide 2 Image">
+              </div>
+              <div class="carousel__text">
+                <h3>Slide 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </li>
+
             <li id="carousel__slide3" tabindex="0" class="carousel__slide">
               <a href="../Launches/Upcoming%20Launch%20Pages/@89_PSLV-C56.html">
                 <div class="carousel__snapper"></div>
                 <div class="carousel__prev">Go to previous slide</div>
                 <div class="carousel__next">Go to next slide</div>
               </a>
+              <div class="carousel__image">
+                <img src="slide3-image.jpg" alt="Slide 3 Image">
+              </div>
+              <div class="carousel__text">
+                <h3>Slide 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
             </li>
+
             <li id="carousel__slide4" tabindex="0" class="carousel__slide">
               <div class="carousel__snapper">
                 <div class="carousel__prev">Go to previous slide</div>
                 <div class="carousel__next">Go to first slide</div>
+              </div>
+              <div class="carousel__image">
+                <img src="slide4-image.jpg" alt="Slide 4 Image">
+              </div>
+              <div class="carousel__text">
+                <h3>Slide 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
           </ol>
@@ -71,11 +129,11 @@
               </li>
             </ol>
           </aside>
-          
-
+        </section>
 
       </div>
     </div>
+
 
     <div class="right-container">
       <div class="countdown-container">
