@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Buttons';
+  src: url('../Launches/Assets/cooper-hewitt.semibold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'About';
+  src: url('../Assets/open-sans.light.ttf') format('opentype');
+}
+
 body {
     background-image: url('Assets/image1.png');
     background-size: cover;
@@ -35,21 +44,33 @@ body {
 
 
   .countdown-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-family: 'Buttons';
+    font-size: 30px;
 
   }
 
   .countdown-timer {
     font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Buttons';
+    margin-bottom: 3%;
+
+  }
+
+  .countdown-container p{
+    color: rgb(209, 209, 119);
+    font-family: 'Buttons';
+
   }
 
   .updates-container {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 20px;
-    height: 43%;
+    height: 42%;
   }
+
+
 
   .countdown-title,
   .countdown-timer,
@@ -60,8 +81,10 @@ body {
 
 
   .updates-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-family: 'Buttons';
+    text-align: center;
   }
 
   .updates-scroll {
@@ -78,11 +101,13 @@ body {
   .update img {
     width: 100px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 10%;
   }
 
   .update-description {
     margin: 0;
+    font-family: 'Buttons';
+    font-size: 20px;
   }
 
   .carousel-container:hover {
@@ -134,7 +159,7 @@ body {
 
 
 .quick-links-container {
-margin-top: 7%;
+margin-top: -10%;
 margin-left: 4%;
 margin-bottom: 5%;
 
