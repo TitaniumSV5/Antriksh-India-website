@@ -273,6 +273,21 @@ body {
     line-height: 40px;
     color: aliceblue;
   }
+
+  .details-box h4{
+    display: inline-flex;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: -5%;
+    font-family: 'About';
+    font-size: 22px;
+    word-spacing: 5px;
+    text-align: justify;
+    line-height: 40px;
+    color: aliceblue;
+  }
+
+
   i{
     margin-top: 5%;
     font-family: 'About';
@@ -462,3 +477,22 @@ body {
   margin-left: 10%;
   margin-right: 0%;
 }
+
+.img2 img{
+  margin-left: 30%;
+  margin-top: -10%;
+}
+
+
+.img3 {
+  margin-top: 2%;
+  display: inline-flex;
+  margin-left: 10%;
+ 
+}
+
+.img3 img{
+  margin-left: 15%;
+  margin-right: 0%;
+}
+
