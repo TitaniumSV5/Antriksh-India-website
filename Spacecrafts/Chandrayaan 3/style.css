@@ -233,7 +233,7 @@ body {
   margin-right: 4%;
   margin-bottom: 5%;
   padding: 6%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   border: 4px solid #000000;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);   
@@ -528,3 +528,46 @@ body {
   flex: 1;
   margin-left: 20%;
 }
+
+
+.img6 img{
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+
+.img7 img{
+  margin-left: 30%;
+  margin-bottom: 5%;
+ 
+}
+
+.img8 img{
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.img9 img{
+  margin-left: 40%;
+  margin-bottom: 5%;
+ 
+}
+
+.img10 img{
+  margin-left: 40%;
+  margin-top: -5%;
+}
+
+.img11 img{
+  margin-left: 30%;
+  margin-top: -5%;
+}
+
+.img12 img{
+  margin-left: 10%;
+  margin-top: -5%;
+}
+
+
+
