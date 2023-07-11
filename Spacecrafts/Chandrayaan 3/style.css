@@ -449,3 +449,16 @@ body {
   }
 }
 
+
+.img1 {
+  margin-top: -5%;
+  margin-bottom: 10%;
+  display: inline-flex;
+  margin-left: 13%;
+ 
+}
+
+.img1 img{
+  margin-left: 10%;
+  margin-right: 0%;
+}
