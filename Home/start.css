@@ -46,7 +46,7 @@ body::after {
     background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
     border-radius: 10px;
     height: 20%;
-    padding: 20px;
+    padding: 18px;
     margin-bottom: 20px;
     z-index: 1; /* Add higher z-index value */
     display: flex;
@@ -67,7 +67,8 @@ body::after {
     font-size: 40px;
     text-transform: uppercase;
     font-family: 'Buttons';
-    margin-bottom: 3%;
+    margin-top: -4%;
+    margin-bottom: 1%;
     word-spacing: 10px;
 
   }
