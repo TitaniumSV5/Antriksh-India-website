@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Create the logo image element
   var logoImage = document.createElement('img');
-  logoImage.src = 'logo2.png';
+  logoImage.src = '../Assets/logo2.png';
   logoImage.classList.add('logo');
   logoImage.setAttribute('height', '100px');
   logoImage.setAttribute('width', '50px');
 
   // Create the anchor element
   var anchor = document.createElement('a');
-  anchor.href = '../../Home/start.html'; // Replace with your desired URL
+  anchor.href = '../../index.html'; // Replace with your desired URL
 
   // Append the logo image to the anchor element
   anchor.appendChild(logoImage);
