@@ -1,11 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antriksh India</title>
+  <link rel="stylesheet" href="Home/navbarcss.css">
+  <link rel="stylesheet" href="Home/start.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="Home/header.js"></script>
+
+  <style>
+    .carousel__slide {
+      position: relative;
+    }
+
+    .carousel__image {
+      max-height: 100%;
+      width: auto;
+    }
+
+    .carousel__text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      width: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s ease-in-out;
+    }
+
+    .carousel__slide:hover .carousel__text {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
 </head>
+
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem vitae dicta, ea culpa excepturi aspernatur cupiditate praesentium quaerat ullam possimus blanditiis corrupti modi voluptate porro iure officiis assumenda alias molestiae asperiores, eos fugiat quisquam nemo qui minus! Possimus earum aliquam in officia minus accusamus, esse dolores totam, tempore iusto unde natus dignissimos iure officiis rem incidunt culpa tenetur eum facere aperiam? Obcaecati, possimus velit temporibus recusandae saepe nisi ullam commodi! Voluptate in possimus dolor, nemo quidem consequuntur sit, ex aliquam quas reprehenderit neque. Non facilis officia sit! Asperiores facilis aliquam illum praesentium, maxime error molestias perspiciatis quaerat nostrum accusamus. Praesentium culpa quas veritatis, enim corporis amet dolores repudiandae eveniet id magni. Accusamus reiciendis iure reprehenderit recusandae veritatis sapiente fugit voluptate maxime assumenda harum nisi excepturi ducimus quia cumque magnam quod tempore sequi aliquam, asperiores quasi placeat veniam? Repellendus sapiente debitis ea! Sit minus modi dolores, accusamus iure odit expedita ad! Minima autem, commodi eligendi, id ex architecto a libero aliquam voluptate eveniet est magni ad incidunt modi dicta, suscipit veritatis maxime vel unde? Pariatur doloremque, quasi eius exercitationem quam temporibus culpa esse nisi possimus, nobis, adipisci ducimus dolores magni obcaecati laborum tempore! In iste excepturi consectetur sit quo maiores mollitia veniam cupiditate at magnam numquam quis hic nesciunt, dolores impedit maxime. Distinctio nulla vel quo unde vitae quis. Tempora laborum asperiores qui rerum, totam praesentium, neque quod eos libero cum accusamus. Magni culpa beatae vitae eos esse tempore, voluptatem, odio repudiandae soluta vero eum quidem, porro laborum enim? Pariatur optio impedit dolores quia voluptate, voluptates dignissimos fugit eaque eius, cumque modi labore autem quod, aliquam veritatis ipsam dolorem sapiente. Quia veritatis ea earum magni ut, quidem eveniet modi eaque iste blanditiis perferendis sequi minima excepturi! Temporibus saepe ipsam voluptates in voluptatum odio amet sapiente accusantium et impedit, animi delectus eveniet similique. Provident, expedita. Ad, eius ea. Delectus molestiae inventore nesciunt, animi eius consequatur fuga voluptatem debitis tempora quam est! Illo aut fugiat natus exercitationem unde sunt blanditiis ullam officia possimus, similique sit dignissimos, eveniet repellat quos iste? Atque harum, omnis iure voluptatibus officiis sapiente aliquam earum. Facilis, delectus molestiae! Ullam, ilique voluptas, asperiores nobis magni quidem. Magnam aspernatur tempore optio sapiente cumque facilis voluptas rerum praesentium repellendus atque officia beatae, fugiat quibusdam inventore deserunt architecto tenetur magni? Vitae aliquid dolorem quis suscipit adipisci reprehenderit excepturi corrupti porro consectetur? Dolorum, architecto ipsam! Officia magni at nostrum sequi adipisci, ipsum, blanditiis obcaecati accusamus non suscipit accusantium nam ipsam est perspiciatis consectetur eum facere deleniti a? Magnam, possimus animi, eaque velit nisi quam voluptatem labore excepturi ipsam odio pariatur distinctio amet corrupti odit, in reiciendis tempore reprehenderit quia? Eaque ea illum aut necessitatibus sint nemo eius, minima ullam perspiciatis tempore repellendus quasi consequatur? Qui repellendus dolor architecto sit nulla non facere officia repudiandae consequatur optio minus, quas iure quia. Quo maiores soluta similique, voluptates voluptatibus excepturi atque vitae facere repudiandae nostrum, dolores eius. Enim et architecto maxime rerum ipsam, ipsum error temporibus officiis? Minima, repellendus vel, eveniet quidem esse magnam in laborum qui omnis praesentium porro? Atque perspiciatis numquam, tempora odit repellendus dolorum tempore! Laudantium autem perferendis sequi ab maxime eum veritatis iusto aliquid amet. Delectus quo voluptas modi fugiat saepe labore? Vero alias rerum libero illo. Id sunt ea quod voluptate veniam, quae voluptates? Dolor, eligendi. Aut neque autem unde nostrum. Repellat vero, aperiam exercitationem explicabo molestiae ab odit consequatur minima voluptas, nostrum, vel accusantium. Ex eveniet ab aliquid rem, labore quidem.</p>
+  <div class="navbar">
+    <!-- Your navbar content here -->
+  </div>
+
+  <div class="banner"></div>
+
+  <div class="container">
+    <div class="center-container">
+
+      <div class="carousel-container">
+
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide active">
+              <a href="Spacecrafts/Chandrayaan 3/cy3.html">
+                <div class="carousel__snapper">
+                  <div class="carousel__prev">Go to last slide</div>
+                  <div class="carousel__next">Go to next slide</div>
+                </div>
+              </a>
+              <div class="carousel__image">
+                <img src="Home/Assets/cy3.jpg" alt="Slide 1 Image" height="30%" width="100%">
+              </div>
+              <div class="carousel__text">
+                <h3>Chandrayaan-3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <a href="Launches/Past Launch Pages/@87_GSLV-F12.html">
+                <div class="carousel__snapper"></div>
+                <div class="carousel__prev">Go to previous slide</div>
+                <div class="carousel__next">Go to next slide</div>
+              </a>
+              <div class="carousel__image">
+                <img src="Home/Assets/f12.jpg" alt="Slide 2 Image" height="30%" width="100%">
+              </div>
+              <div class="carousel__text">
+                <h3>GSLV F12 / NVS-01</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <a href="Launches/Upcoming%20Launch%20Pages/@89_PSLV-C56.html">
+                <div class="carousel__snapper"></div>
+                <div class="carousel__prev">Go to previous slide</div>
+                <div class="carousel__next">Go to next slide</div>
+              </a>
+              <div class="carousel__image">
+                <img src="Home/Assets/pslvql.jpg" alt="Slide 3 Image" height="30%" width="100%">
+              </div>
+              <div class="carousel__text">
+                <h3>PSLV C56 / DS-SAR</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+
+          
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button active"></a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"></a>
+              </li>
+            </ol>
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+
+    <div class="right-container">
+      <div class="countdown-container">
+        <h2 class="countdown-title">LVM3/Chandrayaan-3 Launch</h2>
+        <div class="countdown-timer" id="countdown-timer"></div>
+        <a href="Launches/Upcoming%20Launch%20Pages/@88_LVM3-M4.html">
+          <div class="countdown-box-clickable">
+            <!-- Countdown box clickable content here -->
+            <p>Know More</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="updates-container">
+        <h3 class="updates-title">Updates</h3>
+        <div class="updates-scroll">
+          <div class="update">
+            <img src="Home/Assets/upd1.jpg" alt="Update 1">
+            <p class="update-description">LVM3 rolls out to the Pad ahead of CY3 launch</p>
+          </div>
+          <div class="update">
+            <img src="Home/Assets/upd2.jpg" alt="Update 2">
+            <p class="update-description">Skyroot successfully build Carbon fiber Stage 1 motor case for Vikram 1 rocket</p>
+          </div>
+          <div class="update">
+            <img src="Home/Assets/upd3.jpg" alt="Update 3">
+            <p class="update-description">India becomes the 26th country to sign the Artemis Accords</p>
+          </div>
+          <div class="update">
+            <img src="Home/Assets/upd4.jpg" alt="Update 3">
+            <p class="update-description">PSLV C56 launch campaign has begun</p>
+          </div>
+          <!-- Add more update elements as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-links-container">
+    <h3 class="quick-links-title">Quick Links</h3>
+    <div class="quick-links">
+
+
+
+      <div class="quick-link-card">
+        <a href="Spacecrafts/Chandrayaan%203/cy3.html">
+          <img src="Home/Assets/ql1.jpg" alt="Chandrayaan-3">
+          <div class="quick-link-caption">Chandrayaan-3</div>
+        </a>
+      </div>
+
+
+
+      <div class="quick-link-card">
+        <a href="Rockets/LVM3/lvm3.html">
+          <img src="Home/Assets/ql2.jpg" alt="LVM3">
+          <div class="quick-link-caption">LVM3</div>
+        </a>
+      </div>
+
+
+
+     <div class="quick-link-card">
+        <a href="Rockets/PSLV/pslv.html">
+          <img src="Home/Assets/ql3.jpg" alt="PSLV">
+          <div class="quick-link-caption">PSLV</div>
+        </a>
+      </div>
+
+
+
+    <div class="quick-link-card">
+        <a href="Launches/Past Launch Pages/@87_GSLV-F12.html">
+          <img src="Home/Assets/ql4.jpg" alt="Chandrayaan-3">
+          <div class="quick-link-caption">GSLV - F12</div>
+        </a>
+      </div>
+
+      <div class="quick-link-card">
+        <a href="Launches/Upcoming Launch Pages/@89_PSLV-C56.html">
+          <img src="Home/Assets/ql5.jpg" alt="PSLV C56">
+          <div class="quick-link-caption">PSLV C56</div>
+        </a>
+      </div>
+
+
+
+      <!-- Add more placeholder cards as needed -->
+    </div>
+  </div>
+
+
+  <div class="solid-line"></div>
+
+  <div class="quote">
+
+    <div class="container">
+      <p>
+        Failure is not about succeeding.
+        Rather it is about not putting 
+        your best effort and not contributing, 
+        however modestly, to the common good.
+      </p> 
+      <img src="Home/Assets/scientist-Vikram-Sarabhai.jpg" height="23%" width="23%">
+    </div>
+    
+    <div class="capt">
+      <h1>
+        Vikram Sarabhai <br></h1>
+        <h2>Father of Indian Space
+      </h1>
+    </div>
+
+
+  </div>
+  
+  
+  
+
+  <div class="quick-links-container2">
+    <h1>Antriksh India © 2023</h1>
+    <a href="Extras/About.html" class="no-underline" ><h3>About</h3></a>
+    <a href="https://twitter.com/_AntrikshIndia" class="no-underline" target="_blank"><h3>Twitter</h3></a>
+    <a href="https://www.instagram.com/antrikshindia/" class="no-underline" target="_blank"><h3>Instagram</h3></a>
+    <a href="Extras/Privacy%20Policy.html" class="no-underline"><h3>Privacy Policy</h3></a>
+    <a href="Extras/Content%20use%20policy.html" class="no-underline"><h3>Content use Policy</h3></a>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+<script>
+const navigationButtons = document.querySelectorAll('.carousel__navigation-button');
+const indicators = document.querySelectorAll('.carousel__indicator');
+
+navigationButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    navigationButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const slides = document.querySelectorAll('.carousel__slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    indicators[index].classList.add('active');
+  });
+});
+
+
+</script>
+  <script>
+    // Countdown timer
+    const countdownTimer = document.getElementById('countdown-timer');
+
+    // Set the date and time for the countdown (replace with your desired date and time)
+    const countdownDate = new Date('2023-07-14T14:35:00+05:30');
+
+    // Update the countdown timer every second
+    const countdownInterval = setInterval(() => {
+      const currentDate = new Date();
+      const timeDifference = countdownDate - currentDate;
+
+      // Check if the countdown has expired
+      if (timeDifference <= 0) {
+        clearInterval(countdownInterval);
+        countdownTimer.innerHTML = 'Countdown expired';
+        return;
+      }
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      // Display the countdown timer
+      countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+
 </body>
+
 </html>
