@@ -289,6 +289,19 @@ body {
     color: aliceblue;
   }
 
+  .details-box h7{
+    display: inline-flex;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    font-family: 'About';
+    font-size: 22px;
+    word-spacing: 5px;
+    text-align: justify;
+    line-height: 40px;
+    color: aliceblue;
+  }
+
 
   i{
     margin-top: 5%;
@@ -498,6 +511,10 @@ body {
   margin-right: 0%;
 }
 
+.img4 img{
+  margin-left: 30%;
+  margin-top: 5%;
+}
 
 
 .img5 img{
@@ -538,7 +555,9 @@ body {
 
 .img7 img{
   margin-left: 30%;
+  margin-top: -8%;
   margin-bottom: 5%;
+  
  
 }
 
@@ -569,5 +588,12 @@ body {
   margin-top: -5%;
 }
 
+.img15 img{
+  margin-left: 10%;
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
 
-
+.flex-container{
+  margin-top: -5%;
+}
