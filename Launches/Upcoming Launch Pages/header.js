@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Create the anchor element
   var anchor = document.createElement('a');
-  anchor.href = '../../Home/start.html'; // Replace with your desired URL
+  anchor.href = '../../index.html'; // Replace with your desired URL
 
   // Append the logo image to the anchor element
   anchor.appendChild(logoImage);
