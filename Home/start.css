@@ -537,3 +537,91 @@ font-family: 'Buttons';
     }
 
     
+
+    /* Styles for screens with width up to 767 pixels (mobile devices) */
+@media screen and (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+  body::after {
+    /* Adjust the background image size for mobile */
+    background-size: contain;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .right-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .countdown-container,
+  .updates-container {
+    margin: 0;
+    padding: 2%;
+  }
+
+  .updates-title {
+    font-size: 30px;
+  }
+
+  .update img {
+    width: 80px;
+    margin-right: 5%;
+  }
+
+  .update-description {
+    font-size: 16px;
+  }
+
+  .quick-links-container {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+
+  .quick-link-card {
+    width: 45%;
+    height: 120px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+  }
+
+  .quick-link-caption {
+    font-size: 12px;
+  }
+
+  .quick-links-container2 {
+    margin-top: 7%;
+    padding: 2%;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  .quick-links-container2 h1 {
+    font-size: 10px;
+    margin-right: 2%;
+    margin-left: 4%;
+  }
+
+  .quick-links-container2 h3 {
+    font-size: 16px;
+  }
+
+  .quote p {
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: 10px;
+  }
+
+  .capt h1 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .capt h2 {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
