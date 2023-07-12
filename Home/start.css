@@ -16,7 +16,7 @@ body {
 }
 body::after {
   content: '';
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Assets/image1.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Assets/ql1.jpg');
   background-size: cover;
   background-attachment: fixed;
   top: 0;
