@@ -542,25 +542,37 @@ font-family: 'Buttons';
 @media screen and (max-width: 767px) {
   /* Add your mobile-specific styles here */
   body::after {
-    /* Adjust the background image size for mobile */
-    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .container {
     flex-direction: column;
-    height: auto;
+    align-items: center; /* Center the container horizontally */
+    margin: 0; /* Remove any margins to span the full width */
+    width: 100%; /* Make the container span the full width */
   }
+
+  .center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the carousel container horizontally */
+  }
+
 
   .right-container {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0; /* Remove any margins to span the full width */
+    padding: 5px; /* Add desired padding */
   }
 
   .countdown-container,
   .updates-container {
-    margin: 0;
-    padding: 2%;
+    padding: 5px; /* Add desired padding */
+  }
+
+  .quick-links-container {
+    margin: 0; /* Remove any margins to span the full width */
+    padding: 5px; /* Add desired padding */
   }
 
   .updates-title {
