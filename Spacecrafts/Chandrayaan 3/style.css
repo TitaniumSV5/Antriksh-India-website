@@ -354,8 +354,14 @@ body {
 
 
 
+<<<<<<< HEAD
     /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+=======
+   /* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  /* First Page Styling */
+>>>>>>> parent of 84a8416 (23.6)
   .first-page {
     background-attachment: scroll;
   }
@@ -405,6 +411,10 @@ body {
     margin-top: 5px;
   }
 
+<<<<<<< HEAD
+=======
+  /* Second Page Styling */
+>>>>>>> parent of 84a8416 (23.6)
   .second-page {
     background: linear-gradient(to right, #000 30%, #0000FF);
     color: #fff;
@@ -440,7 +450,10 @@ body {
     text-align: center; /* Adjusted to center the content */
   }
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 84a8416 (23.6)
   .second-page .info-box .heading {
     font-size: 24px;
     margin-bottom: 20px;
@@ -451,6 +464,10 @@ body {
     margin-bottom: 10px;
   }
 
+<<<<<<< HEAD
+=======
+  /* Third Page Styling */
+>>>>>>> parent of 84a8416 (23.6)
   .third-page .content-wrapper {
     flex-direction: column;
     padding: 20px;
