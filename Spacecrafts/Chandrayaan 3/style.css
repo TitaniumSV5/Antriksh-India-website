@@ -659,25 +659,13 @@ body {
   }
 
   .img2{
-    margin-left: -15%;
-
-  }
-  
-  .img2 img{
-    height: 50%;
-    width: 50%;
-    margin-top: 5%;
+    height: 200%;
+    width: 200%;
   }
 
-  .details-box h4{
-    margin-right: -20%;
-  }
 
-  
-  
-  h4:last-of-type {
- margin-right: 0%;
-  }
+
+
 
 
 
@@ -732,12 +720,6 @@ body {
     margin-left: -25%;
   }
 
-
-  .img8{
-    height: 800%;
-    width: 800%;
-  }
-
   .img9{
     height: 150%;
     width: 150%;
@@ -755,17 +737,6 @@ body {
     width: 200%;
     margin-left: -50%;
   }
-  .img12{
-    height: 900%;
-    width: 900%;
-   
-  }
-  .img15{
-    height: 900%;
-    width: 900%;
-
-  }
-
 
 
 }
