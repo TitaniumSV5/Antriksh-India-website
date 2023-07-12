@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // GTM code snippet for the body tag
   var bodyCodeSnippet = '\
     <!-- GTM code for the body tag -->\
-    <noscript>\
+    \
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWXXGWB"\
       height="0" width="0" style="display:none;visibility:hidden"></iframe>\
-    </noscript>\
+    \
   ';
   
   // Create a new script element for the GTM code in the head tag
