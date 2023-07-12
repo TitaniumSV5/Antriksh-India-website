@@ -622,22 +622,39 @@ font-family: 'Buttons';
     font-size: 16px;
   }
 
+  .quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
   .quote p {
     font-size: 20px;
     line-height: 35px;
     word-spacing: 5px;
   }
+
+  .quote img {
+    margin: 10px auto;
+  }
  
 
+  .capt {
+    text-align: center;
+  }
+  
   .capt h1 {
     font-size: 20px;
-    margin-left: 10px;
+    margin: 10px auto;
   }
-
+  
   .capt h2 {
-    font-size: 16px;
-    margin-left: 10px;
+    font-size: 15px;
+    margin: 10px auto;
   }
+  
   
 
   
