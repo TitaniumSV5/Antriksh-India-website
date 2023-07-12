@@ -507,7 +507,7 @@ font-family: 'Buttons';
     }
 
     .quote p{
-      font-size: 250%;
+      font-size: 35px;
       text-align: justify;
       font-family: 'quote';
       margin-right: 15%;
@@ -556,6 +556,7 @@ font-family: 'Buttons';
     width: 100%;
     display: flex;
     justify-content: center; /* Center the carousel container horizontally */
+    padding: 5px;
   }
 
 
@@ -622,10 +623,11 @@ font-family: 'Buttons';
   }
 
   .quote p {
-    font-size: 16px;
-    line-height: 30px;
-    word-spacing: 10px;
+    font-size: 20px;
+    line-height: 35px;
+    word-spacing: 5px;
   }
+ 
 
   .capt h1 {
     font-size: 20px;
@@ -636,4 +638,7 @@ font-family: 'Buttons';
     font-size: 16px;
     margin-left: 10px;
   }
+  
+
+  
 }
