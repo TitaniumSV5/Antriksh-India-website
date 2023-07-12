@@ -101,7 +101,7 @@ body {
 
 /* Second Page Styling */
 .second-page {
-  background-image: url('Assets/2page.png');
+  background-image: url('Assets/2page.jpg');
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff53;
@@ -464,11 +464,194 @@ body {
 
 
 
+  @media only screen and (max-width: 600px) {
+
+  .first-page {
+    background-attachment: scroll;
+  }
+
+  #countdown {
+    top: 40%;
+  }
+
+  .countdown-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .countdown-numbers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown-section {
+    margin: 10px 0;
+  }
+
+  .number {
+    font-size: 48px;
+    padding: 0 5px;
+    width: 80px;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .swipe-up-container {
+    bottom: 20px;
+  }
+
+  .double-chevron {
+    width: 10px;
+    height: 10px;
+    border-width: 0 1px 1px 0;
+    margin-bottom: -0.5px;
+  }
+
+  .swipe-up-text {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .second-page {
+    background: linear-gradient(to right, #000 30%, #0000FF);
+    color: #fff;
+    font-size: 18px;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-page .content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 18px;
+  }
+
+  .second-page .cy3-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 25px; 
+  }
+
+  .second-page .info-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .second-page .info-box .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .second-page .info-box .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .third-page .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .third-page .info-box {
+    padding: 40px;
+  }
+
+  .third-page .info-box .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .third-page .info-box .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 24px;
+  }
+
+  .text-container p {
+    font-size: 14px;
+  }
 
 
+  .details-box {
+    padding: 4%;
+    padding-bottom: 6%;
+    
+  }
 
+  .details-box h2 {
+    font-size: 36px;
+  }
 
+  .details-box h3 {
+    font-size: 30px;
+  }
 
+  .details-box h5,
+  .details-box h6,
+  .details-box h4,
+  .details-box h7,
+  i,
+  .details-box li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .img1,
+  .img3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img1 img,
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  .img7 img,
+  .img8 img,
+  .img9 img,
+  .img10 img,
+  .img11 img,
+  .img12 img,
+  .img15 img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-container h5 {
+    white-space: normal;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 
 
 
