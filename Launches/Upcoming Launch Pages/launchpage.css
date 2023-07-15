@@ -86,9 +86,10 @@ color: #fff;
 h4{
 text-align: center;
 font-size: 50px;
-text-decoration: underline;
-font-family: 'Times New Roman', Times, serif;
+/* text-decoration: underline; */
+font-family: 'Kanit',  sans-serif;
 color: aliceblue;
+font-weight: 400;
 
 }
 
@@ -103,9 +104,10 @@ color: aliceblue;
 
 
 li{
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Outfit',  sans-serif;
 color: rgb(255, 255, 255);
 word-spacing: 5px;
+font-weight: 100;
 
 }
 
@@ -119,7 +121,7 @@ margin-bottom: 5%;
 
 p{
 margin-top: 5%;
-font-family: 'Times New Roman', Times, serif;
+font-family: 'About';
 font-size: 25px;
 word-spacing: 5px;
 text-align: justify;
@@ -226,9 +228,10 @@ color: #fff;
 }
 
 h6{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'About', Times, serif;
   font-weight: 800;
   word-spacing: 4px;
+  font-weight: 400px;
   
 
 }
