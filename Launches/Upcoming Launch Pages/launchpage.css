@@ -127,6 +127,7 @@ word-spacing: 5px;
 text-align: justify;
 line-height: 50px;
 color: aliceblue;
+font-weight: 400;
 }
 
 .container {
@@ -229,9 +230,9 @@ color: #fff;
 
 h6{
   font-family: 'About', Times, serif;
-  font-weight: 800;
+  font-weight: 900;
   word-spacing: 4px;
-  font-weight: 400px;
+  
   
 
 }
