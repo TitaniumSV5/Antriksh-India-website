@@ -179,9 +179,37 @@
           </div>
           <!-- Add more update elements as needed -->
         </div>
+        <div class="arrow-button">
+          <img src="Home/Assets/darrow.png" alt="Downward Arrow">
+        </div>
       </div>
+      
     </div>
+    
   </div>
+
+
+  <script>
+    $(document).ready(function() {
+  const $updatesScroll = $(".updates-scroll");
+  const $arrowButton = $(".arrow-button");
+
+  $updatesScroll.scroll(function() {
+    if ($updatesScroll.scrollTop() + $updatesScroll.innerHeight() >= $updatesScroll[0].scrollHeight) {
+      $arrowButton.hide();
+    } else {
+      $arrowButton.show();
+    }
+  });
+});
+  </script>
+
+
+
+
+
+
+
 
   <div class="quick-links-container">
     <h3 class="quick-links-title">Quick Links</h3>
