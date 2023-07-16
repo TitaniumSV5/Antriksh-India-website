@@ -46,7 +46,7 @@ body::after {
   .countdown-container {
     background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
     border-radius: 10px;
-    height: 25%;
+    height: 20%;
     padding: 18px;
     margin-bottom: 20px;
     z-index: 1; /* Add higher z-index value */
@@ -84,7 +84,7 @@ body::after {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 4%;
-    height: 50%;
+    height: 45%;
   }
 
 
