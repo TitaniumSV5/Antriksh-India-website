@@ -362,6 +362,19 @@ font-family: 'Buttons';
       background-color: #9b9b9b;
   }
 
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+
   @media screen and (max-width: 767px) {
     .updates-scroll {
       display: none;
