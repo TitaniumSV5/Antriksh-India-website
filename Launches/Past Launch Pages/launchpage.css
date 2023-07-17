@@ -232,9 +232,12 @@ h6{
   font-family: 'About', Times, serif;
   font-weight: 900;
   word-spacing: 4px;
-  
-  
+}
 
+.image3{
+  margin-top: 5%;
+  display: flex;
+  margin-left: -3%;
 }
 
 
