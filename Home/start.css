@@ -375,11 +375,11 @@ font-family: 'Buttons';
     border: none;
   }
 
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
     .updates-scroll {
       display: none;
     }
-  }
+  } */
   
     
     * {
