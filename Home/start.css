@@ -46,7 +46,7 @@ body::after {
   .countdown-container {
     background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
     border-radius: 10px;
-    height: 25%;
+    height: 20%;
     padding: 18px;
     margin-bottom: 20px;
     z-index: 1; /* Add higher z-index value */
@@ -84,7 +84,8 @@ body::after {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 4%;
-    height: 50%;
+    padding-bottom: 12%;
+    height: 44%;
   }
 
 
@@ -100,6 +101,7 @@ body::after {
   .updates-title {
     font-size: 40px;
     margin-bottom: 5%;
+    margin-top: -2%;
     font-family: 'Buttons';
     text-align: center;
   }
@@ -124,45 +126,8 @@ body::after {
   .update-description {
    
     font-family: 'Buttons';
-<<<<<<< Updated upstream
-    font-size: 20px;
-=======
     font-size: 18px;
   }
-
-  .scrollable-wrapper {
-    width: 100%;
-    
-    
-    overflow: hidden;
-    position: relative;
-  }
-
-  .updates-scroll {
-      width: 100%;
-      
-      overflow-y: scroll;
-      padding-right: 15px; /* Add space for scrollbar */
-  }
-
-
-  .updates-scroll::-webkit-scrollbar {
-      width: 8px;
-      background-color: #f1f1f11f;
-  }
-
-  .updates-scroll::-webkit-scrollbar-track {
-    width: 8px;
-    background-color: #f1f1f11f;
-  }
-  .updates-scroll::-webkit-scrollbar-thumb {
-      background-color: #888;
-  }
-
-  .updates-scroll::-webkit-scrollbar-thumb:hover {
-      background-color: #d1d1d1;
-  }
-
 
 
 
@@ -176,7 +141,6 @@ body::after {
     width: 5%;
     height: 5%;
     cursor: pointer;
->>>>>>> Stashed changes
   }
 
   .carousel-container:hover {
@@ -232,7 +196,7 @@ body::after {
 
 
 .quick-links-container {
-margin-top: -5%;
+margin-top: -10%;
 margin-left: 4%;
 margin-bottom: 5%;
 
@@ -374,18 +338,49 @@ font-family: 'Buttons';
       scrollbar-width: 0px;
     }
     
-    *::-webkit-scrollbar {
-      width: 0;
+  .updates-scroll {
+      width: 100%;
+      overflow-y: scroll;
+      padding-right: 15px; /* Add space for scrollbar */
+  }
+
+  .updates-scroll::-webkit-scrollbar {
+      width: 8px;
+      background-color: #38383841;
+  }
+
+  .updates-scroll::-webkit-scrollbar-track {
+    width: 8px;
+    background-color: #38383841;
+  }
+
+  .updates-scroll::-webkit-scrollbar-thumb {
+      background-color: #c5c5c58e;
+  }
+
+  .updates-scroll::-webkit-scrollbar-thumb:hover {
+      background-color: #9b9b9b;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+
+  /* @media screen and (max-width: 767px) {
+    .updates-scroll {
+      display: none;
     }
-    
-    *::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    
-    *::-webkit-scrollbar-thumb {
-      background: transparent;
-      border: none;
-    }
+  } */
+  
     
     * {
       -ms-overflow-style: none;

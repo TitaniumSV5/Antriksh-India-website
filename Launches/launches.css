@@ -95,9 +95,9 @@ main {
 .launch-caption {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 18px;
   color: white;
-  /* Add other styles for the caption text */
+  text-align: right;  /* Add other styles for the caption text */
 }
 .launch-caption p{
   font-size: 20px;
