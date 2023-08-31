@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'YourFont';
+  src: url('un.otf') format('opentype');
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.logopslv {
+  width: 14%;
+  position: relative;
+  margin-left: 7%;
+  
+}
+
+.text {
+  color: white;
+  font-size: 70px;
+  text-align: right;
+  margin-right: 200px;
+  font-family: 'YourFont';
+  line-height: 1; /* Adjust the line height to reduce the gap */  
+  text-shadow: 0 0 20px rgb(255, 0, 0);
+
+
+
+}
+
+.subtext {
+  color: white;
+  font-size: 45px;
+  text-align: right;
+  font-family: 'YourFont';
+      padding-top: -1px;
+}
+
