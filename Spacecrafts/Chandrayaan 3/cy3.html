@@ -15,7 +15,7 @@
    <script>
     // Calculate the remaining time until the target date
     function calculateCountdown() {
-      var targetDate = new Date('August 23, 2023 16:35:17 GMT+0530');
+      var targetDate = new Date('September 6, 2023 18:04:00 GMT+0530');
       var now = new Date();
       var difference = targetDate.getTime() - now.getTime();
 
@@ -42,7 +42,7 @@
   <div class="first-page">
     <div class="banner"></div>
     <div id="countdown">
-      <div class="countdown-text">Chandrayaan 3 Lands in</div>
+      <div class="countdown-text">First Lunar Day ends in</div>
       <div class="countdown-numbers">
         <div class="countdown-section">
           <div class="number" id="days"></div>
@@ -63,17 +63,7 @@
       </div>
     </div>
     
-    <!-- <div class="pgContainer">    
-      <div class="progress progress-striped">
-        <div class="progress-bar progress-animated">
-          <script src="pgbar.js"></script>
-        </div>                       
-      </div> 
-    </div>
-     -->
-
-
-    
+ 
 
 
     <div class="swipe-up-container">
@@ -84,294 +74,403 @@
     </div>
   </div>
 
-  <div id="hyperlink1" class="second-page">
-    <div class="content-wrapper">
-      <img src="Assets/cy3mesh.gif" alt="Chandrayaan-3 Mesh" class="cy3-image">
-      <div class="info-box">
-        <h1 class="heading">Brief Overview</h1>
-        <p class="info">Modules - Propulsion module, Lander, Rover</p>
-        <p class="info">Total mass - 3900kg</p>
-        <p class="info">Mission design life - 14 days/1 lunar day for lander and rover</p>
-        <p class="info">Landing site - 69.367621° S, 32.348126° E</p>
-        <p class="info">Total power generation - 738W (Lander), 50W (Rover)</p>
-        <p class="info">Launch vehicle - LVM3</p>
-        <p class="info">Launch date - 14 July 2023</p>
-
+  <main>
+    <div class="launch-text">
+      <div class="launch-option">
+        <button id="overview-button">Overview</button>
+      </div>
+      <div class="launch-option">
+        <button id="upcoming-button" class="active">Post Launch</button>
+      </div>
+      <div class="launch-option">
+        <button id="past-button">Landing</button>
+      </div>
+      <div class="launch-option">
+        <button id="post-button">Post Landing</button>
       </div>
     </div>
-  </div>
-  
-  <div class="third-page">
-  <div class="content-wrapper" style="background-image: url('Assets/propulsion.jpg'); background-size: cover; background-position: center; height: 100vh">
-    <div class="info-box">
-      <h1 class="heading">Propulsion Module</h1>
-      <class="info">
+
+
+
+    <section id="launches">
+      <div id="overview" class="launch-section" style="display: none;">
+        <div id="hyperlink1" class="second-page">
+          <div class="content-wrapper">
+            <img src="Assets/cy3mesh.gif" alt="Chandrayaan-3 Mesh" class="cy3-image">
+            <div class="info-box">
+              <h1 class="heading">Brief Overview</h1>
+              <p class="info">Modules - Propulsion module, Lander, Rover</p>
+              <p class="info">Total mass - 3900kg</p>
+              <p class="info">Mission design life - 14 days/1 lunar day for lander and rover</p>
+              <p class="info">Landing site - 69.367621° S, 32.348126° E</p>
+              <p class="info">Total power generation - 738W (Lander), 50W (Rover)</p>
+              <p class="info">Launch vehicle - LVM3</p>
+              <p class="info">Launch date - 14 July 2023</p>
       
-      <p class="info"> It provides the necessary thrust for the spacecraft to reach the Moon's orbit from an elliptical parking orbit around earth. The propulsion module ensures precise control and maneuverability during the mission and works as a link between the lander and ground stations.<br></p>
-      
-        <p class="info"><br>Engine - 1x 440N Hypergolic engine (MMH+MON3)</p>
-        <p class="info">Total mass - 2148kg</p>
-        <p class="info">Mission design life - TBD</p>
-        <p class="info">Orbit parameters - 100km circular lunar orbit</p>
-        <p class="info">Total power generatio - 758W</p>
-        <p class="info">Payload - SHAPE</p>
-    </div>
-  </div>
-</div>
-
-   <div class="third-page">
-  <div class="content-wrapper" style="background-image: url('Assets/Vikram\ lander.jpg'); background-size: cover; background-position: center; height: 100vh">
-    <div class="info-box">
-      <h1 class="heading">Lander</h1>
-      <class="info">
-      
-      <p class="info"> The Lander will have the capability to soft land at a specified lunar site and deploy the Rover. The Lander and the Rover have scientific payloads to carry out experiments on the lunar surface.</p>
-      
-        <p class="info">Engines - 4x 800N Hypergolic engine w(MMH+MON3)</p>
-        <p class="info">Total mass - 1726 kg</p>
-        <p class="info">Mission design life - 14 days / 1 Lunar Day</p>
-        <p class="info">Landing site - 4km*2.4km area (69.36762 S, 32.34812 E)</p>
-        <p class="info">Total power generation</span> - 738 W</p>
-        <p class="info">Payloads - ILSA, ChaSTE, RAMBHA, LRA </p>
-    </div>
-  </div>
-</div>
-
-   <div class="third-page">
-    <div class="content-wrapper" style="background-image: url('Assets/rover.jpg'); background-size: cover; background-position: center; height: 100vh">
-      <div class="info-box">
-      <h1 class="heading">Rover</h1>
-      <class="info">
-      
-      <p class="info"> Rover which will carry out in-situ chemical analysis of the lunar surface during the course of its mobility.</p>
-      
-        <p class="info">Drivetrain - 6 wheeled rocker-bogie suspension with electric motors</p>
-        <p class="info">Total mass - 26kg</p>
-        <p class="info">Mission design life - 14 days/1 lunar day</p>
-        <p class="info">Camera</span> - 1MP monochrome stereo cameras</p>
-        <p class="info">Total power generation - 50W</p>
-        <p class="info">Payload - APXS, LIBS</p>
-    </div>
-  </div>
-</div>
-
-   <div class="details-box">
-        <h2 style="text-align: center;">Chandrayaan-3 in Detail</h2>
-      
-        <h5>
-          The operations of the Chandrayaan-3 lander on the lunar surface will align with the lunar day. The lunar day spans approximately 14.5 Earth days and is succeeded by an equally long night. During the daylight period, the lander will establish communication with the propulsion module (PM), it can also directly communicate with ground stations on Earth (Chandrayaan-2 orbiter can act as a backup link). The lander and rover will carry out surface surveys and conduct various scientific experiments. Meanwhile the propulsion module stays in orbit acting as a link between the lander and ground stations. It also has one payload on it called SHAPE.<br><br><br><br>
-        </h5>
-        <div class="img1">
-          <img src="Assets/ch3_6.jpg.jpg" height="30%" width="30%">
-          <img src="Assets/ch3_10_medium.jpg.jpg" height="29%" width="29%">
-        </div>
-        
-
-        <div class="solid-line2"></div>
-
-        <h3>Propulsion system - </h3>
-
-        <h5>
-          The Chandrayaan-3  propulsion system incorporates a combination of different liquid-propellant engines, each serving specific purposes with varying thrust capabilities.<br><br></h5>
-
-          <h4 class="pm">a) On the propulsion module (PM) -  <br>
-          For trans lunar injection from earth orbit, trajectory corrections and lunar orbit insertion, an engine with 440N of thrust is employed. This engine is pressure fed burning MMH(fuel) and MON3(oxidiser). The PM also has an array of lower thrust thrusters. This whole system enables precise adjustments to the spacecraft's trajectory.<br><br>
-          
-          <div class="img2">
-            <img src="Assets/440N engine.png" height="100%" width="50%">
-          </div>
-          </h4>
-
-          <h4 class="lander">b) On the lander - <br>
-          To facilitate a soft landing on the lunar surface, 4 throttleable engines with a thrust of 800N each are utilized. These engines are also pressure fed and burn MMH and MON3. This system differs from the Chandrayaan-2 lander which had 5 engines (4 throttleable and the central engine being fixed thrust). The central engine did the final touchdown to mitigate lunar dust blow back on the lander instruments. The central or fifth engine was added last minute during Chandrayaan-2 as the original design was always 4-engined.<br><br>
-          </h4>
-        
-          <div class="img3">
-            <img src="Assets/800N engine.png" height="20%" width="20%">
-            <img src="Assets/58N engine.png" height="20%" width="20%">
-          </div>
-          
-
-          <h5>According to Dr. S. Somanath, Chairman, ISRO - <i>"Five engines were OK with the earlier mass of the lander but now we've enhanced the mass by nearly 200kg. Also, given its weight now, we have to necessarily fire a minimum of two engines to do the landing, and cannot land with a single engine."</i> Hence the central fifth engine was removed from the Chandrayaan-3 lander design. 
-
-          For stabilization and orientation purposes, the system employs 8 engines with a thrust of 58N each.
-
-        </h5>
-
-        <div class="solid-line2"></div>
-        
-        <h3>Onboard Control Mechanisms - </h3>
-
-        <div class="flex-container">
-          <div class="text-container">
-            <h5>
-              <ul>
-                <li>Lander sensors -</li>
-                <h6>
-                  1. Laser Inertial Referencing and Accelerometer Package (LIRAP)<br>
-                  2. Ka-Band Altimeter <br>
-                  3. Lander Position Detection Camera (LPDC)<br>
-                  4. LHDAC (Lander Hazard Detection & Avoidance Camera)<br>
-                  5. Laser Altimeter (LASA)<br>
-                  6. Laser Doppler Velocimeter (LDV)<br>
-                  7. Lander Horizontal Velocity Camera (LHVC)<br>
-                  8. Micro Star sensor<br>
-                  9. Inclinometer &amp; Touchdown sensors
-                </h6>
-              </ul>
-            </h5>
-          </div>
-          <div class="image-container">
-            <img src="Assets/combo.jpg" alt="Image">
-          </div>
-        </div>
-            
-          
-        
-          
-
-          <h5><li>Lander Actuators - </li></ul>
-          <h6>4 Reaction wheels (10 Nm & 0.1 Nm). These are integrated with associated onboard computing systems, throttleable engine control electronics, science payloads, X-band antennas, etc. The PM has it's own similar set of electronics and sensors.</h6>
-
-        </h5>
-
-        <div class="img6">
-          <img src="Assets/reaction wheel.png" height="20%" width="20%">
-        </div>
-
-        <div class="solid-line2"></div>
-
-        <h3>Power Supply System - </h3>
-
-        <h5>
-          Chandrayaan-3 lander is set to become one of the pioneering spacecraft to touch down in the high latitudes of the Moon. In this region, specific constraints arise due to the maximum angle at which the Sun appears above the horizon as the landing location being in the south polar region where the sun remains quite low in the horizon. The lander is designed to tolerate a deviation of up to 12° from the vertical axis, enabling it to further mitigate this situation.<br><br>
-          Such challenging conditions impose additional limitations on the layout possibilities for the solar panels, which serve as the primary source of electrical power. Hence 3 sides of the lander are almost entirely covered in solar panels wherever possible. The total solar panel area has also been increased from the Chandrayaan-2 lander. The rover is also equipped with it's own fold out solar panel array with one side almost completely covered in panel and half on the other side. The PM also has it's own solar panel.
-          All of this is backed by batteries and energy management systems.
-
-        </h5>
-
-        <h5>
-          <ul><li>Power generation figures: </li></ul>
-          <h6>1. PM - 758 Watts <br>
-              2. Lander - 738W, Winter Solstice with bias <br>
-              3. Rover - 50 Watts<br>
-          </h6>
-        </h5>
-
-        <div class="img5">
-          <img src="Assets/lander solar panel.png" height="100%" width="50%">
-        </div>
-
-        <div class="solid-line2"></div>
-
-        <h3>Communication system -  </h3>
-
-        <h5>
-          <ul><li>Propulsion Module: Communicates with IDSN. The RF system consists of a S band TTC transponder and X band transmitter for Payload data transmission to Indian Deep Space Network (IDSN) station.</li><br>
-
-          <li>Lander Module: Communicates with IDSN and Rover. Chandrayaan-2 Orbiter is also planned for contingency    link. The TTC communication between the Lander - IDSN is in S band and the payload data is transmitted by a high torque dual gimbal antenna. The Lander has a TM-TC data handling system with inbuilt storage.</li><br>
-
-          <li>Rover: Communicates only with Lander.</li></ul>
-
-        </h5>
-
-        <div class="img4">
-          <img src="Assets/ttc.png" height="40%" width="40%">
-        </div>
-
-        <div class="solid-line2"></div>
-
-
-        <h3>Scientific Equipment / Payloads - </h3>
-
-        <h5>
-          <ul>
-            <li>Propulsion Module:<br>
-            <h6>1. Spectro-polarimetry of HAbitable Planet Earth (SHAPE)-
-              Future discoveries of smaller planets in reflected light would allow us to probe into variety of Exo-planets which would qualify for habitability (or for presence of life).<br><br><br>
-              </h6>
-            </li>
-
-            <li>Lander:<br>
-              <h6>
-                1. Radio Anatomy of Moon Bound Hypersensitive Ionosphere and Atmosphere (RAMBHA)-
-                The lunar ionosphere is a highly dynamic plasma environment. A unique payload package, such as RAMBHA, has proven to be an effective diagnostic tool to provide a comprehensive exploration of the lunar plasma environment. It consists of a Langmuir Probe (LP) to measure the density of the lunar near-surface plasma and how it changes over time. The primary objective of RAMBHA is to measure factors such as ambient electron density and temperature near the lunar surface and temporal evolution of lunar plasma density for the first time near the surface under varying solar conditions. It is designed and developed at SPL,Thiruvananthapuram.
-                </h6><br><br>
-
-                <div class="img7">
-                  <img src="Assets/rambha.png" height="40%" width="40%">
-                </div>
-                <h7>
-                2. Chandra's Surface Thermo-physical Experiment (ChaSTE)-
-                ChaSTE will help to measure the vertical temperature gradient and thermal conductivity within the top 10 cm of regolith on the lunar surface. ChaSTE consists of a thermal probe including sensors and a heater which will be inserted into the lunar regolith down to a depth of ~10 cm at the landing site. ChaSTE operates in two different modes, Passive mode operation in which continuous in-situ measurements of temperature at different depths are carried out and Active mode operation in which temperature variations in a set period of time and the regolith's thermal conductivity under contact, are estimated. Harness running from the probe will connect the probe to the electronics place inside the lander. An important aspect of the payload is the design of a precise and wide range temperature measurement Front-End (FE) and the selection of a custom-developed Platinum RTD, PT1000 as a sensing element. It is designed and developed by PRL, Ahmedabad and SPL, Thiruvananthapuram.<br><br>
-
-                <div class="img8">
-                  <img src="Assets/CHASTE.png" height="75%" width="95%">
-                </div>
-                </h7>
-                3. Instrument for Lunar Seismic Activity (ILSA) ILSA is a triple-axis, MEMS-based seismometer that can detect minute ground displacement, velocity, or acceleration caused by lunar quakes. Its primary objective is to characterize the seismicity around the landing site. ILSA is designed to identify acceleration as low as 100 ng /√Hz with a dynamic range of ±0.5 g and a bandwidth of 40 Hz. The dynamic range is met by using two sensors, a coarse-range sensor and a fine-range sensor.<br><br>
-                
-                <div class="img9">
-                  <img src="Assets/ILSA.png" height="15%" width="15%">
-                </div>
-
-                4. Laser Retroreflector Array (LRA)
-                It is a passive experiment to understand the dynamics of Moon system.<br><br><br>
-              </h6>
-            </li>
-
-            <div class="img10">
-              <img src="Assets/NASA LRA.png" height="20%" width="20%">
             </div>
-
-            <li>Rover:<br>
-              <h6>1. Alpha Particle X-ray Spectrometer (APXS)
-              APXS is designed with an objective to study the elemental composition of lunar rock and soil near the landing site. It achieves this through the X-ray fluorescence spectroscopy technique, where X-ray or alpha particles are used to excite the surface. The working principle of APXS involves measuring the intensity of characteristic X-rays emitted from the sample due to Alpha Particle Induced X-ray Emission (PIXE) and X-ray Florescence (XRF). APXS uses radioactive Curium (244) metal that emits high-energy, alpha particles as well as X-rays enabling both X-ray emission spectroscopy and X-ray fluorescence spectroscopy. Through these techniques, APXS can detect all major rock-forming elements such as Sodium, Magnesium, Aluminum, Silica, Calcium, Titanium, Iron and some trace elements such as Strontium, Yttrium and Zirconium, spanning the energy range of 0.9 to 16 keV. The electronics design of the APXS experiment has shown that the developed system provides energy resolution of ~150 eV at 5.9 keV which is comparable to off the shelf Silicon Drift Detector (SDD) based X-ray spectrometers. APXS consists of two packages namely APXS sensor head and APXS backend electronics. APXS sensor head will be mounted on a robotic arm. On command, the robotic arm brings the sensor head close to the lunar surface without touching the surface and after the measurements, the sensor head is taken back to the parking position. The sensor head assembly contains SDD, six alpha sources and front end electronic circuits such as charge sensitive preamplifier (CSPA), shaper and filter circuits associated with the detector. The sensor head contains a circular disc that holds six alpha sources symmetrically around the disc and the detector at the center. It is designed and developed at PRL, Ahmedabad.<br><br>
-              <div class="img11">
-                <img src="Assets/APXS.png " height="40%" width="40%">
+          </div>
+        </div>
+        
+        <div class="third-page">
+        <div class="content-wrapper" style="background-image: url('Assets/propulsion.jpg'); background-size: cover; background-position: center; height: 100vh">
+          <div class="info-box">
+            <h1 class="heading">Propulsion Module</h1>
+            <class="info">
+            
+            <p class="info"> It provides the necessary thrust for the spacecraft to reach the Moon's orbit from an elliptical parking orbit around earth. The propulsion module ensures precise control and maneuverability during the mission and works as a link between the lander and ground stations.<br></p>
+            
+              <p class="info"><br>Engine - 1x 440N Hypergolic engine (MMH+MON3)</p>
+              <p class="info">Total mass - 2148kg</p>
+              <p class="info">Mission design life - TBD</p>
+              <p class="info">Orbit parameters - 100km circular lunar orbit</p>
+              <p class="info">Total power generatio - 758W</p>
+              <p class="info">Payload - SHAPE</p>
+          </div>
+        </div>
+      </div>
+      
+         <div class="third-page">
+        <div class="content-wrapper" style="background-image: url('Assets/Vikram\ lander.jpg'); background-size: cover; background-position: center; height: 100vh">
+          <div class="info-box">
+            <h1 class="heading">Lander</h1>
+            <class="info">
+            
+            <p class="info"> The Lander will have the capability to soft land at a specified lunar site and deploy the Rover. The Lander and the Rover have scientific payloads to carry out experiments on the lunar surface.</p>
+            
+              <p class="info">Engines - 4x 800N Hypergolic engine w(MMH+MON3)</p>
+              <p class="info">Total mass - 1726 kg</p>
+              <p class="info">Mission design life - 14 days / 1 Lunar Day</p>
+              <p class="info">Landing site - 4km*2.4km area (69.36762 S, 32.34812 E)</p>
+              <p class="info">Total power generation</span> - 738 W</p>
+              <p class="info">Payloads - ILSA, ChaSTE, RAMBHA, LRA </p>
+          </div>
+        </div>
+      </div>
+      
+         <div class="third-page">
+          <div class="content-wrapper" style="background-image: url('Assets/rover.jpg'); background-size: cover; background-position: center; height: 100vh">
+            <div class="info-box">
+            <h1 class="heading">Rover</h1>
+            <class="info">
+            
+            <p class="info"> Rover which will carry out in-situ chemical analysis of the lunar surface during the course of its mobility.</p>
+            
+              <p class="info">Drivetrain - 6 wheeled rocker-bogie suspension with electric motors</p>
+              <p class="info">Total mass - 26kg</p>
+              <p class="info">Mission design life - 14 days/1 lunar day</p>
+              <p class="info">Camera</span> - 1MP monochrome stereo cameras</p>
+              <p class="info">Total power generation - 50W</p>
+              <p class="info">Payload - APXS, LIBS</p>
+          </div>
+        </div>
+      </div>
+      
+         <div class="details-box">
+              <h2 style="text-align: center;">Chandrayaan-3 in Detail</h2>
+            
+              <h5>
+                The operations of the Chandrayaan-3 lander on the lunar surface will align with the lunar day. The lunar day spans approximately 14.5 Earth days and is succeeded by an equally long night. During the daylight period, the lander will establish communication with the propulsion module (PM), it can also directly communicate with ground stations on Earth (Chandrayaan-2 orbiter can act as a backup link). The lander and rover will carry out surface surveys and conduct various scientific experiments. Meanwhile the propulsion module stays in orbit acting as a link between the lander and ground stations. It also has one payload on it called SHAPE.<br><br><br><br>
+              </h5>
+              <div class="img1">
+                <img src="Assets/ch3_6.jpg.jpg" height="30%" width="30%">
+                <img src="Assets/ch3_10_medium.jpg.jpg" height="29%" width="29%">
               </div>
               
+      
+              <div class="solid-line2"></div>
+      
+              <h3>Propulsion system - </h3>
+      
+              <h5>
+                The Chandrayaan-3  propulsion system incorporates a combination of different liquid-propellant engines, each serving specific purposes with varying thrust capabilities.<br><br></h5>
+      
+                <h4 class="pm">a) On the propulsion module (PM) -  <br>
+                For trans lunar injection from earth orbit, trajectory corrections and lunar orbit insertion, an engine with 440N of thrust is employed. This engine is pressure fed burning MMH(fuel) and MON3(oxidiser). The PM also has an array of lower thrust thrusters. This whole system enables precise adjustments to the spacecraft's trajectory.<br><br>
+                
+                <div class="img2">
+                  <img src="Assets/440N engine.png" height="100%" width="50%">
+                </div>
+                </h4>
+      
+                <h4 class="lander">b) On the lander - <br>
+                To facilitate a soft landing on the lunar surface, 4 throttleable engines with a thrust of 800N each are utilized. These engines are also pressure fed and burn MMH and MON3. This system differs from the Chandrayaan-2 lander which had 5 engines (4 throttleable and the central engine being fixed thrust). The central engine did the final touchdown to mitigate lunar dust blow back on the lander instruments. The central or fifth engine was added last minute during Chandrayaan-2 as the original design was always 4-engined.<br><br>
+                </h4>
               
-              2. Laser Induced Breakdown Spectroscope (LIBS)
-              LIBS is designed with a prime objective to identify and determine the abundance of elements on the lunar surface near the landing site. This is achieved by firing high-powered laser pulses at various locations and
-              analyzing the radiation emitted by the decaying plasma. LIBS performs simultaneous multi-element
-              determination of the matter in any of its diverse forms, namely, solid, liquid or gas using an intense
-              nanosecond pulse duration of the laser beam of lunar regolith from an in-situ distance of 200 mm from the surface. The plasma emission emanating from the target surface is collected by a chromatic aberration
-              corrected Collection Optics Unit (COU) and spectra are acquired using an aberration corrected concave
-              holographic grating and linear CCD based spectrograph. The spectrograph supports variable time delay in the range of 1 to 5 μs and an integration time of 8μs to 1 ms. The LIBS instrument is realized with a
-              weight of 1.2 kg and having power consumption more than 5 W and a footprint of 180*150*80 mm. It is
-              designed and developed at Laboratory for Electro-Optic Systems (LEOS), Bengaluru.<br><br>
-              </h6>
+                <div class="img3">
+                  <img src="Assets/800N engine.png" height="20%" width="20%">
+                  <img src="Assets/58N engine.png" height="20%" width="20%">
+                </div>
+                
+      
+                <h5>According to Dr. S. Somanath, Chairman, ISRO - <i>"Five engines were OK with the earlier mass of the lander but now we've enhanced the mass by nearly 200kg. Also, given its weight now, we have to necessarily fire a minimum of two engines to do the landing, and cannot land with a single engine."</i> Hence the central fifth engine was removed from the Chandrayaan-3 lander design. 
+      
+                For stabilization and orientation purposes, the system employs 8 engines with a thrust of 58N each.
+      
+              </h5>
+      
+              <div class="solid-line2"></div>
               
-
-            </li>
-          </ul>
-        </h5>
-
-
-        <div class="solid-line2"></div>
-
-       <h3>Landing leg mechanism:</h3>
-
-       <h7>
-        Chandrayaan-3's landing leg mechanism is specifically engineered to absorb the kinetic energy generated during the landing process on the Moon's surface. It comprises of four leg structure assemblies, positioned at each corner of the main lander body, with each leg consisting a shock absorber, a V-shaped strut, and a support structure. The whole mechanism is now designed to survive upto 3m/sec of vertical touchdown velocity up from the 2m/sec of the Chandrayaan-2 lander.
-
-        At the bottom of each leg a crush core is attached which further helps in absorbing the energy during touchdown. These crush cores also have within them touchdown sensors to detect the moment of landing.<br><br><br><br>
-        <div class="img15">
-          <img src="Assets/landing leg.png" height="70%" width="135%">
-        </div>
-       </h7>
-
-       <h3>Rover mechanisms:</h3>
-
-       <h7>
-        Rover is a six-wheeled mobility system with the objective of performing mobility on the low gravity & vacuum of moon and in addition conduct science for understanding the lunar resources. Rover chassis houses all the electronics and has two 1MP monochrome navigation cameras to generate stereo images for path planning. The deployed solar panel provides the power during the mission. The 6 wheel rocker bogie mechanism along with the six wheels ensure a rugged mobility system over obstacles and slopes along the identified path for exploration of the region.<br>
-       
-       <div class="img12">
-        <img src="Assets/Rover wheel.png" height="90%" width="120%">
+              <h3>Onboard Control Mechanisms - </h3>
+      
+              <div class="flex-container">
+                <div class="text-container">
+                  <h5>
+                    <ul>
+                      <li>Lander sensors -</li>
+                      <h6>
+                        1. Laser Inertial Referencing and Accelerometer Package (LIRAP)<br>
+                        2. Ka-Band Altimeter <br>
+                        3. Lander Position Detection Camera (LPDC)<br>
+                        4. LHDAC (Lander Hazard Detection & Avoidance Camera)<br>
+                        5. Laser Altimeter (LASA)<br>
+                        6. Laser Doppler Velocimeter (LDV)<br>
+                        7. Lander Horizontal Velocity Camera (LHVC)<br>
+                        8. Micro Star sensor<br>
+                        9. Inclinometer &amp; Touchdown sensors
+                      </h6>
+                    </ul>
+                  </h5>
+                </div>
+                <div class="image-container">
+                  <img src="Assets/combo.jpg" alt="Image">
+                </div>
+              </div>
+                  
+                
+              
+                
+      
+                <h5><li>Lander Actuators - </li></ul>
+                <h6>4 Reaction wheels (10 Nm & 0.1 Nm). These are integrated with associated onboard computing systems, throttleable engine control electronics, science payloads, X-band antennas, etc. The PM has it's own similar set of electronics and sensors.</h6>
+      
+              </h5>
+      
+              <div class="img6">
+                <img src="Assets/reaction wheel.png" height="20%" width="20%">
+              </div>
+      
+              <div class="solid-line2"></div>
+      
+              <h3>Power Supply System - </h3>
+      
+              <h5>
+                Chandrayaan-3 lander is set to become one of the pioneering spacecraft to touch down in the high latitudes of the Moon. In this region, specific constraints arise due to the maximum angle at which the Sun appears above the horizon as the landing location being in the south polar region where the sun remains quite low in the horizon. The lander is designed to tolerate a deviation of up to 12° from the vertical axis, enabling it to further mitigate this situation.<br><br>
+                Such challenging conditions impose additional limitations on the layout possibilities for the solar panels, which serve as the primary source of electrical power. Hence 3 sides of the lander are almost entirely covered in solar panels wherever possible. The total solar panel area has also been increased from the Chandrayaan-2 lander. The rover is also equipped with it's own fold out solar panel array with one side almost completely covered in panel and half on the other side. The PM also has it's own solar panel.
+                All of this is backed by batteries and energy management systems.
+      
+              </h5>
+      
+              <h5>
+                <ul><li>Power generation figures: </li></ul>
+                <h6>1. PM - 758 Watts <br>
+                    2. Lander - 738W, Winter Solstice with bias <br>
+                    3. Rover - 50 Watts<br>
+                </h6>
+              </h5>
+      
+              <div class="img5">
+                <img src="Assets/lander solar panel.png" height="100%" width="50%">
+              </div>
+      
+              <div class="solid-line2"></div>
+      
+              <h3>Communication system -  </h3>
+      
+              <h5>
+                <ul><li>Propulsion Module: Communicates with IDSN. The RF system consists of a S band TTC transponder and X band transmitter for Payload data transmission to Indian Deep Space Network (IDSN) station.</li><br>
+      
+                <li>Lander Module: Communicates with IDSN and Rover. Chandrayaan-2 Orbiter is also planned for contingency    link. The TTC communication between the Lander - IDSN is in S band and the payload data is transmitted by a high torque dual gimbal antenna. The Lander has a TM-TC data handling system with inbuilt storage.</li><br>
+      
+                <li>Rover: Communicates only with Lander.</li></ul>
+      
+              </h5>
+      
+              <div class="img4">
+                <img src="Assets/ttc.png" height="40%" width="40%">
+              </div>
+      
+              <div class="solid-line2"></div>
+      
+      
+              <h3>Scientific Equipment / Payloads - </h3>
+      
+              <h5>
+                <ul>
+                  <li>Propulsion Module:<br>
+                  <h6>1. Spectro-polarimetry of HAbitable Planet Earth (SHAPE)-
+                    Future discoveries of smaller planets in reflected light would allow us to probe into variety of Exo-planets which would qualify for habitability (or for presence of life).<br><br><br>
+                    </h6>
+                  </li>
+      
+                  <li>Lander:<br>
+                    <h6>
+                      1. Radio Anatomy of Moon Bound Hypersensitive Ionosphere and Atmosphere (RAMBHA)-
+                      The lunar ionosphere is a highly dynamic plasma environment. A unique payload package, such as RAMBHA, has proven to be an effective diagnostic tool to provide a comprehensive exploration of the lunar plasma environment. It consists of a Langmuir Probe (LP) to measure the density of the lunar near-surface plasma and how it changes over time. The primary objective of RAMBHA is to measure factors such as ambient electron density and temperature near the lunar surface and temporal evolution of lunar plasma density for the first time near the surface under varying solar conditions. It is designed and developed at SPL,Thiruvananthapuram.
+                      </h6><br><br>
+      
+                      <div class="img7">
+                        <img src="Assets/rambha.png" height="40%" width="40%">
+                      </div>
+                      <h7>
+                      2. Chandra's Surface Thermo-physical Experiment (ChaSTE)-
+                      ChaSTE will help to measure the vertical temperature gradient and thermal conductivity within the top 10 cm of regolith on the lunar surface. ChaSTE consists of a thermal probe including sensors and a heater which will be inserted into the lunar regolith down to a depth of ~10 cm at the landing site. ChaSTE operates in two different modes, Passive mode operation in which continuous in-situ measurements of temperature at different depths are carried out and Active mode operation in which temperature variations in a set period of time and the regolith's thermal conductivity under contact, are estimated. Harness running from the probe will connect the probe to the electronics place inside the lander. An important aspect of the payload is the design of a precise and wide range temperature measurement Front-End (FE) and the selection of a custom-developed Platinum RTD, PT1000 as a sensing element. It is designed and developed by PRL, Ahmedabad and SPL, Thiruvananthapuram.<br><br>
+      
+                      <div class="img8">
+                        <img src="Assets/CHASTE.png" height="75%" width="95%">
+                      </div>
+                      </h7>
+                      3. Instrument for Lunar Seismic Activity (ILSA) ILSA is a triple-axis, MEMS-based seismometer that can detect minute ground displacement, velocity, or acceleration caused by lunar quakes. Its primary objective is to characterize the seismicity around the landing site. ILSA is designed to identify acceleration as low as 100 ng /√Hz with a dynamic range of ±0.5 g and a bandwidth of 40 Hz. The dynamic range is met by using two sensors, a coarse-range sensor and a fine-range sensor.<br><br>
+                      
+                      <div class="img9">
+                        <img src="Assets/ILSA.png" height="15%" width="15%">
+                      </div>
+      
+                      4. Laser Retroreflector Array (LRA)
+                      It is a passive experiment to understand the dynamics of Moon system.<br><br><br>
+                    </h6>
+                  </li>
+      
+                  <div class="img10">
+                    <img src="Assets/NASA LRA.png" height="20%" width="20%">
+                  </div>
+      
+                  <li>Rover:<br>
+                    <h6>1. Alpha Particle X-ray Spectrometer (APXS)
+                    APXS is designed with an objective to study the elemental composition of lunar rock and soil near the landing site. It achieves this through the X-ray fluorescence spectroscopy technique, where X-ray or alpha particles are used to excite the surface. The working principle of APXS involves measuring the intensity of characteristic X-rays emitted from the sample due to Alpha Particle Induced X-ray Emission (PIXE) and X-ray Florescence (XRF). APXS uses radioactive Curium (244) metal that emits high-energy, alpha particles as well as X-rays enabling both X-ray emission spectroscopy and X-ray fluorescence spectroscopy. Through these techniques, APXS can detect all major rock-forming elements such as Sodium, Magnesium, Aluminum, Silica, Calcium, Titanium, Iron and some trace elements such as Strontium, Yttrium and Zirconium, spanning the energy range of 0.9 to 16 keV. The electronics design of the APXS experiment has shown that the developed system provides energy resolution of ~150 eV at 5.9 keV which is comparable to off the shelf Silicon Drift Detector (SDD) based X-ray spectrometers. APXS consists of two packages namely APXS sensor head and APXS backend electronics. APXS sensor head will be mounted on a robotic arm. On command, the robotic arm brings the sensor head close to the lunar surface without touching the surface and after the measurements, the sensor head is taken back to the parking position. The sensor head assembly contains SDD, six alpha sources and front end electronic circuits such as charge sensitive preamplifier (CSPA), shaper and filter circuits associated with the detector. The sensor head contains a circular disc that holds six alpha sources symmetrically around the disc and the detector at the center. It is designed and developed at PRL, Ahmedabad.<br><br>
+                    <div class="img11">
+                      <img src="Assets/APXS.png " height="40%" width="40%">
+                    </div>
+                    
+                    
+                    2. Laser Induced Breakdown Spectroscope (LIBS)
+                    LIBS is designed with a prime objective to identify and determine the abundance of elements on the lunar surface near the landing site. This is achieved by firing high-powered laser pulses at various locations and
+                    analyzing the radiation emitted by the decaying plasma. LIBS performs simultaneous multi-element
+                    determination of the matter in any of its diverse forms, namely, solid, liquid or gas using an intense
+                    nanosecond pulse duration of the laser beam of lunar regolith from an in-situ distance of 200 mm from the surface. The plasma emission emanating from the target surface is collected by a chromatic aberration
+                    corrected Collection Optics Unit (COU) and spectra are acquired using an aberration corrected concave
+                    holographic grating and linear CCD based spectrograph. The spectrograph supports variable time delay in the range of 1 to 5 μs and an integration time of 8μs to 1 ms. The LIBS instrument is realized with a
+                    weight of 1.2 kg and having power consumption more than 5 W and a footprint of 180*150*80 mm. It is
+                    designed and developed at Laboratory for Electro-Optic Systems (LEOS), Bengaluru.<br><br>
+                    </h6>
+                    
+      
+                  </li>
+                </ul>
+              </h5>
+      
+      
+              <div class="solid-line2"></div>
+      
+             <h3>Landing leg mechanism:</h3>
+      
+             <h7>
+              Chandrayaan-3's landing leg mechanism is specifically engineered to absorb the kinetic energy generated during the landing process on the Moon's surface. It comprises of four leg structure assemblies, positioned at each corner of the main lander body, with each leg consisting a shock absorber, a V-shaped strut, and a support structure. The whole mechanism is now designed to survive upto 3m/sec of vertical touchdown velocity up from the 2m/sec of the Chandrayaan-2 lander.
+      
+              At the bottom of each leg a crush core is attached which further helps in absorbing the energy during touchdown. These crush cores also have within them touchdown sensors to detect the moment of landing.<br><br><br><br>
+              <div class="img15">
+                <img src="Assets/landing leg.png" height="70%" width="135%">
+              </div>
+             </h7>
+      
+             <h3>Rover mechanisms:</h3>
+      
+             <h7>
+              Rover is a six-wheeled mobility system with the objective of performing mobility on the low gravity & vacuum of moon and in addition conduct science for understanding the lunar resources. Rover chassis houses all the electronics and has two 1MP monochrome navigation cameras to generate stereo images for path planning. The deployed solar panel provides the power during the mission. The 6 wheel rocker bogie mechanism along with the six wheels ensure a rugged mobility system over obstacles and slopes along the identified path for exploration of the region.<br>
+             
+             <div class="img12">
+              <img src="Assets/Rover wheel.png" height="90%" width="120%">
+            </div>
+          </h7>
+          </div>
       </div>
-    </h7>
-    </div>
+  </section>
+
+    <section id="launches">
+        <div id="upcoming-launches" class="launch-section" style="display: none;">   
+          This is post launch
+        </div>
+    </section>
+
+    <section id="launches">
+      <div id="past-launches" class="launch-section" style="display: none;">
+        This is landing
+      </div>
+    </section>
+
+    <section id="launches">
+      <div id="post-launches" class="launch-section" style="display: none;">
+        This is post landing
+      </div>
+    </section>
+
+  </main>
+
+
+  
+  <script>
+    // JavaScript to toggle between upcoming, past, post-landing, and overview launches
+    const upcomingButton = document.getElementById("upcoming-button");
+    const pastButton = document.getElementById("past-button");
+    const postButton = document.getElementById("post-button");
+    const overviewButton = document.getElementById("overview-button");
+    const upcomingLaunches = document.getElementById("upcoming-launches");
+    const pastLaunches = document.getElementById("past-launches");
+    const postLaunches = document.getElementById("post-launches");
+    const overview = document.getElementById("overview");
+  
+    function setActiveSection(sectionId) {
+      // Remove the 'active' class from all buttons and hide all sections
+      [upcomingButton, pastButton, postButton, overviewButton].forEach(button => {
+        button.classList.remove("active");
+      });
+  
+      [upcomingLaunches, pastLaunches, postLaunches, overview].forEach(section => {
+        section.style.display = "none";
+      });
+  
+      // Add the 'active' class to the selected button and show the corresponding section
+      switch (sectionId) {
+        case "upcoming-button":
+          upcomingButton.classList.add("active");
+          upcomingLaunches.style.display = "block";
+          break;
+        case "past-button":
+          pastButton.classList.add("active");
+          pastLaunches.style.display = "block";
+          break;
+        case "post-button":
+          postButton.classList.add("active");
+          postLaunches.style.display = "block";
+          break;
+        case "overview-button":
+          overviewButton.classList.add("active");
+          overview.style.display = "block";
+          break;
+      }
+    }
+  
+    // Set the default active section to "overview" when the page loads
+    window.addEventListener("load", function () {
+      setActiveSection("overview-button");
+    });
+  
+    // Add click event listeners for the buttons
+    upcomingButton.addEventListener("click", function () {
+      setActiveSection("upcoming-button");
+    });
+  
+    pastButton.addEventListener("click", function () {
+      setActiveSection("past-button");
+    });
+  
+    postButton.addEventListener("click", function () {
+      setActiveSection("post-button");
+    });
+  
+    overviewButton.addEventListener("click", function () {
+      setActiveSection("overview-button");
+    });
+  </script>
 
 
 </body>
