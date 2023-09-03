@@ -46,7 +46,7 @@ body::after {
   .countdown-container {
     background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
     border-radius: 10px;
-    height: 14%;
+    height: 18%;
     padding: 18px;
     margin-bottom: 1%;
     z-index: 1; /* Add higher z-index value */
@@ -86,7 +86,7 @@ body::after {
     border-radius: 10px;
     padding: 4%;
     padding-bottom: 12%;
-    height: 30%;
+    height: 39%;
     margin-top: 3%;
   }
 
@@ -198,7 +198,7 @@ body::after {
 
 
 .quick-links-container {
-margin-top: -35%;
+margin-top: -15%;
 margin-left: 4%;
 margin-bottom: 5%;
 
