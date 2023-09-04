@@ -817,7 +817,8 @@ body {
 .abcde{
   color: #0000ff00;
   background-image: url('Assets/starbg.jpg');
-  background-size: cover;
+  background: fixed;
+  background-attachment: fixed;
   margin-bottom: -2%;
 }
 .jello{
