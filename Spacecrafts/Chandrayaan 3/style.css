@@ -15,8 +15,15 @@
   src: url('../Assets/open-sans.light.ttf') format('opentype');
 }
 body {
-  margin: 0;
+  margin-left: -1.3%;
+  margin-right: -1.3%;
+  overflow-x: hidden;
   padding: 0;
+}
+
+#launches {
+  background-image: url('Assets/starbg.jpg'); /* Replace 'your-image-path.jpg' with the actual path to your background image */
+ background-size: contain;
 }
 
 .first-page {
@@ -233,7 +240,7 @@ body {
   margin-right: 4%;
   margin-bottom: 5%;
   padding: 6%;
-  padding-bottom: 10%;
+  padding-bottom: 3%;
   border: 4px solid #000000;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);   
@@ -248,6 +255,35 @@ body {
   font-family: 'Times New Roman', Times, serif;
   text-decoration: underline;
 }
+
+.details-box2{
+
+  background-color: #1a1916e1;
+  position: relative;
+  z-index: 1;
+  margin-top: 0%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: -5%;
+  padding: 6%;  
+  border: 4px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1.8);   
+}
+
+
+
+.details-box2 h2{
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: -5%;
+  margin-bottom: 7%;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+
+
 .details-box h3{
   font-size: 40px;
   color: aliceblue;
@@ -457,6 +493,10 @@ body {
     margin-top: -5%;
   }
   
+
+  .info-box2{
+    margin-top: 25%;
+  }
 
 
 
@@ -774,8 +814,16 @@ body {
 
 
 
-
-
+.abcde{
+  color: #0000ff00;
+  background-image: url('Assets/starbg.jpg');
+  background-size: cover;
+  margin-bottom: -2%;
+}
+.jello{
+  margin-top: 5%;
+  color: #00000000;
+}
 
 
 
@@ -796,6 +844,7 @@ body {
 
 .launch-section{
   color: aliceblue;
+  margin-bottom: -2%;
 }
 
 
@@ -807,7 +856,7 @@ body {
 main {
   padding: 20px;
   font-family: 'YourFont';
-  background: #000;
+  background: #010b0e;
 
 }
 
