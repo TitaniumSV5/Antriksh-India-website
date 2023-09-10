@@ -498,6 +498,59 @@ body {
     margin-top: 25%;
   }
 
+  /* Post Landing CSS*/
+
+  .updatebox {
+    display: flex;
+    margin-bottom: 10%;
+  }
+  
+  .updatetext {
+    flex: 7; /* 70% of the available width */
+    text-align: justify; /* Justify the text */
+    margin-right: 5%;
+    font-family: 'About';
+    font-size: 25px;
+  }
+  .updatetext b{
+    flex: 7; /* 70% of the available width */
+    text-align: justify; /* Justify the text */
+    margin-right: 5%;
+    font-family: 'About';
+    font-size: 25px;
+  }
+  
+  .updateimage {
+    flex: 3; /* 30% of the available width */
+    text-align: center; /* Center the image horizontally */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  .updateimage img {
+    max-width: 90%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
