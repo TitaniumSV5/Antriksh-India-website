@@ -511,6 +511,7 @@ body {
     margin-right: 5%;
     font-family: 'About';
     font-size: 25px;
+    word-spacing: 15px;
   }
   .updatetext b{
     flex: 7; /* 70% of the available width */
