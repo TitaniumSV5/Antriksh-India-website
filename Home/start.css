@@ -86,7 +86,7 @@ body::after {
     border-radius: 10px;
     padding: 4%;
     padding-bottom: 12%;
-    height: 30%;          /*change here for update container height */
+    height: 28.5%;          /*change here for update container height */
     margin-top: 3%;
   }
 
@@ -198,7 +198,7 @@ body::after {
 
 
 .quick-links-container {
-margin-top: -25%;
+margin-top: -30%;
 margin-left: 4%;
 margin-bottom: 5%;
 
